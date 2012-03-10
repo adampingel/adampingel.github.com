@@ -14,9 +14,9 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../lib/object_big.png" />
+        <a title="Go to companion" href="Speed.html"><img src="../../../../lib/object_to_class_big.png" /></a>
         <p id="owner"><a name="org" class="extype" href="../../../package.html">org</a>.<a name="org.pingel" class="extype" href="../../package.html">pingel</a>.<a name="org.pingel.axle" class="extype" href="../package.html">axle</a>.<a name="org.pingel.axle.quanta" class="extype" href="package.html">quanta</a></p>
-        <h1>Speed</h1>
+        <h1><a title="Go to companion" href="Speed.html">Speed</a></h1>
       </div>
 
       <h4 class="signature" id="signature">
@@ -24,13 +24,13 @@
       <span class="symbol"> 
         <span class="name">Speed</span>
         
-        <span class="result"> extends <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></span>
+        <span class="result"> extends <a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a></span>
       </span>
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a>, <a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>, <a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>], <a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>, <a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a>, <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a>, <a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a>, <a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -46,7 +46,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="org.pingel.axle.quanta.Speed" class="in"><span>Speed</span></li><li name="org.pingel.axle.quanta.Quantum" class="in"><span>Quantum</span></li><li name="org.pingel.axle.graph.DirectedGraph" class="in"><span>DirectedGraph</span></li><li name="org.pingel.axle.graph.Graph" class="in"><span>Graph</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="org.pingel.axle.quanta.Speed" class="in"><span>Speed</span></li><li name="org.pingel.axle.quanta.Speed" class="in"><span>Speed</span></li><li name="org.pingel.axle.quanta.Quantum" class="in"><span>Quantum</span></li><li name="org.pingel.axle.graph.DirectedGraph" class="in"><span>DirectedGraph</span></li><li name="org.pingel.axle.graph.Graph" class="in"><span>Graph</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -56,7 +56,131 @@
 
         
 
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="org.pingel.axle.quanta.Quantum.Conversion" data-isabs="false">
+      <a id="Conversion:Conversion"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Quantum$Conversion.html"><span class="name">Conversion</span></a>
         
+        <span class="params">(<span name="from">from: UOM</span>, <span name="to">to: UOM</span>, <span name="bd">bd: BigDecimal</span>)</span><span class="result"> extends DirectedGraphEdge with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph.DirectedGraphEdge" data-isabs="true">
+      <a id="DirectedGraphEdge:DirectedGraphEdge"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="../graph/DirectedGraph$DirectedGraphEdge.html"><span class="name">DirectedGraphEdge</span></a>
+        
+        <span class="result"> extends GraphEdge</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph.DirectedGraphEdgeImpl" data-isabs="false">
+      <a id="DirectedGraphEdgeImpl:DirectedGraphEdgeImpl"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="../graph/DirectedGraph$DirectedGraphEdgeImpl.html"><span class="name">DirectedGraphEdgeImpl</span></a>
+        
+        <span class="result"> extends DirectedGraphEdge</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph.DirectedGraphVertex" data-isabs="true">
+      <a id="DirectedGraphVertex:DirectedGraphVertex"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="../graph/DirectedGraph$DirectedGraphVertex.html"><span class="name">DirectedGraphVertex</span></a>
+        
+        <span class="result"> extends GraphVertex</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#E" data-isabs="false">
+      <a id="E:E"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">E</span>
+        
+        <span class="result"> = <a name="org.pingel.axle.quanta.Quantum.Conversion" class="extype" href="Quantum$Conversion.html">Conversion</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a> → <a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph.GraphEdge" data-isabs="true">
+      <a id="GraphEdge:GraphEdge"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="../graph/Graph$GraphEdge.html"><span class="name">GraphEdge</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph.GraphVertex" data-isabs="true">
+      <a id="GraphVertex:GraphVertex"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="../graph/Graph$GraphVertex.html"><span class="name">GraphVertex</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Speed.SpeedUnit" data-isabs="false">
+      <a id="SpeedUnit:SpeedUnit"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="Speed$SpeedUnit.html"><span class="name">SpeedUnit</span></a>
+        
+        <span class="result"> extends UnitOfMeasurement</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Speed#UOM" data-isabs="false">
+      <a id="UOM:UOM"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">UOM</span>
+        
+        <span class="result"> = <a name="org.pingel.axle.quanta.Speed.SpeedUnit" class="extype" href="Speed$SpeedUnit.html">SpeedUnit</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a> → <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum.UnitOfMeasurement" data-isabs="false">
+      <a id="UnitOfMeasurement:UnitOfMeasurement"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="Quantum$UnitOfMeasurement.html"><span class="name">UnitOfMeasurement</span></a>
+        
+        <span class="result"> extends DirectedGraphVertex</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#V" data-isabs="false">
+      <a id="V:V"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">V</span>
+        
+        <span class="result"> = UOM</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a> → <a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
+    </li></ol>
+            </div>
         
         
 
@@ -95,28 +219,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#*" data-isabs="false">
-      <a id="*(Quantum):QuantumMultiplication"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">*</span>
-        
-        <span class="params">(<span name="right">right: <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></span>)</span><span class="result">: <a name="org.pingel.axle.quanta.QuantumMultiplication" class="extype" href="QuantumMultiplication.html">QuantumMultiplication</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#/" data-isabs="false">
-      <a id="/(Quantum):QuantumMultiplication"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">/</span>
-        
-        <span class="params">(<span name="right">right: <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></span>)</span><span class="result">: <a name="org.pingel.axle.quanta.QuantumMultiplication" class="extype" href="QuantumMultiplication.html">QuantumMultiplication</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -140,35 +242,35 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#_shortestPath" data-isabs="false">
-      <a id="_shortestPath(UnitOfMeasurement,UnitOfMeasurement,Set[UnitOfMeasurement]):Option[List[Conversion]]"></a>
+      <a id="_shortestPath(V,V,Set[V]):Option[List[E]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">_shortestPath</span>
         
-        <span class="params">(<span name="source">source: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="goal">goal: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="visited">visited: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[List[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]]</span>
+        <span class="params">(<span name="source">source: V</span>, <span name="goal">goal: V</span>, <span name="visited">visited: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[List[E]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#addEdge" data-isabs="false">
-      <a id="addEdge(Conversion):Conversion"></a>
+      <a id="addEdge(E):E"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">addEdge</span>
         
-        <span class="params">(<span name="edge">edge: <a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a></span>)</span><span class="result">: <a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a></span>
+        <span class="params">(<span name="edge">edge: E</span>)</span><span class="result">: E</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#addVertex" data-isabs="false">
-      <a id="addVertex(UnitOfMeasurement):UnitOfMeasurement"></a>
+      <a id="addVertex(V):V"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">addVertex</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: V</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
@@ -184,16 +286,16 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.quanta.Speed#c" data-isabs="false">
-      <a id="c:Quantity"></a>
+      <a id="c:UOM"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">c</span>
         
-        <span class="result">: <a name="org.pingel.axle.quanta.Quantity" class="extype" href="Quantity.html">Quantity</a></span>
+        <span class="result">: UOM</span>
       </span>
       </h4>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a></dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -209,113 +311,102 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#collectAncestors" data-isabs="false">
-      <a id="collectAncestors(Set[UnitOfMeasurement],Set[UnitOfMeasurement]):Unit"></a>
+      <a id="collectAncestors(Set[V],Set[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">collectAncestors</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>, <span name="result">result: <span name="scala.collection.mutable.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>, <span name="result">result: <span name="scala.collection.mutable.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#collectAncestors" data-isabs="false">
-      <a id="collectAncestors(UnitOfMeasurement,Set[UnitOfMeasurement]):Unit"></a>
+      <a id="collectAncestors(V,Set[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">collectAncestors</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="result">result: <span name="scala.collection.mutable.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>, <span name="result">result: <span name="scala.collection.mutable.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#collectDescendants" data-isabs="false">
-      <a id="collectDescendants(UnitOfMeasurement,Set[UnitOfMeasurement]):Unit"></a>
+      <a id="collectDescendants(V,Set[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">collectDescendants</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="result">result: <span name="scala.collection.mutable.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>, <span name="result">result: <span name="scala.collection.mutable.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#conversionPath" data-isabs="false">
-      <a id="conversionPath(UnitOfMeasurement,UnitOfMeasurement):Option[List[Conversion]]"></a>
+      <a id="conversionPath(UOM,UOM):Option[List[Conversion]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">conversionPath</span>
         
-        <span class="params">(<span name="source">source: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="goal">goal: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[List[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]]</span>
+        <span class="params">(<span name="source">source: UOM</span>, <span name="goal">goal: UOM</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[List[<a name="org.pingel.axle.quanta.Quantum.Conversion" class="extype" href="Quantum$Conversion.html">Conversion</a>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Searches the Directed Graph defined by this Quantum for a path of Conversions from source to goal</p><div class="fullcomment"><div class="comment cmt"><p>Searches the Directed Graph defined by this Quantum for a path of Conversions from source to goal</p></div><dl class="paramcmts block"><dt class="param">source</dt><dd class="cmt"><p>Start node for shortest path search</p></dd><dt class="param">goal</dt><dd class="cmt"><p>End node for shortest path search
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#cubed" data-isabs="false">
-      <a id="cubed():QuantumMultiplication"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">cubed</span>
-        
-        <span class="params">()</span><span class="result">: <a name="org.pingel.axle.quanta.QuantumMultiplication" class="extype" href="QuantumMultiplication.html">QuantumMultiplication</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#deleteEdge" data-isabs="false">
-      <a id="deleteEdge(Conversion):Option[Boolean]"></a>
+      <a id="deleteEdge(E):Option[Boolean]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">deleteEdge</span>
         
-        <span class="params">(<span name="e">e: <a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+        <span class="params">(<span name="e">e: E</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#deleteVertex" data-isabs="false">
-      <a id="deleteVertex(UnitOfMeasurement):Unit"></a>
+      <a id="deleteVertex(V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">deleteVertex</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.quanta.Speed#derivations" data-isabs="false">
-      <a id="derivations:List[QuantumMultiplication]"></a>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#derive" data-isabs="false">
+      <a id="derive(UnitOfMeasurement,Option[String],Option[String],Option[String]):UOM"></a>
       <h4 class="signature">
-      <span class="kind">val</span>
+      <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">derivations</span>
+        <span class="name">derive</span>
         
-        <span class="result">: <span name="scala.collection.immutable.List" class="extype">List</span>[<a name="org.pingel.axle.quanta.QuantumMultiplication" class="extype" href="QuantumMultiplication.html">QuantumMultiplication</a>]</span>
+        <span class="params">(<span name="compoundUnit">compoundUnit: <a name="org.pingel.axle.quanta.Quantum.UnitOfMeasurement" class="extype" href="Quantum$UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="nameOpt">nameOpt: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>, <span name="symbolOpt">symbolOpt: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>, <span name="linkOpt">linkOpt: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>)</span><span class="result">: UOM</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="">Speed</a> → <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#descendantsIntersectsSet" data-isabs="false">
-      <a id="descendantsIntersectsSet(UnitOfMeasurement,Set[UnitOfMeasurement]):Boolean"></a>
+      <a id="descendantsIntersectsSet(V,Set[V]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">descendantsIntersectsSet</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="s">s: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="v">v: V</span>, <span name="s">s: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#edges" data-isabs="false">
-      <a id="edges:Set[Conversion]"></a>
+      <a id="edges:Set[E]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">edges</span>
         
-        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]</span>
+        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
@@ -355,6 +446,17 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Speed#fps" data-isabs="false">
+      <a id="fps:UOM"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">fps</span>
+        
+        <span class="result">: UOM</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
       <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
@@ -367,79 +469,79 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#getEdge" data-isabs="false">
-      <a id="getEdge(UnitOfMeasurement,UnitOfMeasurement):Option[Conversion]"></a>
+      <a id="getEdge(V,V):Option[E]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getEdge</span>
         
-        <span class="params">(<span name="from">from: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="to">to: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]</span>
+        <span class="params">(<span name="from">from: V</span>, <span name="to">to: V</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#getEdges" data-isabs="false">
-      <a id="getEdges():Set[Conversion]"></a>
+      <a id="getEdges():Set[E]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getEdges</span>
         
-        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]</span>
+        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#getLeaves" data-isabs="false">
-      <a id="getLeaves():Set[UnitOfMeasurement]"></a>
+      <a id="getLeaves():Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getLeaves</span>
         
-        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>
+        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#getNeighbors" data-isabs="false">
-      <a id="getNeighbors(UnitOfMeasurement):Set[UnitOfMeasurement]"></a>
+      <a id="getNeighbors(V):Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getNeighbors</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#getPredecessors" data-isabs="false">
-      <a id="getPredecessors(UnitOfMeasurement):Set[UnitOfMeasurement]"></a>
+      <a id="getPredecessors(V):Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getPredecessors</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#getSuccessors" data-isabs="false">
-      <a id="getSuccessors(UnitOfMeasurement):Set[UnitOfMeasurement]"></a>
+      <a id="getSuccessors(V):Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getSuccessors</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#getVertices" data-isabs="false">
-      <a id="getVertices():Set[UnitOfMeasurement]"></a>
+      <a id="getVertices():Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getVertices</span>
         
-        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>
+        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
@@ -477,38 +579,38 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#isLeaf" data-isabs="false">
-      <a id="isLeaf(UnitOfMeasurement):Boolean"></a>
+      <a id="isLeaf(V):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">isLeaf</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.quanta.Speed#mph" data-isabs="false">
-      <a id="mph:UomDivision"></a>
+      <a id="mph:UOM"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">mph</span>
         
-        <span class="result">: <a name="org.pingel.axle.quanta.UomDivision" class="extype" href="UomDivision.html">UomDivision</a></span>
+        <span class="result">: UOM</span>
       </span>
       </h4>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.quanta.Speed#mps" data-isabs="false">
-      <a id="mps:UomDivision"></a>
+      <a id="mps:UOM"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">mps</span>
         
-        <span class="result">: <a name="org.pingel.axle.quanta.UomDivision" class="extype" href="UomDivision.html">UomDivision</a></span>
+        <span class="result">: UOM</span>
       </span>
       </h4>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -520,6 +622,50 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#newEdge" data-isabs="false">
+      <a id="newEdge(UOM,UOM,BigDecimal):Conversion"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">newEdge</span>
+        
+        <span class="params">(<span name="source">source: UOM</span>, <span name="dest">dest: UOM</span>, <span name="magnitude">magnitude: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>)</span><span class="result">: <a name="org.pingel.axle.quanta.Quantum.Conversion" class="extype" href="Quantum$Conversion.html">Conversion</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#newEdge" data-isabs="false">
+      <a id="newEdge(UOM,UOM):Conversion"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">newEdge</span>
+        
+        <span class="params">(<span name="source">source: UOM</span>, <span name="dest">dest: UOM</span>)</span><span class="result">: <a name="org.pingel.axle.quanta.Quantum.Conversion" class="extype" href="Quantum$Conversion.html">Conversion</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Speed#newUnitOfMeasurement" data-isabs="false">
+      <a id="newUnitOfMeasurement(Option[Conversion],Option[String],Option[String],Option[String]):SpeedUnit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">newUnitOfMeasurement</span>
+        
+        <span class="params">(<span name="conversion">conversion: <span name="scala.Option" class="extype">Option</span>[<a name="org.pingel.axle.quanta.Quantum.Conversion" class="extype" href="Quantum$Conversion.html">Conversion</a>] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>, <span name="name">name: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>, <span name="symbol">symbol: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>, <span name="link">link: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>)</span><span class="result">: <a name="org.pingel.axle.quanta.Speed.SpeedUnit" class="extype" href="Speed$SpeedUnit.html">SpeedUnit</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a> → <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#newVertex" data-isabs="false">
+      <a id="newVertex(String):UOM"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">newVertex</span>
+        
+        <span class="params">(<span name="label">label: String</span>)</span><span class="result">: UOM</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
       <a id="notify():Unit"></a>
       <h4 class="signature">
@@ -542,28 +688,50 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#one" data-isabs="false">
+      <a id="one:BigDecimal"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">one</span>
+        
+        <span class="result">: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#outputEdgesOf" data-isabs="false">
-      <a id="outputEdgesOf(UnitOfMeasurement):Set[Conversion]"></a>
+      <a id="outputEdgesOf(V):Set[E]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">outputEdgesOf</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#precedes" data-isabs="false">
-      <a id="precedes(UnitOfMeasurement,UnitOfMeasurement):Boolean"></a>
+      <a id="precedes(V,V):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">precedes</span>
         
-        <span class="params">(<span name="v1">v1: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="v2">v2: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="v1">v1: V</span>, <span name="v2">v2: V</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#quantity" data-isabs="false">
+      <a id="quantity(BigDecimal,UOM,Option[String],Option[String],Option[String]):UOM"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">quantity</span>
+        
+        <span class="params">(<span name="magnitude">magnitude: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>, <span name="unit">unit: UOM</span>, <span name="qname">qname: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>, <span name="qsymbol">qsymbol: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>, <span name="qlink">qlink: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>)</span><span class="result">: UOM</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#removeAllEdgesAndVertices" data-isabs="false">
       <a id="removeAllEdgesAndVertices():Unit"></a>
       <h4 class="signature">
@@ -576,57 +744,57 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#removeInputs" data-isabs="false">
-      <a id="removeInputs(Set[UnitOfMeasurement]):Unit"></a>
+      <a id="removeInputs(Set[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">removeInputs</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#removeOutputs" data-isabs="false">
-      <a id="removeOutputs(Set[UnitOfMeasurement]):Unit"></a>
+      <a id="removeOutputs(Set[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">removeOutputs</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#removePredecessor" data-isabs="false">
-      <a id="removePredecessor(UnitOfMeasurement,UnitOfMeasurement):Unit"></a>
+      <a id="removePredecessor(V,V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">removePredecessor</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="predecessor">predecessor: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>, <span name="predecessor">predecessor: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#removeSuccessor" data-isabs="false">
-      <a id="removeSuccessor(UnitOfMeasurement,UnitOfMeasurement):Unit"></a>
+      <a id="removeSuccessor(V,V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">removeSuccessor</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="successor">successor: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>, <span name="successor">successor: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#shortestPath" data-isabs="false">
-      <a id="shortestPath(UnitOfMeasurement,UnitOfMeasurement):Option[List[Conversion]]"></a>
+      <a id="shortestPath(V,V):Option[List[E]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">shortestPath</span>
         
-        <span class="params">(<span name="source">source: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>, <span name="goal">goal: <a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[List[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]]</span>
+        <span class="params">(<span name="source">source: V</span>, <span name="goal">goal: V</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[List[E]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
@@ -642,27 +810,16 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.quanta.Speed#speedLimit" data-isabs="false">
-      <a id="speedLimit:Quantity"></a>
+      <a id="speedLimit:UOM"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol"> 
         <span class="name">speedLimit</span>
         
-        <span class="result">: <a name="org.pingel.axle.quanta.Quantity" class="extype" href="Quantity.html">Quantity</a></span>
+        <span class="result">: UOM</span>
       </span>
       </h4>
-      
-    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#squared" data-isabs="false">
-      <a id="squared():QuantumMultiplication"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">squared</span>
-        
-        <span class="params">()</span><span class="result">: <a name="org.pingel.axle.quanta.QuantumMultiplication" class="extype" href="QuantumMultiplication.html">QuantumMultiplication</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
@@ -674,6 +831,39 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#toBD" data-isabs="false">
+      <a id="toBD(String):BigDecimal"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">toBD</span>
+        
+        <span class="params">(<span name="s">s: String</span>)</span><span class="result">: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#toBD" data-isabs="false">
+      <a id="toBD(Double):BigDecimal"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">toBD</span>
+        
+        <span class="params">(<span name="d">d: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#toBD" data-isabs="false">
+      <a id="toBD(Int):BigDecimal"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">toBD</span>
+        
+        <span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#toString" data-isabs="false">
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -685,36 +875,47 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a> → AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#unit" data-isabs="false">
+      <a id="unit(String,String,Option[String]):UOM"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">unit</span>
+        
+        <span class="params">(<span name="name">name: String</span>, <span name="symbol">symbol: String</span>, <span name="linkOpt">linkOpt: <span name="scala.Option" class="extype">Option</span>[String] = <span class="symbol"><span class="name"><a href="../../../../scala/package.html">None</a></span></span></span>)</span><span class="result">: UOM</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#vertex2inedges" data-isabs="false">
-      <a id="vertex2inedges:Map[UnitOfMeasurement, Set[Conversion]]"></a>
+      <a id="vertex2inedges:Map[V, Set[E]]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">vertex2inedges</span>
         
-        <span class="result">: <span name="scala.collection.Map" class="extype">Map</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>, <span name="scala.collection.mutable.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]]</span>
+        <span class="result">: <span name="scala.collection.Map" class="extype">Map</span>[V, <span name="scala.collection.mutable.Set" class="extype">Set</span>[E]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#vertex2outedges" data-isabs="false">
-      <a id="vertex2outedges:Map[UnitOfMeasurement, Set[Conversion]]"></a>
+      <a id="vertex2outedges:Map[V, Set[E]]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">vertex2outedges</span>
         
-        <span class="result">: <span name="scala.collection.Map" class="extype">Map</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>, <span name="scala.collection.mutable.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]]</span>
+        <span class="result">: <span name="scala.collection.Map" class="extype">Map</span>[V, <span name="scala.collection.mutable.Set" class="extype">Set</span>[E]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#vertices" data-isabs="false">
-      <a id="vertices:Set[UnitOfMeasurement]"></a>
+      <a id="vertices:Set[V]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">vertices</span>
         
-        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>]</span>
+        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
@@ -770,18 +971,20 @@
         <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="">Speed</a> → <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a> → <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li></ol>
             </div>
 
         
 
-        <div name="org.pingel.axle.quanta.Quantum" class="parent">
+        <div name="org.pingel.axle.quanta.Speed" class="parent">
+              <h3>Inherited from <a name="org.pingel.axle.quanta.Speed" class="extype" href="Speed.html">Speed</a></h3>
+            </div><div name="org.pingel.axle.quanta.Quantum" class="parent">
               <h3>Inherited from <a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></h3>
             </div><div name="org.pingel.axle.graph.DirectedGraph" class="parent">
-              <h3>Inherited from <a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>, <a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]</h3>
+              <h3>Inherited from <a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></h3>
             </div><div name="org.pingel.axle.graph.Graph" class="parent">
-              <h3>Inherited from <a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a>[<a name="org.pingel.axle.quanta.UnitOfMeasurement" class="extype" href="UnitOfMeasurement.html">UnitOfMeasurement</a>, <a name="org.pingel.axle.quanta.Conversion" class="extype" href="Conversion.html">Conversion</a>]</h3>
+              <h3>Inherited from <a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">

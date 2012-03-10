@@ -23,14 +23,14 @@
       <span class="kind">trait</span>
       <span class="symbol"> 
         <span class="name">UndirectedGraph</span>
-        <span class="tparams">[<span name="UV">UV &lt;: <a name="org.pingel.axle.graph.UndirectedGraphVertex" class="extype" href="UndirectedGraphVertex.html">UndirectedGraphVertex</a>[UE]</span>, <span name="UE">UE &lt;: <a name="org.pingel.axle.graph.UndirectedGraphEdge" class="extype" href="UndirectedGraphEdge.html">UndirectedGraphEdge</a>[UV]</span>]</span>
-        <span class="result"> extends <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a>[UV, UE]</span>
+        
+        <span class="result"> extends <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></span>
       </span>
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a>[UV, UE], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
           <div class="subClasses hiddenContent"><a name="org.pingel.axle.graph.SimpleGraph" class="extype" href="SimpleGraph.html">SimpleGraph</a></div>
@@ -61,33 +61,110 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedVertexStringer" data-isabs="false">
-      <a id="UndirectedVertexStringer:UndirectedVertexStringer"></a>
+              <ol><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#E" data-isabs="true">
+      <a id="E:E"></a>
       <h4 class="signature">
-      <span class="kind">class</span>
+      <span class="kind">type</span>
       <span class="symbol"> 
-        <a href="UndirectedGraph$UndirectedVertexStringer.html"><span class="name">UndirectedVertexStringer</span></a>
+        <span class="name">E</span>
         
-        <span class="result"> extends VertexStringer</span>
+        <span class="result"> &lt;: <a name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="extype" href="UndirectedGraph$UndirectedGraphEdge.html">UndirectedGraphEdge</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="">UndirectedGraph</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph.GraphEdge" data-isabs="true">
+      <a id="GraphEdge:GraphEdge"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Graph$GraphEdge.html"><span class="name">GraphEdge</span></a>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph.GraphVertex" data-isabs="true">
+      <a id="GraphVertex:GraphVertex"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Graph$GraphVertex.html"><span class="name">GraphVertex</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" data-isabs="true">
+      <a id="UndirectedGraphEdge:UndirectedGraphEdge"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="UndirectedGraph$UndirectedGraphEdge.html"><span class="name">UndirectedGraphEdge</span></a>
+        
+        <span class="result"> extends GraphEdge</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdgeImpl" data-isabs="false">
+      <a id="UndirectedGraphEdgeImpl:UndirectedGraphEdgeImpl"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="UndirectedGraph$UndirectedGraphEdgeImpl.html"><span class="name">UndirectedGraphEdgeImpl</span></a>
+        
+        <span class="result"> extends UndirectedGraphEdge</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphVertex" data-isabs="true">
+      <a id="UndirectedGraphVertex:UndirectedGraphVertex"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="UndirectedGraph$UndirectedGraphVertex.html"><span class="name">UndirectedGraphVertex</span></a>
+        
+        <span class="result"> extends GraphVertex</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#V" data-isabs="true">
+      <a id="V:V"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">V</span>
+        
+        <span class="result"> &lt;: <a name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphVertex" class="extype" href="UndirectedGraph$UndirectedGraphVertex.html">UndirectedGraphVertex</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="">UndirectedGraph</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
     </li></ol>
             </div>
         
         <div class="values members" id="values">
               <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#constructEdge" data-isabs="true">
-      <a id="constructEdge(UV,UV):UE"></a>
+              <ol><li visbl="pub" name="org.pingel.axle.graph.Graph#newEdge" data-isabs="true">
+      <a id="newEdge(V,V):E"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">constructEdge</span>
+        <span class="name">newEdge</span>
         
-        <span class="params">(<span name="v1">v1: UV</span>, <span name="v2">v2: UV</span>)</span><span class="result">: UE</span>
+        <span class="params">(<span name="v1">v1: V</span>, <span name="v2">v2: V</span>)</span><span class="result">: E</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph#newVertex" data-isabs="true">
+      <a id="newVertex(String):V"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">newVertex</span>
+        
+        <span class="params">(<span name="name">name: String</span>)</span><span class="result">: V</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd><dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -149,35 +226,35 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#addEdge" data-isabs="false">
-      <a id="addEdge(UE):UE"></a>
+      <a id="addEdge(E):E"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">addEdge</span>
         
-        <span class="params">(<span name="e">e: UE</span>)</span><span class="result">: UE</span>
+        <span class="params">(<span name="e">e: E</span>)</span><span class="result">: E</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#addVertex" data-isabs="false">
-      <a id="addVertex(UV):UV"></a>
+      <a id="addVertex(V):V"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">addVertex</span>
         
-        <span class="params">(<span name="v">v: UV</span>)</span><span class="result">: UV</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: V</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#areNeighbors" data-isabs="false">
-      <a id="areNeighbors(UV,UV):Boolean"></a>
+      <a id="areNeighbors(V,V):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">areNeighbors</span>
         
-        <span class="params">(<span name="v1">v1: UV</span>, <span name="v2">v2: UV</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="v1">v1: V</span>, <span name="v2">v2: V</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       
@@ -207,35 +284,35 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#copyTo" data-isabs="false">
-      <a id="copyTo(UndirectedGraph[UV, UE]):Unit"></a>
+      <a id="copyTo(UndirectedGraph):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">copyTo</span>
         
-        <span class="params">(<span name="other">other: <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="">UndirectedGraph</a>[UV, UE]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="other">other: <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="">UndirectedGraph</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#degree" data-isabs="false">
-      <a id="degree(UV):Int"></a>
+      <a id="degree(V):Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">degree</span>
         
-        <span class="params">(<span name="v">v: UV</span>)</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#delete" data-isabs="false">
-      <a id="delete(UV):Unit"></a>
+      <a id="delete(V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">delete</span>
         
-        <span class="params">(<span name="v">v: UV</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       
@@ -251,35 +328,35 @@
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#edges" data-isabs="false">
-      <a id="edges:Set[UE]"></a>
+      <a id="edges:Set[E]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">edges</span>
         
-        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[UE]</span>
+        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#eliminate" data-isabs="false">
-      <a id="eliminate(List[UV]):Unit"></a>
+      <a id="eliminate(List[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">eliminate</span>
         
-        <span class="params">(<span name="vs">vs: List[UV]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="vs">vs: List[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#eliminate" data-isabs="false">
-      <a id="eliminate(UV):Unit"></a>
+      <a id="eliminate(V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">eliminate</span>
         
-        <span class="params">(<span name="v">v: UV</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       
@@ -320,24 +397,24 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#firstLeafOtherThan" data-isabs="false">
-      <a id="firstLeafOtherThan(UV):Option[UV]"></a>
+      <a id="firstLeafOtherThan(V):Option[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">firstLeafOtherThan</span>
         
-        <span class="params">(<span name="r">r: UV</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[UV]</span>
+        <span class="params">(<span name="r">r: V</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[V]</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#forceClique" data-isabs="false">
-      <a id="forceClique(Set[UV]):Unit"></a>
+      <a id="forceClique(Set[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">forceClique</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[UV]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       
@@ -353,57 +430,57 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#getEdges" data-isabs="false">
-      <a id="getEdges(UV):Set[UE]"></a>
+      <a id="getEdges(V):Set[E]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getEdges</span>
         
-        <span class="params">(<span name="v">v: UV</span>)</span><span class="result">: <span name="scala.collection.mutable.Set" class="extype">Set</span>[UE]</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.collection.mutable.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#getEdges" data-isabs="false">
-      <a id="getEdges():Set[UE]"></a>
+      <a id="getEdges():Set[E]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getEdges</span>
         
-        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[UE]</span>
+        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#getNeighbors" data-isabs="false">
-      <a id="getNeighbors(UV):Set[UV]"></a>
+      <a id="getNeighbors(V):Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getNeighbors</span>
         
-        <span class="params">(<span name="v">v: UV</span>)</span><span class="result">: <span name="scala.collection.immutable.Set" class="extype">Set</span>[UV]</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.collection.immutable.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#getNumEdgesToForceClique" data-isabs="false">
-      <a id="getNumEdgesToForceClique(Set[UV]):Int"></a>
+      <a id="getNumEdgesToForceClique(Set[V]):Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getNumEdgesToForceClique</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[UV]</span>)</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#getVertices" data-isabs="false">
-      <a id="getVertices():Set[UV]"></a>
+      <a id="getVertices():Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getVertices</span>
         
-        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[UV]</span>
+        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
@@ -419,13 +496,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#isClique" data-isabs="false">
-      <a id="isClique(Set[UV]):Boolean"></a>
+      <a id="isClique(Set[V]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">isClique</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[UV]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       
@@ -507,68 +584,68 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#unlink" data-isabs="false">
-      <a id="unlink(UV,UV):Unit"></a>
+      <a id="unlink(V,V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">unlink</span>
         
-        <span class="params">(<span name="v1">v1: UV</span>, <span name="v2">v2: UV</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v1">v1: V</span>, <span name="v2">v2: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#unlink" data-isabs="false">
-      <a id="unlink(UE):Unit"></a>
+      <a id="unlink(E):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">unlink</span>
         
-        <span class="params">(<span name="e">e: UE</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="e">e: E</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#vertex2edges" data-isabs="false">
-      <a id="vertex2edges:Map[UV, Set[UE]]"></a>
+      <a id="vertex2edges:Map[V, Set[E]]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">vertex2edges</span>
         
-        <span class="result">: <span name="scala.collection.mutable.Map" class="extype">Map</span>[UV, <span name="scala.collection.mutable.Set" class="extype">Set</span>[UE]]</span>
+        <span class="result">: <span name="scala.collection.mutable.Map" class="extype">Map</span>[V, <span name="scala.collection.mutable.Set" class="extype">Set</span>[E]]</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#vertexWithFewestEdgesToEliminateAmong" data-isabs="false">
-      <a id="vertexWithFewestEdgesToEliminateAmong(Set[UV]):Option[UV]"></a>
+      <a id="vertexWithFewestEdgesToEliminateAmong(Set[V]):Option[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">vertexWithFewestEdgesToEliminateAmong</span>
         
-        <span class="params">(<span name="among">among: <span name="scala.collection.Set" class="extype">Set</span>[UV]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[UV]</span>
+        <span class="params">(<span name="among">among: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[V]</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#vertexWithFewestNeighborsAmong" data-isabs="false">
-      <a id="vertexWithFewestNeighborsAmong(Set[UV]):Option[UV]"></a>
+      <a id="vertexWithFewestNeighborsAmong(Set[V]):Option[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">vertexWithFewestNeighborsAmong</span>
         
-        <span class="params">(<span name="among">among: <span name="scala.collection.Set" class="extype">Set</span>[UV]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[UV]</span>
+        <span class="params">(<span name="among">among: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[V]</span>
       </span>
       </h4>
       
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#vertices" data-isabs="false">
-      <a id="vertices:Set[UV]"></a>
+      <a id="vertices:Set[V]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">vertices</span>
         
-        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[UV]</span>
+        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
@@ -620,7 +697,7 @@
         
 
         <div name="org.pingel.axle.graph.Graph" class="parent">
-              <h3>Inherited from <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a>[UV, UE]</h3>
+              <h3>Inherited from <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">

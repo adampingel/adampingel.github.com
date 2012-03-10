@@ -24,13 +24,13 @@
       <span class="symbol"> 
         <span class="name">SimpleGraph</span>
         
-        <span class="result"> extends <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>, <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>]</span>
+        <span class="result"> extends <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></span>
       </span>
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>, <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>], <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>, <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a>, <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -72,17 +72,105 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedVertexStringer" data-isabs="false">
-      <a id="UndirectedVertexStringer:UndirectedVertexStringer"></a>
+              <ol><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph#E" data-isabs="false">
+      <a id="E:E"></a>
       <h4 class="signature">
-      <span class="kind">class</span>
+      <span class="kind">type</span>
       <span class="symbol"> 
-        <a href="UndirectedGraph$UndirectedVertexStringer.html"><span class="name">UndirectedVertexStringer</span></a>
+        <span class="name">E</span>
         
-        <span class="result"> extends VertexStringer</span>
+        <span class="result"> = <a name="org.pingel.axle.graph.SimpleGraph.SimpleEdge" class="extype" href="SimpleGraph$SimpleEdge.html">SimpleEdge</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.SimpleGraph" class="extype" href="">SimpleGraph</a> → <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph.GraphEdge" data-isabs="true">
+      <a id="GraphEdge:GraphEdge"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Graph$GraphEdge.html"><span class="name">GraphEdge</span></a>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph.GraphVertex" data-isabs="true">
+      <a id="GraphVertex:GraphVertex"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Graph$GraphVertex.html"><span class="name">GraphVertex</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph.SimpleEdge" data-isabs="false">
+      <a id="SimpleEdge:SimpleEdge"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="SimpleGraph$SimpleEdge.html"><span class="name">SimpleEdge</span></a>
+        
+        <span class="result"> extends UndirectedGraphEdge</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" data-isabs="false">
+      <a id="SimpleVertex:SimpleVertex"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="SimpleGraph$SimpleVertex.html"><span class="name">SimpleVertex</span></a>
+        
+        <span class="result"> extends UndirectedGraphVertex</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" data-isabs="true">
+      <a id="UndirectedGraphEdge:UndirectedGraphEdge"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="UndirectedGraph$UndirectedGraphEdge.html"><span class="name">UndirectedGraphEdge</span></a>
+        
+        <span class="result"> extends GraphEdge</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdgeImpl" data-isabs="false">
+      <a id="UndirectedGraphEdgeImpl:UndirectedGraphEdgeImpl"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="UndirectedGraph$UndirectedGraphEdgeImpl.html"><span class="name">UndirectedGraphEdgeImpl</span></a>
+        
+        <span class="result"> extends UndirectedGraphEdge</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphVertex" data-isabs="true">
+      <a id="UndirectedGraphVertex:UndirectedGraphVertex"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="UndirectedGraph$UndirectedGraphVertex.html"><span class="name">UndirectedGraphVertex</span></a>
+        
+        <span class="result"> extends GraphVertex</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph#V" data-isabs="false">
+      <a id="V:V"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">V</span>
+        
+        <span class="result"> = <a name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" class="extype" href="SimpleGraph$SimpleVertex.html">SimpleVertex</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.SimpleGraph" class="extype" href="">SimpleGraph</a> → <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
     </li></ol>
             </div>
         
@@ -146,35 +234,35 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#addEdge" data-isabs="false">
-      <a id="addEdge(SimpleEdge):SimpleEdge"></a>
+      <a id="addEdge(E):E"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">addEdge</span>
         
-        <span class="params">(<span name="e">e: <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a></span>)</span><span class="result">: <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a></span>
+        <span class="params">(<span name="e">e: E</span>)</span><span class="result">: E</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#addVertex" data-isabs="false">
-      <a id="addVertex(SimpleVertex):SimpleVertex"></a>
+      <a id="addVertex(V):V"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">addVertex</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: V</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#areNeighbors" data-isabs="false">
-      <a id="areNeighbors(SimpleVertex,SimpleVertex):Boolean"></a>
+      <a id="areNeighbors(V,V):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">areNeighbors</span>
         
-        <span class="params">(<span name="v1">v1: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>, <span name="v2">v2: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="v1">v1: V</span>, <span name="v2">v2: V</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
@@ -203,47 +291,36 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph#constructEdge" data-isabs="false">
-      <a id="constructEdge(SimpleVertex,SimpleVertex):SimpleEdge"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">constructEdge</span>
-        
-        <span class="params">(<span name="v1">v1: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>, <span name="v2">v2: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.SimpleGraph" class="extype" href="">SimpleGraph</a> → <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#copyTo" data-isabs="false">
-      <a id="copyTo(UndirectedGraph[SimpleVertex, SimpleEdge]):Unit"></a>
+      <a id="copyTo(UndirectedGraph):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">copyTo</span>
         
-        <span class="params">(<span name="other">other: <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>, <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="other">other: <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#degree" data-isabs="false">
-      <a id="degree(SimpleVertex):Int"></a>
+      <a id="degree(V):Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">degree</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#delete" data-isabs="false">
-      <a id="delete(SimpleVertex):Unit"></a>
+      <a id="delete(V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">delete</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
@@ -259,35 +336,35 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#edges" data-isabs="false">
-      <a id="edges:Set[SimpleEdge]"></a>
+      <a id="edges:Set[E]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">edges</span>
         
-        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>]</span>
+        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#eliminate" data-isabs="false">
-      <a id="eliminate(List[SimpleVertex]):Unit"></a>
+      <a id="eliminate(List[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">eliminate</span>
         
-        <span class="params">(<span name="vs">vs: List[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="vs">vs: List[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#eliminate" data-isabs="false">
-      <a id="eliminate(SimpleVertex):Unit"></a>
+      <a id="eliminate(V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">eliminate</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
@@ -328,24 +405,24 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#firstLeafOtherThan" data-isabs="false">
-      <a id="firstLeafOtherThan(SimpleVertex):Option[SimpleVertex]"></a>
+      <a id="firstLeafOtherThan(V):Option[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">firstLeafOtherThan</span>
         
-        <span class="params">(<span name="r">r: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>
+        <span class="params">(<span name="r">r: V</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#forceClique" data-isabs="false">
-      <a id="forceClique(Set[SimpleVertex]):Unit"></a>
+      <a id="forceClique(Set[V]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">forceClique</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
@@ -361,57 +438,57 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#getEdges" data-isabs="false">
-      <a id="getEdges(SimpleVertex):Set[SimpleEdge]"></a>
+      <a id="getEdges(V):Set[E]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getEdges</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <span name="scala.collection.mutable.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>]</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.collection.mutable.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#getEdges" data-isabs="false">
-      <a id="getEdges():Set[SimpleEdge]"></a>
+      <a id="getEdges():Set[E]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getEdges</span>
         
-        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>]</span>
+        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[E]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#getNeighbors" data-isabs="false">
-      <a id="getNeighbors(SimpleVertex):Set[SimpleVertex]"></a>
+      <a id="getNeighbors(V):Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getNeighbors</span>
         
-        <span class="params">(<span name="v">v: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <span name="scala.collection.immutable.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>
+        <span class="params">(<span name="v">v: V</span>)</span><span class="result">: <span name="scala.collection.immutable.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#getNumEdgesToForceClique" data-isabs="false">
-      <a id="getNumEdgesToForceClique(Set[SimpleVertex]):Int"></a>
+      <a id="getNumEdgesToForceClique(Set[V]):Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getNumEdgesToForceClique</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>)</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#getVertices" data-isabs="false">
-      <a id="getVertices():Set[SimpleVertex]"></a>
+      <a id="getVertices():Set[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">getVertices</span>
         
-        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>
+        <span class="params">()</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
@@ -427,13 +504,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#isClique" data-isabs="false">
-      <a id="isClique(Set[SimpleVertex]):Boolean"></a>
+      <a id="isClique(Set[V]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">isClique</span>
         
-        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="params">(<span name="vs">vs: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
@@ -459,6 +536,28 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph#newEdge" data-isabs="false">
+      <a id="newEdge(SimpleVertex,SimpleVertex):SimpleEdge"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">newEdge</span>
+        
+        <span class="params">(<span name="v1">v1: <a name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" class="extype" href="SimpleGraph$SimpleVertex.html">SimpleVertex</a></span>, <span name="v2">v2: <a name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" class="extype" href="SimpleGraph$SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <a name="org.pingel.axle.graph.SimpleGraph.SimpleEdge" class="extype" href="SimpleGraph$SimpleEdge.html">SimpleEdge</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.SimpleGraph" class="extype" href="">SimpleGraph</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph#newVertex" data-isabs="false">
+      <a id="newVertex(String):SimpleVertex"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">newVertex</span>
+        
+        <span class="params">(<span name="name">name: String</span>)</span><span class="result">: <a name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" class="extype" href="SimpleGraph$SimpleVertex.html">SimpleVertex</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.SimpleGraph" class="extype" href="">SimpleGraph</a> → <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
       <a id="notify():Unit"></a>
       <h4 class="signature">
@@ -515,68 +614,68 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#unlink" data-isabs="false">
-      <a id="unlink(SimpleVertex,SimpleVertex):Unit"></a>
+      <a id="unlink(V,V):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">unlink</span>
         
-        <span class="params">(<span name="v1">v1: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>, <span name="v2">v2: <a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="v1">v1: V</span>, <span name="v2">v2: V</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#unlink" data-isabs="false">
-      <a id="unlink(SimpleEdge):Unit"></a>
+      <a id="unlink(E):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">unlink</span>
         
-        <span class="params">(<span name="e">e: <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="params">(<span name="e">e: E</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#vertex2edges" data-isabs="false">
-      <a id="vertex2edges:Map[SimpleVertex, Set[SimpleEdge]]"></a>
+      <a id="vertex2edges:Map[V, Set[E]]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">vertex2edges</span>
         
-        <span class="result">: <span name="scala.collection.mutable.Map" class="extype">Map</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>, <span name="scala.collection.mutable.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>]]</span>
+        <span class="result">: <span name="scala.collection.mutable.Map" class="extype">Map</span>[V, <span name="scala.collection.mutable.Set" class="extype">Set</span>[E]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#vertexWithFewestEdgesToEliminateAmong" data-isabs="false">
-      <a id="vertexWithFewestEdgesToEliminateAmong(Set[SimpleVertex]):Option[SimpleVertex]"></a>
+      <a id="vertexWithFewestEdgesToEliminateAmong(Set[V]):Option[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">vertexWithFewestEdgesToEliminateAmong</span>
         
-        <span class="params">(<span name="among">among: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>
+        <span class="params">(<span name="among">among: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph#vertexWithFewestNeighborsAmong" data-isabs="false">
-      <a id="vertexWithFewestNeighborsAmong(Set[SimpleVertex]):Option[SimpleVertex]"></a>
+      <a id="vertexWithFewestNeighborsAmong(Set[V]):Option[V]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">vertexWithFewestNeighborsAmong</span>
         
-        <span class="params">(<span name="among">among: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>
+        <span class="params">(<span name="among">among: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.Graph#vertices" data-isabs="false">
-      <a id="vertices:Set[SimpleVertex]"></a>
+      <a id="vertices:Set[V]"></a>
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol"> 
         <span class="name">vertices</span>
         
-        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>]</span>
+        <span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></dd></dl></div>
@@ -628,9 +727,9 @@
         
 
         <div name="org.pingel.axle.graph.UndirectedGraph" class="parent">
-              <h3>Inherited from <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>, <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>]</h3>
+              <h3>Inherited from <a name="org.pingel.axle.graph.UndirectedGraph" class="extype" href="UndirectedGraph.html">UndirectedGraph</a></h3>
             </div><div name="org.pingel.axle.graph.Graph" class="parent">
-              <h3>Inherited from <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a>[<a name="org.pingel.axle.graph.SimpleVertex" class="extype" href="SimpleVertex.html">SimpleVertex</a>, <a name="org.pingel.axle.graph.SimpleEdge" class="extype" href="SimpleEdge.html">SimpleEdge</a>]</h3>
+              <h3>Inherited from <a name="org.pingel.axle.graph.Graph" class="extype" href="Graph.html">Graph</a></h3>
             </div><div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">
