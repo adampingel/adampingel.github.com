@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>org.pingel.axle.graph.SimpleGraph.SimpleEdge</title>
+          <title>org.pingel.axle.graph.DirectedGraphAsJUNG2</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
@@ -15,22 +15,22 @@
         <body class="type">
       <div id="definition">
         <img src="../../../../lib/class_big.png" />
-        <p id="owner"><a name="org" class="extype" href="../../../package.html">org</a>.<a name="org.pingel" class="extype" href="../../package.html">pingel</a>.<a name="org.pingel.axle" class="extype" href="../package.html">axle</a>.<a name="org.pingel.axle.graph" class="extype" href="package.html">graph</a>.<a name="org.pingel.axle.graph.SimpleGraph" class="extype" href="SimpleGraph.html">SimpleGraph</a></p>
-        <h1>SimpleEdge</h1>
+        <p id="owner"><a name="org" class="extype" href="../../../package.html">org</a>.<a name="org.pingel" class="extype" href="../../package.html">pingel</a>.<a name="org.pingel.axle" class="extype" href="../package.html">axle</a>.<a name="org.pingel.axle.graph" class="extype" href="package.html">graph</a></p>
+        <h1>DirectedGraphAsJUNG2</h1>
       </div>
 
       <h4 class="signature" id="signature">
       <span class="kind">class</span>
       <span class="symbol"> 
-        <span class="name">SimpleEdge</span>
+        <span class="name">DirectedGraphAsJUNG2</span>
         
-        <span class="result"> extends <a name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="extype" href="UndirectedGraph$UndirectedGraphEdge.html">UndirectedGraphEdge</a></span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
           <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="extype" href="UndirectedGraph$UndirectedGraphEdge.html">UndirectedGraphEdge</a>, <a name="org.pingel.axle.graph.Graph.GraphEdge" class="extype" href="Graph$GraphEdge.html">GraphEdge</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -46,7 +46,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="org.pingel.axle.graph.SimpleGraph.SimpleEdge" class="in"><span>SimpleEdge</span></li><li name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="in"><span>UndirectedGraphEdge</span></li><li name="org.pingel.axle.graph.Graph.GraphEdge" class="in"><span>GraphEdge</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="org.pingel.axle.graph.DirectedGraphAsJUNG2" class="in"><span>DirectedGraphAsJUNG2</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -56,14 +56,14 @@
 
         <div class="members" id="constructors">
               <h3>Instance Constructors</h3>
-              <ol><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph.SimpleEdge#this" data-isabs="false">
-      <a id="this:SimpleEdge"></a>
+              <ol><li visbl="pub" name="org.pingel.axle.graph.DirectedGraphAsJUNG2#this" data-isabs="false">
+      <a id="this:DirectedGraphAsJUNG2"></a>
       <h4 class="signature">
       <span class="kind">new</span>
       <span class="symbol"> 
-        <span class="name">SimpleEdge</span>
+        <span class="name">DirectedGraphAsJUNG2</span>
         
-        <span class="params">(<span name="v1">v1: <a name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" class="extype" href="SimpleGraph$SimpleVertex.html">SimpleVertex</a></span>, <span name="v2">v2: <a name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" class="extype" href="SimpleGraph$SimpleVertex.html">SimpleVertex</a></span>)</span>
+        <span class="params">(<span name="ugf">ugf: <a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="DirectedGraph.html">DirectedGraph</a></span>)</span>
       </span>
       </h4>
       
@@ -142,6 +142,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraphAsJUNG2#border" data-isabs="false">
+      <a id="border:Int"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">border</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -156,17 +167,6 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge#connects" data-isabs="false">
-      <a id="connects(V,V):Boolean"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">connects</span>
-        
-        <span class="params">(<span name="a1">a1: V</span>, <span name="a2">a2: V</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="extype" href="UndirectedGraph$UndirectedGraphEdge.html">UndirectedGraphEdge</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -214,28 +214,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph.SimpleEdge#getLabel" data-isabs="false">
-      <a id="getLabel():String"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">getLabel</span>
-        
-        <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.SimpleGraph.SimpleEdge" class="extype" href="">SimpleEdge</a> → <a name="org.pingel.axle.graph.Graph.GraphEdge" class="extype" href="Graph$GraphEdge.html">GraphEdge</a></dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.graph.SimpleGraph.SimpleEdge#getVertices" data-isabs="false">
-      <a id="getVertices():(SimpleVertex, SimpleVertex)"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">getVertices</span>
-        
-        <span class="params">()</span><span class="result">: (<a name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" class="extype" href="SimpleGraph$SimpleVertex.html">SimpleVertex</a>, <a name="org.pingel.axle.graph.SimpleGraph.SimpleVertex" class="extype" href="SimpleGraph$SimpleVertex.html">SimpleVertex</a>)</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.SimpleGraph.SimpleEdge" class="extype" href="">SimpleEdge</a> → <a name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="extype" href="UndirectedGraph$UndirectedGraphEdge.html">UndirectedGraphEdge</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
       <a id="hashCode():Int"></a>
       <h4 class="signature">
@@ -247,6 +225,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraphAsJUNG2#height" data-isabs="false">
+      <a id="height:Int"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">height</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
@@ -258,6 +247,28 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraphAsJUNG2#jframe" data-isabs="false">
+      <a id="jframe():JFrame"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">jframe</span>
+        
+        <span class="params">()</span><span class="result">: <span name="javax.swing.JFrame" class="extype">JFrame</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraphAsJUNG2#jungGraph" data-isabs="false">
+      <a id="jungGraph:DirectedSparseGraph[V, E]"></a>
+      <h4 class="signature">
+      <span class="kind">var</span>
+      <span class="symbol"> 
+        <span class="name">jungGraph</span>
+        
+        <span class="result">: <span name="edu.uci.ics.jung.graph.DirectedSparseGraph" class="extype">DirectedSparseGraph</span>[V, E]</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -291,17 +302,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge#other" data-isabs="false">
-      <a id="other(V):V"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">other</span>
-        
-        <span class="params">(<span name="u">u: V</span>)</span><span class="result">: V</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="extype" href="UndirectedGraph$UndirectedGraphEdge.html">UndirectedGraphEdge</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
@@ -324,6 +324,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraphAsJUNG2#ug" data-isabs="false">
+      <a id="ug:DirectedGraph"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">ug</span>
+        
+        <span class="result">: <a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="DirectedGraph.html">DirectedGraph</a></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait():Unit"></a>
       <h4 class="signature">
@@ -366,16 +377,23 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraphAsJUNG2#width" data-isabs="false">
+      <a id="width:Int"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">width</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      
     </li></ol>
             </div>
 
         
 
-        <div name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="parent">
-              <h3>Inherited from <a name="org.pingel.axle.graph.UndirectedGraph.UndirectedGraphEdge" class="extype" href="UndirectedGraph$UndirectedGraphEdge.html">UndirectedGraphEdge</a></h3>
-            </div><div name="org.pingel.axle.graph.Graph.GraphEdge" class="parent">
-              <h3>Inherited from <a name="org.pingel.axle.graph.Graph.GraphEdge" class="extype" href="Graph$GraphEdge.html">GraphEdge</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
+        <div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">
               <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>

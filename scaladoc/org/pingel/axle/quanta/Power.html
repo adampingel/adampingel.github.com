@@ -97,17 +97,6 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph.DirectedGraphEdgeImpl" data-isabs="false">
-      <a id="DirectedGraphEdgeImpl:DirectedGraphEdgeImpl"></a>
-      <h4 class="signature">
-      <span class="kind">class</span>
-      <span class="symbol"> 
-        <a href="../graph/DirectedGraph$DirectedGraphEdgeImpl.html"><span class="name">DirectedGraphEdgeImpl</span></a>
-        
-        <span class="result"> extends DirectedGraphEdge</span>
-      </span>
-      </h4>
-      
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph.DirectedGraphVertex" data-isabs="true">
       <a id="DirectedGraphVertex:DirectedGraphVertex"></a>
       <h4 class="signature">
@@ -236,6 +225,28 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph#+=" data-isabs="false">
+      <a id="+=(String):V"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">+=</span>
+        
+        <span class="params">(<span name="name">name: String</span>)</span><span class="result">: V</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.Graph#+=" data-isabs="false">
+      <a id="+=((V, V)):E"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">+=</span>
+        
+        <span class="params">(<span name="vs">vs: (V, V)</span>)</span><span class="result">: E</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.Graph" class="extype" href="../graph/Graph.html">Graph</a></dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -302,6 +313,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#bdDivide" data-isabs="false">
+      <a id="bdDivide(BigDecimal,BigDecimal):BigDecimal"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">bdDivide</span>
+        
+        <span class="params">(<span name="numerator">numerator: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>, <span name="denominator">denominator: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>)</span><span class="result">: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
@@ -362,13 +384,13 @@
       <p class="shortcomment cmt">Searches the Directed Graph defined by this Quantum for a path of Conversions from source to goal</p><div class="fullcomment"><div class="comment cmt"><p>Searches the Directed Graph defined by this Quantum for a path of Conversions from source to goal</p></div><dl class="paramcmts block"><dt class="param">source</dt><dd class="cmt"><p>Start node for shortest path search</p></dd><dt class="param">goal</dt><dd class="cmt"><p>End node for shortest path search
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#deleteEdge" data-isabs="false">
-      <a id="deleteEdge(E):Option[Boolean]"></a>
+      <a id="deleteEdge(E):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">deleteEdge</span>
         
-        <span class="params">(<span name="e">e: E</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+        <span class="params">(<span name="e">e: E</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
@@ -402,6 +424,17 @@
         <span class="name">descendantsIntersectsSet</span>
         
         <span class="params">(<span name="v">v: V</span>, <span name="s">s: <span name="scala.collection.Set" class="extype">Set</span>[V]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
+    </li><li visbl="pub" name="org.pingel.axle.graph.DirectedGraph#draw" data-isabs="false">
+      <a id="draw():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">draw</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.graph.DirectedGraph" class="extype" href="../graph/DirectedGraph.html">DirectedGraph</a></dd></dl></div>
@@ -639,6 +672,17 @@
       </span>
       </h4>
       
+    </li><li visbl="pub" name="org.pingel.axle.quanta.Quantum#link" data-isabs="false">
+      <a id="link(UOM,BigDecimal,UOM):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">link</span>
+        
+        <span class="params">(<span name="base">base: UOM</span>, <span name="multiple">multiple: <span name="java.math.BigDecimal" class="extype">BigDecimal</span></span>, <span name="result">result: UOM</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="org.pingel.axle.quanta.Quantum" class="extype" href="Quantum.html">Quantum</a></dd></dl></div>
     </li><li visbl="pub" name="org.pingel.axle.quanta.Power#megawatt" data-isabs="false">
       <a id="megawatt:UOM"></a>
       <h4 class="signature">
