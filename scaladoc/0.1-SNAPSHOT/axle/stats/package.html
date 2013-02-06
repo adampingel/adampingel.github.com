@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>axle.stats</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a name="axle" class="extype" href="../package.html">axle</a></p>
+        <h1>stats</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <span class="name">stats</span>
+        
+        
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="axle.stats.BayesianNetwork" data-isabs="false">
+      <a id="BayesianNetwork:BayesianNetwork"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="BayesianNetwork.html"><span class="name">BayesianNetwork</span></a>
+        
+        <span class="result"> extends Model[BayesianNetworkNode]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.BayesianNetworkNode" data-isabs="false">
+      <a id="BayesianNetworkNode:BayesianNetworkNode"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="BayesianNetworkNode.html"><span class="name">BayesianNetworkNode</span></a>
+        
+        <span class="params">(<span name="rv">rv: axle.stats.RandomVariable[_]</span>, <span name="cpt">cpt: Factor</span>)</span><span class="result"> extends XmlAble with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Case" data-isabs="true">
+      <a id="Case:Case[A]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Case.html"><span class="name">Case</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.CaseAnd" data-isabs="false">
+      <a id="CaseAnd:CaseAnd[A, B]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="CaseAnd.html"><span class="name">CaseAnd</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span name="left">left: Case[A]</span>, <span name="right">right: Case[B]</span>)</span><span class="result"> extends Case[(A, B)] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.CaseAndGT" data-isabs="false">
+      <a id="CaseAndGT:CaseAndGT[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="CaseAndGT.html"><span class="name">CaseAndGT</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="conjuncts">conjuncts: GenTraversable[Case[A]]</span>)</span><span class="result"> extends Case[List[A]] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.CaseGiven" data-isabs="false">
+      <a id="CaseGiven:CaseGiven[A, B]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="CaseGiven.html"><span class="name">CaseGiven</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span name="c">c: Case[A]</span>, <span name="given">given: Case[B]</span>)</span><span class="result"> extends Case[(A, B)] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.CaseIs" data-isabs="false">
+      <a id="CaseIs:CaseIs[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="CaseIs.html"><span class="name">CaseIs</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="rv">rv: RandomVariable[A]</span>, <span name="v">v: A</span>)</span><span class="result"> extends Case[A] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.CaseIsnt" data-isabs="false">
+      <a id="CaseIsnt:CaseIsnt[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="CaseIsnt.html"><span class="name">CaseIsnt</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="rv">rv: RandomVariable[A]</span>, <span name="v">v: A</span>)</span><span class="result"> extends Case[A] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.CaseOr" data-isabs="false">
+      <a id="CaseOr:CaseOr[A, B]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="CaseOr.html"><span class="name">CaseOr</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span name="left">left: Case[A]</span>, <span name="right">right: Case[B]</span>)</span><span class="result"> extends Case[(A, B)] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.ConditionalProbabilityTable0" data-isabs="false">
+      <a id="ConditionalProbabilityTable0:ConditionalProbabilityTable0[A]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="ConditionalProbabilityTable0.html"><span class="name">ConditionalProbabilityTable0</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="result"> extends Distribution0[A]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.ConditionalProbabilityTable2" data-isabs="false">
+      <a id="ConditionalProbabilityTable2:ConditionalProbabilityTable2[A, G1, G2]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="ConditionalProbabilityTable2.html"><span class="name">ConditionalProbabilityTable2</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="G1">G1</span>, <span name="G2">G2</span>]</span>
+        <span class="result"> extends Distribution2[A, G1, G2]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.DTree" data-isabs="false">
+      <a id="DTree:DTree"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="DTree.html"><span class="name">DTree</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.DTreeEdge" data-isabs="false">
+      <a id="DTreeEdge:DTreeEdge"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="DTreeEdge.html"><span class="name">DTreeEdge</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.DTreeNode" data-isabs="false">
+      <a id="DTreeNode:DTreeNode"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="DTreeNode.html"><span class="name">DTreeNode</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Distribution" data-isabs="true">
+      <a id="Distribution:Distribution[A]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Distribution.html"><span class="name">Distribution</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Distribution0" data-isabs="true">
+      <a id="Distribution0:Distribution0[A]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Distribution0.html"><span class="name">Distribution0</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="result"> extends Distribution[A]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Distribution1" data-isabs="true">
+      <a id="Distribution1:Distribution1[A, G1]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Distribution1.html"><span class="name">Distribution1</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="G1">G1</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Distribution2" data-isabs="true">
+      <a id="Distribution2:Distribution2[A, G1, G2]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Distribution2.html"><span class="name">Distribution2</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="G1">G1</span>, <span name="G2">G2</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.EliminationTree" data-isabs="false">
+      <a id="EliminationTree:EliminationTree"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="EliminationTree.html"><span class="name">EliminationTree</span></a>
+        
+        <span class="params">(<span name="vps">vps: Seq[Factor]</span>, <span name="ef">ef: (Seq[Vertex[Factor]]) ⇒ Seq[(Vertex[Factor], Vertex[Factor], String)]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.EnrichedCaseGenTraversable" data-isabs="false">
+      <a id="EnrichedCaseGenTraversable:EnrichedCaseGenTraversable[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="EnrichedCaseGenTraversable.html"><span class="name">EnrichedCaseGenTraversable</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="cgt">cgt: GenTraversable[Case[A]]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Factor" data-isabs="false">
+      <a id="Factor:Factor"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="Factor.html"><span class="name">Factor</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Independence" data-isabs="false">
+      <a id="Independence:Independence"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Independence.html"><span class="name">Independence</span></a>
+        
+        <span class="params">(<span name="X">X: Set[axle.stats.RandomVariable[_]]</span>, <span name="Z">Z: Set[axle.stats.RandomVariable[_]]</span>, <span name="Y">Y: Set[axle.stats.RandomVariable[_]]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Read: &quot;X is independent of Y given Z&quot;
+</p>
+    </li><li visbl="pub" name="axle.stats.InteractionGraph" data-isabs="false">
+      <a id="InteractionGraph:InteractionGraph"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="InteractionGraph.html"><span class="name">InteractionGraph</span></a>
+        
+        <span class="params">(<span name="vps">vps: Seq[axle.stats.RandomVariable[_]]</span>, <span name="ef">ef: (Seq[Vertex[axle.stats.RandomVariable[_]]]) ⇒ Seq[(Vertex[axle.stats.RandomVariable[_]], Vertex[axle.stats.RandomVariable[_]], String)]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.JoinTree" data-isabs="false">
+      <a id="JoinTree:JoinTree"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="JoinTree.html"><span class="name">JoinTree</span></a>
+        
+        <span class="params">(<span name="graph">graph: UndirectedGraph[Set[axle.stats.RandomVariable[_]], String]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Model" data-isabs="false">
+      <a id="Model:Model[MVP]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="Model.html"><span class="name">Model</span></a>
+        <span class="tparams">[<span name="MVP">MVP</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.P" data-isabs="false">
+      <a id="P:P[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="P.html"><span class="name">P</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="c">c: Case[A]</span>)</span><span class="result"> extends Probability with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.PMultiply" data-isabs="false">
+      <a id="PMultiply:PMultiply"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="PMultiply.html"><span class="name">PMultiply</span></a>
+        
+        <span class="params">(<span name="left">left: Probability</span>, <span name="right">right: Double</span>)</span><span class="result"> extends Probability with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Probability" data-isabs="true">
+      <a id="Probability:Probability"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Probability.html"><span class="name">Probability</span></a>
+        
+        <span class="result"> extends () ⇒ Double</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.RandomVariable" data-isabs="true">
+      <a id="RandomVariable:RandomVariable[A]"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="RandomVariable.html"><span class="name">RandomVariable</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.RandomVariable0" data-isabs="false">
+      <a id="RandomVariable0:RandomVariable0[A]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="RandomVariable0.html"><span class="name">RandomVariable0</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="_name">_name: String</span>, <span name="_values">_values: Option[IndexedSeq[A]]</span>, <span name="distribution">distribution: Option[Distribution0[A]]</span>)</span><span class="result"> extends RandomVariable[A] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.RandomVariable1" data-isabs="false">
+      <a id="RandomVariable1:RandomVariable1[A, G1]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="RandomVariable1.html"><span class="name">RandomVariable1</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="G1">G1</span>]</span>
+        <span class="params">(<span name="_name">_name: String</span>, <span name="_values">_values: Option[IndexedSeq[A]]</span>, <span name="grv">grv: RandomVariable[G1]</span>, <span name="distribution">distribution: Option[Distribution1[A, G1]]</span>)</span><span class="result"> extends RandomVariable[A] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.RandomVariable2" data-isabs="false">
+      <a id="RandomVariable2:RandomVariable2[A, G1, G2]"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="RandomVariable2.html"><span class="name">RandomVariable2</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="G1">G1</span>, <span name="G2">G2</span>]</span>
+        <span class="params">(<span name="_name">_name: String</span>, <span name="_values">_values: Option[IndexedSeq[A]]</span>, <span name="grv1">grv1: RandomVariable[G1]</span>, <span name="grv2">grv2: RandomVariable[G2]</span>, <span name="distribution">distribution: Option[Distribution2[A, G1, G2]]</span>)</span><span class="result"> extends RandomVariable[A] with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.TallyDistribution0" data-isabs="false">
+      <a id="TallyDistribution0:TallyDistribution0[A]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="TallyDistribution0.html"><span class="name">TallyDistribution0</span></a>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="result"> extends Distribution0[A]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.TallyDistribution1" data-isabs="false">
+      <a id="TallyDistribution1:TallyDistribution1[A, G]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="TallyDistribution1.html"><span class="name">TallyDistribution1</span></a>
+        <span class="tparams">[<span name="A">A</span>, <span name="G">G</span>]</span>
+        <span class="result"> extends Distribution1[A, G]</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="axle.stats.BayesianNetwork" data-isabs="false">
+      <a id="BayesianNetwork:BayesianNetwork"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="BayesianNetwork$.html"><span class="name">BayesianNetwork</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Direction" data-isabs="false">
+      <a id="Direction:Direction"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Direction$.html"><span class="name">Direction</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Factor" data-isabs="false">
+      <a id="Factor:Factor"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Factor$.html"><span class="name">Factor</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.package#H" data-isabs="false">
+      <a id="H[A](RandomVariable[A]):Q"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">H</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="X">X: <a name="axle.stats.RandomVariable" class="extype" href="RandomVariable.html">RandomVariable</a>[A]</span>)</span><span class="result">: Q</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.stats.JoinTree" data-isabs="false">
+      <a id="JoinTree:JoinTree"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="JoinTree$.html"><span class="name">JoinTree</span></a>
+        
+        <span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.Model" data-isabs="false">
+      <a id="Model:Model"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Model$.html"><span class="name">Model</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.package#coin" data-isabs="false">
+      <a id="coin(Double):RandomVariable0[Symbol]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">coin</span>
+        
+        <span class="params">(<span name="pHead">pHead: <span name="scala.Double" class="extype">Double</span> = <span class="symbol">0.5</span></span>)</span><span class="result">: <a name="axle.stats.RandomVariable0" class="extype" href="RandomVariable0.html">RandomVariable0</a>[<span name="scala.Symbol" class="extype">Symbol</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.stats.docalculus" data-isabs="false">
+      <a id="docalculus:docalculus"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="docalculus/package.html"><span class="name">docalculus</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.stats.package#enrichCaseGenTraversable" data-isabs="false">
+      <a id="enrichCaseGenTraversable[A](GenTraversable[Case[A]]):EnrichedCaseGenTraversable[A]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">enrichCaseGenTraversable</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="cgt">cgt: <span name="scala.collection.GenTraversable" class="extype">GenTraversable</span>[<a name="axle.stats.Case" class="extype" href="Case.html">Case</a>[A]]</span>)</span><span class="result">: <a name="axle.stats.EnrichedCaseGenTraversable" class="extype" href="EnrichedCaseGenTraversable.html">EnrichedCaseGenTraversable</a>[A]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.stats.package#entropy" data-isabs="false">
+      <a id="entropy[A](RandomVariable[A]):Q"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">entropy</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="X">X: <a name="axle.stats.RandomVariable" class="extype" href="RandomVariable.html">RandomVariable</a>[A]</span>)</span><span class="result">: Q</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.stats.package#huffmanCode" data-isabs="false">
+      <a id="huffmanCode[A, S](Set[S]):Map[A, Seq[S]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">huffmanCode</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="S">S</span>]</span>
+        <span class="params">(<span name="alphabet">alphabet: <span name="scala.collection.Set" class="extype">Set</span>[S]</span>)</span><span class="result">: <span name="scala.collection.Map" class="extype">Map</span>[A, <span name="scala.collection.Seq" class="extype">Seq</span>[S]]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.stats.package#log2" data-isabs="false">
+      <a id="log2(Double):Double"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">log2</span>
+        
+        <span class="params">(<span name="x">x: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: <span name="scala.Double" class="extype">Double</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.stats.package#probability2double" data-isabs="false">
+      <a id="probability2double:(Probability) ⇒ Double"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">probability2double</span>
+        
+        <span class="result">: (<a name="axle.stats.Probability" class="extype" href="Probability.html">Probability</a>) ⇒ <span name="scala.Double" class="extype">Double</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.stats.package#rv2it" data-isabs="false">
+      <a id="rv2it[K](RandomVariable[K]):IndexedSeq[K]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">rv2it</span>
+        <span class="tparams">[<span name="K">K</span>]</span>
+        <span class="params">(<span name="rv">rv: <a name="axle.stats.RandomVariable" class="extype" href="RandomVariable.html">RandomVariable</a>[K]</span>)</span><span class="result">: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[K]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

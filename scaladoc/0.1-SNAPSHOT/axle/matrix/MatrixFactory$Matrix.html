@@ -1,0 +1,1436 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>axle.matrix.MatrixFactory.Matrix</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../lib/trait_big.png" />
+        <p id="owner"><a name="axle" class="extype" href="../package.html">axle</a>.<a name="axle.matrix" class="extype" href="package.html">matrix</a>.<a name="axle.matrix.MatrixFactory" class="extype" href="MatrixFactory.html">MatrixFactory</a></p>
+        <h1>Matrix</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <span class="name">Matrix</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div><div class="toggleContainer block">
+          <span class="toggle">Known Subclasses</span>
+          <div class="subClasses hiddenContent"><a name="axle.matrix.ArrayMatrixFactory.ArrayMatrix" class="extype" href="ArrayMatrixFactory$ArrayMatrix.html">ArrayMatrix</a>, <a name="axle.matrix.ArrayMatrixFactory.ArrayMatrixImpl" class="extype" href="ArrayMatrixFactory$ArrayMatrixImpl.html">ArrayMatrixImpl</a>, <a name="axle.matrix.JblasMatrixFactory.JblasMatrix" class="extype" href="JblasMatrixFactory$JblasMatrix.html">JblasMatrix</a>, <a name="axle.matrix.JblasMatrixFactory.JblasMatrixImpl" class="extype" href="JblasMatrixFactory$JblasMatrixImpl.html">JblasMatrixImpl</a></div>
+        </div></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              </div>
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show all</span></li></ol>
+                <ol id="linearization"><li name="axle.matrix.MatrixFactory.Matrix" class="in"><span>Matrix</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+              </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#S" data-isabs="true">
+      <a id="S:S"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">S</span>
+        
+        
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li></ol>
+            </div>
+        
+        <div class="values members" id="values">
+              <h3>Abstract Value Members</h3>
+              <ol><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#addAssignment" data-isabs="true">
+      <a id="addAssignment(Int,Int,T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">addAssignment</span>
+        
+        <span class="params">(<span name="r">r: <span name="scala.Int" class="extype">Int</span></span>, <span name="c">c: <span name="scala.Int" class="extype">Int</span></span>, <span name="v">v: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#addColumnVector" data-isabs="true">
+      <a id="addColumnVector(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">addColumnVector</span>
+        
+        <span class="params">(<span name="column">column: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#addMatrix" data-isabs="true">
+      <a id="addMatrix(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">addMatrix</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#addRowVector" data-isabs="true">
+      <a id="addRowVector(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">addRowVector</span>
+        
+        <span class="params">(<span name="row">row: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#addScalar" data-isabs="true">
+      <a id="addScalar(T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">addScalar</span>
+        
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#and" data-isabs="true">
+      <a id="and(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">and</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#apply" data-isabs="true">
+      <a id="apply(Int,Int):T"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">apply</span>
+        
+        <span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>, <span name="j">j: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: T</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#argmax" data-isabs="true">
+      <a id="argmax():(Int, Int)"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">argmax</span>
+        
+        <span class="params">()</span><span class="result">: (<span name="scala.Int" class="extype">Int</span>, <span name="scala.Int" class="extype">Int</span>)</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#argmin" data-isabs="true">
+      <a id="argmin():(Int, Int)"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">argmin</span>
+        
+        <span class="params">()</span><span class="result">: (<span name="scala.Int" class="extype">Int</span>, <span name="scala.Int" class="extype">Int</span>)</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#ceil" data-isabs="true">
+      <a id="ceil():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ceil</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#column" data-isabs="true">
+      <a id="column(Int):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">column</span>
+        
+        <span class="params">(<span name="j">j: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#columnMaxs" data-isabs="true">
+      <a id="columnMaxs():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">columnMaxs</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#columnMins" data-isabs="true">
+      <a id="columnMins():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">columnMins</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#columns" data-isabs="true">
+      <a id="columns:Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">columns</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#concatenateHorizontally" data-isabs="true">
+      <a id="concatenateHorizontally(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">concatenateHorizontally</span>
+        
+        <span class="params">(<span name="right">right: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#concatenateVertically" data-isabs="true">
+      <a id="concatenateVertically(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">concatenateVertically</span>
+        
+        <span class="params">(<span name="under">under: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#diag" data-isabs="true">
+      <a id="diag():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">diag</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#divPointwise" data-isabs="true">
+      <a id="divPointwise(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">divPointwise</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#divideScalar" data-isabs="true">
+      <a id="divideScalar(T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">divideScalar</span>
+        
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#dup" data-isabs="true">
+      <a id="dup():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">dup</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#eq" data-isabs="true">
+      <a id="eq(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#flatMapColumns" data-isabs="true">
+      <a id="flatMapColumns[A]((M[T]) ⇒ M[A])(E[A]):M[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">flatMapColumns</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="f">f: (M[T]) ⇒ M[A]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="elementAdapter">elementAdapter: E[A]</span>)</span><span class="result">: M[A]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#floor" data-isabs="true">
+      <a id="floor():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">floor</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#fullSVD" data-isabs="true">
+      <a id="fullSVD():(M[T], M[T], M[T])"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">fullSVD</span>
+        
+        <span class="params">()</span><span class="result">: (M[T], M[T], M[T])</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#ge" data-isabs="true">
+      <a id="ge(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ge</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#gt" data-isabs="true">
+      <a id="gt(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">gt</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#invert" data-isabs="true">
+      <a id="invert():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">invert</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#isColumnVector" data-isabs="true">
+      <a id="isColumnVector():Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isColumnVector</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#isEmpty" data-isabs="true">
+      <a id="isEmpty():Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isEmpty</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#isRowVector" data-isabs="true">
+      <a id="isRowVector():Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isRowVector</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#isScalar" data-isabs="true">
+      <a id="isScalar():Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isScalar</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#isSquare" data-isabs="true">
+      <a id="isSquare():Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isSquare</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#isVector" data-isabs="true">
+      <a id="isVector():Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isVector</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#le" data-isabs="true">
+      <a id="le(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">le</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#length" data-isabs="true">
+      <a id="length:Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">length</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#log" data-isabs="true">
+      <a id="log():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">log</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#log10" data-isabs="true">
+      <a id="log10():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">log10</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#lt" data-isabs="true">
+      <a id="lt(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">lt</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#map" data-isabs="true">
+      <a id="map[B]((T) ⇒ B)(E[B]):M[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">map</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="f">f: (T) ⇒ B</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="elementAdapter">elementAdapter: E[B]</span>)</span><span class="result">: M[B]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#max" data-isabs="true">
+      <a id="max():T"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">max</span>
+        
+        <span class="params">()</span><span class="result">: T</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#min" data-isabs="true">
+      <a id="min():T"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">min</span>
+        
+        <span class="params">()</span><span class="result">: T</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#mulColumn" data-isabs="true">
+      <a id="mulColumn(Int,T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">mulColumn</span>
+        
+        <span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>, <span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#mulPointwise" data-isabs="true">
+      <a id="mulPointwise(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">mulPointwise</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#mulRow" data-isabs="true">
+      <a id="mulRow(Int,T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">mulRow</span>
+        
+        <span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>, <span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#multiplyMatrix" data-isabs="true">
+      <a id="multiplyMatrix(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">multiplyMatrix</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#multiplyScalar" data-isabs="true">
+      <a id="multiplyScalar(T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">multiplyScalar</span>
+        
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#ne" data-isabs="true">
+      <a id="ne(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#negate" data-isabs="true">
+      <a id="negate():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">negate</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#not" data-isabs="true">
+      <a id="not():Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">not</span>
+        
+        <span class="params">()</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#or" data-isabs="true">
+      <a id="or(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">or</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#pow" data-isabs="true">
+      <a id="pow(Double):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">pow</span>
+        
+        <span class="params">(<span name="p">p: <span name="scala.Double" class="extype">Double</span></span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#row" data-isabs="true">
+      <a id="row(Int):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">row</span>
+        
+        <span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#rows" data-isabs="true">
+      <a id="rows:Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">rows</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#solve" data-isabs="true">
+      <a id="solve(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">solve</span>
+        
+        <span class="params">(<span name="B">B: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#storage" data-isabs="true">
+      <a id="storage:S"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">storage</span>
+        
+        <span class="result">: S</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#subColumnVector" data-isabs="true">
+      <a id="subColumnVector(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">subColumnVector</span>
+        
+        <span class="params">(<span name="column">column: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#subRowVector" data-isabs="true">
+      <a id="subRowVector(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">subRowVector</span>
+        
+        <span class="params">(<span name="row">row: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#subtractMatrix" data-isabs="true">
+      <a id="subtractMatrix(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">subtractMatrix</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#subtractScalar" data-isabs="true">
+      <a id="subtractScalar(T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">subtractScalar</span>
+        
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#toList" data-isabs="true">
+      <a id="toList():List[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">toList</span>
+        
+        <span class="params">()</span><span class="result">: List[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#transpose" data-isabs="true">
+      <a id="transpose():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">transpose</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#xor" data-isabs="true">
+      <a id="xor(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">xor</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Concrete Value Members</h3>
+              <ol><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#!" data-isabs="false">
+      <a id="!():Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!</span>
+        
+        <span class="params">()</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#!=" data-isabs="false">
+      <a id="!=(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">##</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#&amp;" data-isabs="false">
+      <a id="&amp;(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">&amp;</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#*" data-isabs="false">
+      <a id="*(T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">*</span>
+        
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#+" data-isabs="false">
+      <a id="+(((Int, Int), T)):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">+</span>
+        
+        <span class="params">(<span name="rc2v">rc2v: ((<span name="scala.Int" class="extype">Int</span>, <span name="scala.Int" class="extype">Int</span>), T)</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#+" data-isabs="false">
+      <a id="+(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">+</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#+" data-isabs="false">
+      <a id="+(T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">+</span>
+        
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#+/+" data-isabs="false">
+      <a id="+/+(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">+/+</span>
+        
+        <span class="params">(<span name="under">under: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#+|+" data-isabs="false">
+      <a id="+|+(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">+|+</span>
+        
+        <span class="params">(<span name="right">right: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#-" data-isabs="false">
+      <a id="-(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">-</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#-" data-isabs="false">
+      <a id="-(T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">-</span>
+        
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#/" data-isabs="false">
+      <a id="/(T):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">/</span>
+        
+        <span class="params">(<span name="x">x: T</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#&lt;" data-isabs="false">
+      <a id="&lt;(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">&lt;</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#&lt;=" data-isabs="false">
+      <a id="&lt;=(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">&lt;=</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#==" data-isabs="false">
+      <a id="==(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#&gt;" data-isabs="false">
+      <a id="&gt;(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">&gt;</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#&gt;=" data-isabs="false">
+      <a id="&gt;=(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">&gt;=</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#aside" data-isabs="false">
+      <a id="aside(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">aside</span>
+        
+        <span class="params">(<span name="right">right: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#atop" data-isabs="false">
+      <a id="atop(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">atop</span>
+        
+        <span class="params">(<span name="under">under: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">clone</span>
+        
+        <span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#foldLeft" data-isabs="false">
+      <a id="foldLeft[A](M[A])((M[A], M[T]) ⇒ M[A])(E[A]):M[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">foldLeft</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="zero">zero: M[A]</span>)</span><span class="params">(<span name="f">f: (M[A], M[T]) ⇒ M[A]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="elementAdapter">elementAdapter: E[A]</span>)</span><span class="result">: M[A]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#foldTop" data-isabs="false">
+      <a id="foldTop[A](M[A])((M[A], M[T]) ⇒ M[A])(E[A]):M[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">foldTop</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="zero">zero: M[A]</span>)</span><span class="params">(<span name="f">f: (M[A], M[T]) ⇒ M[A]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="elementAdapter">elementAdapter: E[A]</span>)</span><span class="result">: M[A]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#inv" data-isabs="false">
+      <a id="inv():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">inv</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#mm" data-isabs="false">
+      <a id="mm(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">mm</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notify</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#scalar" data-isabs="false">
+      <a id="scalar():T"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">scalar</span>
+        
+        <span class="params">()</span><span class="result">: T</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#t" data-isabs="false">
+      <a id="t():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">t</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">toString</span>
+        
+        <span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#tr" data-isabs="false">
+      <a id="tr():M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">tr</span>
+        
+        <span class="params">()</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#|" data-isabs="false">
+      <a id="|(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">|</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#~" data-isabs="false">
+      <a id="~():Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">~</span>
+        
+        <span class="params">()</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#¬" data-isabs="false">
+      <a id="¬():Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">¬</span>
+        
+        <span class="params">()</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#∧" data-isabs="false">
+      <a id="∧(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">∧</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#∨" data-isabs="false">
+      <a id="∨(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">∨</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#≠" data-isabs="false">
+      <a id="≠(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">≠</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#≤" data-isabs="false">
+      <a id="≤(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">≤</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#≥" data-isabs="false">
+      <a id="≥(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">≥</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#⊕" data-isabs="false">
+      <a id="⊕(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">⊕</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#⊻" data-isabs="false">
+      <a id="⊻(M[T]):Matrix[Boolean]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">⊻</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="">Matrix</a>[<span name="scala.Boolean" class="extype">Boolean</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.matrix.MatrixFactory.Matrix#⨯" data-isabs="false">
+      <a id="⨯(M[T]):M[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">⨯</span>
+        
+        <span class="params">(<span name="other">other: M[T]</span>)</span><span class="result">: M[T]</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
