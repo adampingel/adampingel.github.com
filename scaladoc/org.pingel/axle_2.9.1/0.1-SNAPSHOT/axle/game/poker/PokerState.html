@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>axle.game.poker.PokerState</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../../lib/class_big.png" />
+        <p id="owner"><a name="axle" class="extype" href="../../package.html">axle</a>.<a name="axle.game" class="extype" href="../package.html">game</a>.<a name="axle.game.poker" class="extype" href="package.html">poker</a></p>
+        <h1>PokerState</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <span class="name">PokerState</span>
+        
+        <span class="params">(<span name="playerFn">playerFn: (<a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a>) ⇒ <a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a></span>, <span name="deck">deck: <a name="axle.game.cards.Deck" class="extype" href="../cards/Deck.html">Deck</a></span>, <span name="shared">shared: IndexedSeq[<a name="axle.game.cards.Card" class="extype" href="../cards/Card.html">Card</a>]</span>, <span name="numShown">numShown: <span name="scala.Int" class="extype">Int</span></span>, <span name="hands">hands: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, Seq[<a name="axle.game.cards.Card" class="extype" href="../cards/Card.html">Card</a>]]</span>, <span name="pot">pot: <span name="scala.Int" class="extype">Int</span></span>, <span name="currentBet">currentBet: <span name="scala.Int" class="extype">Int</span></span>, <span name="stillIn">stillIn: Set[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>]</span>, <span name="inFors">inFors: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, <span name="scala.Int" class="extype">Int</span>]</span>, <span name="piles">piles: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, <span name="scala.Int" class="extype">Int</span>]</span>, <span name="_outcome">_outcome: <span name="scala.Option" class="extype">Option</span>[<a name="axle.game.poker.PokerOutcome" class="extype" href="PokerOutcome.html">PokerOutcome</a>]</span>, <span name="_eventQueues">_eventQueues: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, List[<a name="axle.game.Event" class="extype" href="../Event.html">Event</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>]]]</span>, <span name="game">game: <a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a></span>)</span><span class="result"> extends <a name="axle.game.State" class="extype" href="../State.html">State</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>] with <span name="scala.Product" class="extype">Product</span> with <span name="scala.Serializable" class="extype">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span name="scala.Serializable" class="extype">Serializable</span>, <span name="java.io.Serializable" class="extype">Serializable</span>, <span name="scala.Product" class="extype">Product</span>, <span name="scala.Equals" class="extype">Equals</span>, <a name="axle.game.State" class="extype" href="../State.html">State</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              </div>
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show all</span></li></ol>
+                <ol id="linearization"><li name="axle.game.poker.PokerState" class="in"><span>PokerState</span></li><li name="scala.Serializable" class="in"><span>Serializable</span></li><li name="java.io.Serializable" class="in"><span>Serializable</span></li><li name="scala.Product" class="in"><span>Product</span></li><li name="scala.Equals" class="in"><span>Equals</span></li><li name="axle.game.State" class="in"><span>State</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+              </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        <div class="members" id="constructors">
+              <h3>Instance Constructors</h3>
+              <ol><li visbl="pub" name="axle.game.poker.PokerState#this" data-isabs="false">
+      <a id="this:PokerState"></a>
+      <h4 class="signature">
+      <span class="kind">new</span>
+      <span class="symbol"> 
+        <span class="name">PokerState</span>
+        
+        <span class="params">(<span name="playerFn">playerFn: (<a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a>) ⇒ <a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a></span>, <span name="deck">deck: <a name="axle.game.cards.Deck" class="extype" href="../cards/Deck.html">Deck</a></span>, <span name="shared">shared: IndexedSeq[<a name="axle.game.cards.Card" class="extype" href="../cards/Card.html">Card</a>]</span>, <span name="numShown">numShown: <span name="scala.Int" class="extype">Int</span></span>, <span name="hands">hands: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, Seq[<a name="axle.game.cards.Card" class="extype" href="../cards/Card.html">Card</a>]]</span>, <span name="pot">pot: <span name="scala.Int" class="extype">Int</span></span>, <span name="currentBet">currentBet: <span name="scala.Int" class="extype">Int</span></span>, <span name="stillIn">stillIn: Set[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>]</span>, <span name="inFors">inFors: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, <span name="scala.Int" class="extype">Int</span>]</span>, <span name="piles">piles: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, <span name="scala.Int" class="extype">Int</span>]</span>, <span name="_outcome">_outcome: <span name="scala.Option" class="extype">Option</span>[<a name="axle.game.poker.PokerOutcome" class="extype" href="PokerOutcome.html">PokerOutcome</a>]</span>, <span name="_eventQueues">_eventQueues: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, List[<a name="axle.game.Event" class="extype" href="../Event.html">Event</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>]]]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="game">game: <a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a></span>)</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">##</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#_eventQueues" data-isabs="false">
+      <a id="_eventQueues:Map[PokerPlayer, List[Event[Poker]]]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">_eventQueues</span>
+        
+        <span class="result">: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, List[<a name="axle.game.Event" class="extype" href="../Event.html">Event</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>]]]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#_outcome" data-isabs="false">
+      <a id="_outcome:Option[PokerOutcome]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">_outcome</span>
+        
+        <span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="axle.game.poker.PokerOutcome" class="extype" href="PokerOutcome.html">PokerOutcome</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#_player" data-isabs="false">
+      <a id="_player:PokerPlayer"></a>
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol"> 
+        <span class="name">_player</span>
+        
+        <span class="result">: <a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#apply" data-isabs="false">
+      <a id="apply(PokerMove):Option[PokerState]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">apply</span>
+        
+        <span class="params">(<span name="move">move: <a name="axle.game.poker.PokerMove" class="extype" href="PokerMove.html">PokerMove</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → <a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#betterAfter" data-isabs="false">
+      <a id="betterAfter(PokerPlayer):Option[PokerPlayer]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">betterAfter</span>
+        
+        <span class="params">(<span name="before">before: <a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a></span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#bigBlind" data-isabs="false">
+      <a id="bigBlind:Int"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">bigBlind</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.State#broadcast" data-isabs="false">
+      <a id="broadcast[E&lt;:Event[Poker]](Set[PLAYER],E):STATE"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">broadcast</span>
+        <span class="tparams">[<span name="E">E &lt;: <a name="axle.game.Event" class="extype" href="../Event.html">Event</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>]</span>]</span>
+        <span class="params">(<span name="players">players: Set[PLAYER]</span>, <span name="event">event: E</span>)</span><span class="result">: STATE</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#canEqual" data-isabs="false">
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">canEqual</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → Equals</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">clone</span>
+        
+        <span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#currentBet" data-isabs="false">
+      <a id="currentBet:Int"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">currentBet</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#deck" data-isabs="false">
+      <a id="deck:Deck"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">deck</span>
+        
+        <span class="result">: <a name="axle.game.cards.Deck" class="extype" href="../cards/Deck.html">Deck</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.State#displayEvents" data-isabs="false">
+      <a id="displayEvents(Set[PLAYER]):STATE"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">displayEvents</span>
+        
+        <span class="params">(<span name="players">players: Set[PLAYER]</span>)</span><span class="result">: STATE</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#displayTo" data-isabs="false">
+      <a id="displayTo(PokerPlayer):String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">displayTo</span>
+        
+        <span class="params">(<span name="viewer">viewer: <a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a></span>)</span><span class="result">: String</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → <a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → Equals → AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#eventQueues" data-isabs="false">
+      <a id="eventQueues():Map[PokerPlayer, List[Event[Poker]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">eventQueues</span>
+        
+        <span class="params">()</span><span class="result">: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, List[<a name="axle.game.Event" class="extype" href="../Event.html">Event</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>]]]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → <a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#firstBetter" data-isabs="false">
+      <a id="firstBetter():PokerPlayer"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">firstBetter</span>
+        
+        <span class="params">()</span><span class="result">: <a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#hands" data-isabs="false">
+      <a id="hands:Map[PokerPlayer, Seq[Card]]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">hands</span>
+        
+        <span class="result">: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, Seq[<a name="axle.game.cards.Card" class="extype" href="../cards/Card.html">Card</a>]]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#inFors" data-isabs="false">
+      <a id="inFors:Map[PokerPlayer, Int]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">inFors</span>
+        
+        <span class="result">: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, <span name="scala.Int" class="extype">Int</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#moves" data-isabs="false">
+      <a id="moves():Seq[PokerMove]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">moves</span>
+        
+        <span class="params">()</span><span class="result">: Seq[<a name="axle.game.poker.PokerMove" class="extype" href="PokerMove.html">PokerMove</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → <a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notify</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#numShown" data-isabs="false">
+      <a id="numShown:Int"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">numShown</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#outcome" data-isabs="false">
+      <a id="outcome():Option[PokerOutcome]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">outcome</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="axle.game.poker.PokerOutcome" class="extype" href="PokerOutcome.html">PokerOutcome</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → <a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#piles" data-isabs="false">
+      <a id="piles:Map[PokerPlayer, Int]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">piles</span>
+        
+        <span class="result">: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, <span name="scala.Int" class="extype">Int</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#player" data-isabs="false">
+      <a id="player():PokerPlayer"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">player</span>
+        
+        <span class="params">()</span><span class="result">: <a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → <a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#playerFn" data-isabs="false">
+      <a id="playerFn:(PokerState) ⇒ PokerPlayer"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">playerFn</span>
+        
+        <span class="result">: (<a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a>) ⇒ <a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#pokerHandCategoryOrdering" data-isabs="false">
+      <a id="pokerHandCategoryOrdering:PokerHandCategoryOrdering"></a>
+      <h4 class="signature">
+      <span class="kind">implicit val</span>
+      <span class="symbol"> 
+        <span class="name">pokerHandCategoryOrdering</span>
+        
+        <span class="result">: <a name="axle.game.poker.PokerHandCategoryOrdering" class="extype" href="PokerHandCategoryOrdering.html">PokerHandCategoryOrdering</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#pokerHandOrdering" data-isabs="false">
+      <a id="pokerHandOrdering:PokerHandOrdering"></a>
+      <h4 class="signature">
+      <span class="kind">implicit val</span>
+      <span class="symbol"> 
+        <span class="name">pokerHandOrdering</span>
+        
+        <span class="result">: <a name="axle.game.poker.PokerHandOrdering" class="extype" href="PokerHandOrdering.html">PokerHandOrdering</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#pot" data-isabs="false">
+      <a id="pot:Int"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">pot</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#productArity" data-isabs="false">
+      <a id="productArity:Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">productArity</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → Product</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#productElement" data-isabs="false">
+      <a id="productElement(Int):Any"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">productElement</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Any" class="extype">Any</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → Product</dd></dl></div>
+    </li><li visbl="pub" name="scala.Product#productIterator" data-isabs="false">
+      <a id="productIterator:Iterator[Any]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">productIterator</span>
+        
+        <span class="result">: Iterator[<span name="scala.Any" class="extype">Any</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#productPrefix" data-isabs="false">
+      <a id="productPrefix:String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">productPrefix</span>
+        
+        <span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → Product</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#setEventQueues" data-isabs="false">
+      <a id="setEventQueues(Map[PokerPlayer, List[Event[Poker]]]):PokerState"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">setEventQueues</span>
+        
+        <span class="params">(<span name="qs">qs: Map[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>, List[<a name="axle.game.Event" class="extype" href="../Event.html">Event</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>]]]</span>)</span><span class="result">: <a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → <a name="axle.game.State" class="extype" href="../State.html">State</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#shared" data-isabs="false">
+      <a id="shared:IndexedSeq[Card]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">shared</span>
+        
+        <span class="result">: IndexedSeq[<a name="axle.game.cards.Card" class="extype" href="../cards/Card.html">Card</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#smallBlind" data-isabs="false">
+      <a id="smallBlind:Int"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">smallBlind</span>
+        
+        <span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.poker.PokerState#stillIn" data-isabs="false">
+      <a id="stillIn:Set[PokerPlayer]"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">stillIn</span>
+        
+        <span class="result">: Set[<a name="axle.game.poker.PokerPlayer" class="extype" href="PokerPlayer.html">PokerPlayer</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="axle.game.poker.PokerState#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">toString</span>
+        
+        <span class="params">()</span><span class="result">: String</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.poker.PokerState" class="extype" href="">PokerState</a> → AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Deprecated Value Members</h3>
+              <ol><li visbl="pub" name="scala.Product#productElements" data-isabs="false">
+      <a id="productElements:Iterator[Any]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name deprecated">productElements</span>
+        
+        <span class="result">: Iterator[<span name="scala.Any" class="extype">Any</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>use productIterator instead</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div name="scala.Serializable" class="parent">
+              <h3>Inherited from <span name="scala.Serializable" class="extype">Serializable</span></h3>
+            </div><div name="java.io.Serializable" class="parent">
+              <h3>Inherited from <span name="java.io.Serializable" class="extype">Serializable</span></h3>
+            </div><div name="scala.Product" class="parent">
+              <h3>Inherited from <span name="scala.Product" class="extype">Product</span></h3>
+            </div><div name="scala.Equals" class="parent">
+              <h3>Inherited from <span name="scala.Equals" class="extype">Equals</span></h3>
+            </div><div name="axle.game.State" class="parent">
+              <h3>Inherited from <a name="axle.game.State" class="extype" href="../State.html">State</a>[<a name="axle.game.poker.Poker" class="extype" href="Poker.html">Poker</a>]</h3>
+            </div><div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

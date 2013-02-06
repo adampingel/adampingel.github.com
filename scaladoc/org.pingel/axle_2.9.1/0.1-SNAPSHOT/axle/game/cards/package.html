@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>axle.game.cards</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a name="axle" class="extype" href="../../package.html">axle</a>.<a name="axle.game" class="extype" href="../package.html">game</a></p>
+        <h1>cards</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <span class="name">cards</span>
+        
+        
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="axle.game.cards.Card" data-isabs="false">
+      <a id="Card:Card"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Card.html"><span class="name">Card</span></a>
+        
+        <span class="params">(<span name="rank">rank: Rank</span>, <span name="suit">suit: Suit</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.CardOrdering" data-isabs="false">
+      <a id="CardOrdering:CardOrdering"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="CardOrdering.html"><span class="name">CardOrdering</span></a>
+        
+        <span class="result"> extends Ordering[Card]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Deck" data-isabs="false">
+      <a id="Deck:Deck"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Deck.html"><span class="name">Deck</span></a>
+        
+        <span class="params">(<span name="cards">cards: IndexedSeq[Card]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Rank" data-isabs="true">
+      <a id="Rank:Rank"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Rank.html"><span class="name">Rank</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>sealed </dd></dl></div>
+    </li><li visbl="pub" name="axle.game.cards.RankOrdering" data-isabs="false">
+      <a id="RankOrdering:RankOrdering"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="RankOrdering.html"><span class="name">RankOrdering</span></a>
+        
+        <span class="result"> extends Ordering[Rank]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Suit" data-isabs="true">
+      <a id="Suit:Suit"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Suit.html"><span class="name">Suit</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>sealed </dd></dl></div>
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="axle.game.cards.Ace" data-isabs="false">
+      <a id="Ace:Ace"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Ace$.html"><span class="name">Ace</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Clubs" data-isabs="false">
+      <a id="Clubs:Clubs"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Clubs$.html"><span class="name">Clubs</span></a>
+        
+        <span class="result"> extends Suit</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Deck" data-isabs="false">
+      <a id="Deck:Deck"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Deck$.html"><span class="name">Deck</span></a>
+        
+        <span class="result"> extends Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Diamonds" data-isabs="false">
+      <a id="Diamonds:Diamonds"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Diamonds$.html"><span class="name">Diamonds</span></a>
+        
+        <span class="result"> extends Suit</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Hearts" data-isabs="false">
+      <a id="Hearts:Hearts"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Hearts$.html"><span class="name">Hearts</span></a>
+        
+        <span class="result"> extends Suit</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Implicits" data-isabs="false">
+      <a id="Implicits:Implicits"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Implicits$.html"><span class="name">Implicits</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Jack" data-isabs="false">
+      <a id="Jack:Jack"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Jack$.html"><span class="name">Jack</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.King" data-isabs="false">
+      <a id="King:King"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="King$.html"><span class="name">King</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Queen" data-isabs="false">
+      <a id="Queen:Queen"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Queen$.html"><span class="name">Queen</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R10" data-isabs="false">
+      <a id="R10:R10"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R10$.html"><span class="name">R10</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R2" data-isabs="false">
+      <a id="R2:R2"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R2$.html"><span class="name">R2</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R3" data-isabs="false">
+      <a id="R3:R3"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R3$.html"><span class="name">R3</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R4" data-isabs="false">
+      <a id="R4:R4"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R4$.html"><span class="name">R4</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R5" data-isabs="false">
+      <a id="R5:R5"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R5$.html"><span class="name">R5</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R6" data-isabs="false">
+      <a id="R6:R6"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R6$.html"><span class="name">R6</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R7" data-isabs="false">
+      <a id="R7:R7"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R7$.html"><span class="name">R7</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R8" data-isabs="false">
+      <a id="R8:R8"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R8$.html"><span class="name">R8</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.R9" data-isabs="false">
+      <a id="R9:R9"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="R9$.html"><span class="name">R9</span></a>
+        
+        <span class="result"> extends Rank</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.game.cards.Spades" data-isabs="false">
+      <a id="Spades:Spades"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Spades$.html"><span class="name">Spades</span></a>
+        
+        <span class="result"> extends Suit</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
