@@ -47,25 +47,14 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="axle.stats.BayesianNetwork" data-isabs="false">
-      <a id="BayesianNetwork:BayesianNetwork"></a>
+              <ol><li visbl="pub" name="axle.stats.BayesianNetworkModule" data-isabs="true">
+      <a id="BayesianNetworkModule:BayesianNetworkModule"></a>
       <h4 class="signature">
-      <span class="kind">class</span>
+      <span class="kind">trait</span>
       <span class="symbol"> 
-        <a href="BayesianNetwork.html"><span class="name">BayesianNetwork</span></a>
+        <a href="BayesianNetworkModule.html"><span class="name">BayesianNetworkModule</span></a>
         
-        <span class="result"> extends Model[BayesianNetworkNode]</span>
-      </span>
-      </h4>
-      
-    </li><li visbl="pub" name="axle.stats.BayesianNetworkNode" data-isabs="false">
-      <a id="BayesianNetworkNode:BayesianNetworkNode"></a>
-      <h4 class="signature">
-      <span class="kind">case class</span>
-      <span class="symbol"> 
-        <a href="BayesianNetworkNode.html"><span class="name">BayesianNetworkNode</span></a>
-        
-        <span class="params">(<span name="rv">rv: axle.stats.RandomVariable[_]</span>, <span name="cpt">cpt: Factor</span>)</span><span class="result"> extends XmlAble with Product with Serializable</span>
+        <span class="result"> extends FactorModule with EliminationTreeModule</span>
       </span>
       </h4>
       
@@ -245,14 +234,14 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="axle.stats.EliminationTree" data-isabs="false">
-      <a id="EliminationTree:EliminationTree"></a>
+    </li><li visbl="pub" name="axle.stats.EliminationTreeModule" data-isabs="true">
+      <a id="EliminationTreeModule:EliminationTreeModule"></a>
       <h4 class="signature">
-      <span class="kind">case class</span>
+      <span class="kind">trait</span>
       <span class="symbol"> 
-        <a href="EliminationTree.html"><span class="name">EliminationTree</span></a>
+        <a href="EliminationTreeModule.html"><span class="name">EliminationTreeModule</span></a>
         
-        <span class="params">(<span name="vps">vps: Seq[Factor]</span>, <span name="ef">ef: (Seq[Vertex[Factor]]) ⇒ Seq[(Vertex[Factor], Vertex[Factor], String)]</span>)</span><span class="result"> extends Product with Serializable</span>
+        <span class="result"> extends FactorModule</span>
       </span>
       </h4>
       
@@ -267,14 +256,14 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="axle.stats.Factor" data-isabs="false">
-      <a id="Factor:Factor"></a>
+    </li><li visbl="pub" name="axle.stats.FactorModule" data-isabs="true">
+      <a id="FactorModule:FactorModule"></a>
       <h4 class="signature">
-      <span class="kind">class</span>
+      <span class="kind">trait</span>
       <span class="symbol"> 
-        <a href="Factor.html"><span class="name">Factor</span></a>
+        <a href="FactorModule.html"><span class="name">FactorModule</span></a>
         
-        <span class="result"> extends AnyRef</span>
+        <span class="result"> extends JblasMatrixModule</span>
       </span>
       </h4>
       
@@ -429,14 +418,14 @@
 
         <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="axle.stats.BayesianNetwork" data-isabs="false">
-      <a id="BayesianNetwork:BayesianNetwork"></a>
+              <ol><li visbl="pub" name="axle.stats.BayesianNetworkModule" data-isabs="false">
+      <a id="BayesianNetworkModule:BayesianNetworkModule"></a>
       <h4 class="signature">
       <span class="kind">object</span>
       <span class="symbol"> 
-        <a href="BayesianNetwork$.html"><span class="name">BayesianNetwork</span></a>
+        <a href="BayesianNetworkModule$.html"><span class="name">BayesianNetworkModule</span></a>
         
-        <span class="result"> extends AnyRef</span>
+        <span class="result"> extends BayesianNetworkModule</span>
       </span>
       </h4>
       
@@ -451,25 +440,14 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="axle.stats.Factor" data-isabs="false">
-      <a id="Factor:Factor"></a>
-      <h4 class="signature">
-      <span class="kind">object</span>
-      <span class="symbol"> 
-        <a href="Factor$.html"><span class="name">Factor</span></a>
-        
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </h4>
-      
     </li><li visbl="pub" name="axle.stats.package#H" data-isabs="false">
-      <a id="H[A](RandomVariable[A]):Q"></a>
+      <a id="H[A](RandomVariable[A])(ClassManifest[A]):Q"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">H</span>
         <span class="tparams">[<span name="A">A</span>]</span>
-        <span class="params">(<span name="X">X: <a name="axle.stats.RandomVariable" class="extype" href="RandomVariable.html">RandomVariable</a>[A]</span>)</span><span class="result">: Q</span>
+        <span class="params">(<span name="X">X: <a name="axle.stats.RandomVariable" class="extype" href="RandomVariable.html">RandomVariable</a>[A]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[A]</span>)</span><span class="result">: Q</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
@@ -518,24 +496,24 @@
       </h4>
       
     </li><li visbl="pub" name="axle.stats.package#enrichCaseGenTraversable" data-isabs="false">
-      <a id="enrichCaseGenTraversable[A](GenTraversable[Case[A]]):EnrichedCaseGenTraversable[A]"></a>
+      <a id="enrichCaseGenTraversable[A](GenTraversable[Case[A]])(ClassManifest[A]):EnrichedCaseGenTraversable[A]"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol"> 
         <span class="name">enrichCaseGenTraversable</span>
         <span class="tparams">[<span name="A">A</span>]</span>
-        <span class="params">(<span name="cgt">cgt: <span name="scala.collection.GenTraversable" class="extype">GenTraversable</span>[<a name="axle.stats.Case" class="extype" href="Case.html">Case</a>[A]]</span>)</span><span class="result">: <a name="axle.stats.EnrichedCaseGenTraversable" class="extype" href="EnrichedCaseGenTraversable.html">EnrichedCaseGenTraversable</a>[A]</span>
+        <span class="params">(<span name="cgt">cgt: <span name="scala.collection.GenTraversable" class="extype">GenTraversable</span>[<a name="axle.stats.Case" class="extype" href="Case.html">Case</a>[A]]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[A]</span>)</span><span class="result">: <a name="axle.stats.EnrichedCaseGenTraversable" class="extype" href="EnrichedCaseGenTraversable.html">EnrichedCaseGenTraversable</a>[A]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="axle.stats.package#entropy" data-isabs="false">
-      <a id="entropy[A](RandomVariable[A]):Q"></a>
+      <a id="entropy[A](RandomVariable[A])(ClassManifest[A]):Q"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">entropy</span>
         <span class="tparams">[<span name="A">A</span>]</span>
-        <span class="params">(<span name="X">X: <a name="axle.stats.RandomVariable" class="extype" href="RandomVariable.html">RandomVariable</a>[A]</span>)</span><span class="result">: Q</span>
+        <span class="params">(<span name="X">X: <a name="axle.stats.RandomVariable" class="extype" href="RandomVariable.html">RandomVariable</a>[A]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[A]</span>)</span><span class="result">: Q</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.stats.package" class="extype" href="package$.html">package</a></dd></dl></div>

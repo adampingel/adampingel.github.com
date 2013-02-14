@@ -296,30 +296,19 @@
   2. OR (if First(Y1) does contain epsilon) then First (Y1Y2..Yk) is everything in First(Y1) &lt;except for epsilon &gt; as well as everything in First(Y2..Yk)
   3. If First(Y1) First(Y2)..First(Yk) all contain epsilon then add epsilon to First(Y1Y2..Yk) as well.</li></ol></div></div>
     </li><li visbl="pub" name="axle.ast.LLLanguage#follow" data-isabs="false">
-      <a id="follow(NonTerminal):Set[Symbol]"></a>
+      <a id="follow(NonTerminal,Map[Symbol, Set[Symbol]]):(Set[Symbol], Map[Symbol, Set[Symbol]])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">follow</span>
         
-        <span class="params">(<span name="symbol">symbol: <a name="axle.ast.NonTerminal" class="extype" href="NonTerminal.html">NonTerminal</a></span>)</span><span class="result">: <span name="scala.collection.Set" class="extype">Set</span>[<a name="axle.ast.Symbol" class="extype" href="Symbol.html">Symbol</a>]</span>
+        <span class="params">(<span name="symbol">symbol: <a name="axle.ast.NonTerminal" class="extype" href="NonTerminal.html">NonTerminal</a></span>, <span name="followMemo">followMemo: <span name="scala.collection.Map" class="extype">Map</span>[<a name="axle.ast.Symbol" class="extype" href="Symbol.html">Symbol</a>, <span name="scala.collection.Set" class="extype">Set</span>[<a name="axle.ast.Symbol" class="extype" href="Symbol.html">Symbol</a>]]</span>)</span><span class="result">: (<span name="scala.collection.Set" class="extype">Set</span>[<a name="axle.ast.Symbol" class="extype" href="Symbol.html">Symbol</a>], <span name="scala.collection.Map" class="extype">Map</span>[<a name="axle.ast.Symbol" class="extype" href="Symbol.html">Symbol</a>, <span name="scala.collection.Set" class="extype">Set</span>[<a name="axle.ast.Symbol" class="extype" href="Symbol.html">Symbol</a>]])</span>
       </span>
       </h4>
       <p class="shortcomment cmt">1.</p><div class="fullcomment"><div class="comment cmt"><p>1. First put ⊥ (the end of input marker) in Follow(S) (S is the start symbol)
 2. If there is a production A -&gt; aBb, (where 'a' can be a whole string) then everything in FIRST(b) except for epsilon is placed in FOLLOW(B).
 3. If there is a production A -&gt; aB, then everything in FOLLOW(A) is in FOLLOW(B)
 4. If there is a production A -&gt; aBb, where FIRST(b) contains epsilon, then everything in FOLLOW(A) is in FOLLOW(B)</p></div></div>
-    </li><li visbl="pub" name="axle.ast.LLLanguage#followMemo" data-isabs="false">
-      <a id="followMemo:Map[Symbol, Set[Symbol]]"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol"> 
-        <span class="name">followMemo</span>
-        
-        <span class="result">: <span name="scala.collection.mutable.Map" class="extype">Map</span>[<a name="axle.ast.Symbol" class="extype" href="Symbol.html">Symbol</a>, <span name="scala.collection.Set" class="extype">Set</span>[<a name="axle.ast.Symbol" class="extype" href="Symbol.html">Symbol</a>]]</span>
-      </span>
-      </h4>
-      
     </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
       <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">

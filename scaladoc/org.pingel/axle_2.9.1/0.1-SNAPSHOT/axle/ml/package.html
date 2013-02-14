@@ -47,7 +47,29 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="axle.ml.GeneticAlgorithm" data-isabs="false">
+              <ol><li visbl="pub" name="axle.ml.DistanceFunctionModule" data-isabs="true">
+      <a id="DistanceFunctionModule:DistanceFunctionModule"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="DistanceFunctionModule.html"><span class="name">DistanceFunctionModule</span></a>
+        
+        <span class="result"> extends JblasMatrixModule</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.ml.FeatureNormalizerModule" data-isabs="true">
+      <a id="FeatureNormalizerModule:FeatureNormalizerModule"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="FeatureNormalizerModule.html"><span class="name">FeatureNormalizerModule</span></a>
+        
+        <span class="result"> extends DistanceFunctionModule</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.ml.GeneticAlgorithm" data-isabs="false">
       <a id="GeneticAlgorithm:GeneticAlgorithm[G]"></a>
       <h4 class="signature">
       <span class="kind">class</span>
@@ -69,6 +91,17 @@
       </span>
       </h4>
       
+    </li><li visbl="pub" name="axle.ml.KMeansModule" data-isabs="true">
+      <a id="KMeansModule:KMeansModule"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="KMeansModule.html"><span class="name">KMeansModule</span></a>
+        
+        <span class="result"> extends FeatureNormalizerModule</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="axle.ml.LatentSemanticAnalysis" data-isabs="false">
       <a id="LatentSemanticAnalysis:LatentSemanticAnalysis"></a>
       <h4 class="signature">
@@ -80,25 +113,25 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="axle.ml.LinearRegression" data-isabs="true">
-      <a id="LinearRegression:LinearRegression"></a>
+    </li><li visbl="pub" name="axle.ml.LinearRegressionModule" data-isabs="true">
+      <a id="LinearRegressionModule:LinearRegressionModule"></a>
       <h4 class="signature">
       <span class="kind">trait</span>
       <span class="symbol"> 
-        <a href="LinearRegression.html"><span class="name">LinearRegression</span></a>
+        <a href="LinearRegressionModule.html"><span class="name">LinearRegressionModule</span></a>
         
-        <span class="result"> extends AnyRef</span>
+        <span class="result"> extends FeatureNormalizerModule</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="axle.ml.LogisticRegression" data-isabs="true">
-      <a id="LogisticRegression:LogisticRegression"></a>
+    </li><li visbl="pub" name="axle.ml.LogisticRegressionModule" data-isabs="true">
+      <a id="LogisticRegressionModule:LogisticRegressionModule"></a>
       <h4 class="signature">
       <span class="kind">trait</span>
       <span class="symbol"> 
-        <a href="LogisticRegression.html"><span class="name">LogisticRegression</span></a>
+        <a href="LogisticRegressionModule.html"><span class="name">LogisticRegressionModule</span></a>
         
-        <span class="result"> extends AnyRef</span>
+        <span class="result"> extends FeatureNormalizerModule</span>
       </span>
       </h4>
       
@@ -142,29 +175,7 @@
 
         <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="axle.ml.DistanceFunction" data-isabs="false">
-      <a id="DistanceFunction:DistanceFunction"></a>
-      <h4 class="signature">
-      <span class="kind">object</span>
-      <span class="symbol"> 
-        <a href="DistanceFunction$.html"><span class="name">DistanceFunction</span></a>
-        
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </h4>
-      
-    </li><li visbl="pub" name="axle.ml.FeatureNormalizer" data-isabs="false">
-      <a id="FeatureNormalizer:FeatureNormalizer"></a>
-      <h4 class="signature">
-      <span class="kind">object</span>
-      <span class="symbol"> 
-        <a href="FeatureNormalizer$.html"><span class="name">FeatureNormalizer</span></a>
-        
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </h4>
-      
-    </li><li visbl="pub" name="axle.ml.GeneticAlgorithm" data-isabs="false">
+              <ol><li visbl="pub" name="axle.ml.GeneticAlgorithm" data-isabs="false">
       <a id="GeneticAlgorithm:GeneticAlgorithm"></a>
       <h4 class="signature">
       <span class="kind">object</span>
@@ -175,36 +186,36 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="axle.ml.KMeans" data-isabs="false">
-      <a id="KMeans:KMeans"></a>
+    </li><li visbl="pub" name="axle.ml.KMeansModule" data-isabs="false">
+      <a id="KMeansModule:KMeansModule"></a>
       <h4 class="signature">
       <span class="kind">object</span>
       <span class="symbol"> 
-        <a href="KMeans$.html"><span class="name">KMeans</span></a>
+        <a href="KMeansModule$.html"><span class="name">KMeansModule</span></a>
         
-        <span class="result"> extends AnyRef</span>
+        <span class="result"> extends KMeansModule</span>
       </span>
       </h4>
       <p class="comment cmt">KMeans</p>
-    </li><li visbl="pub" name="axle.ml.LinearRegression" data-isabs="false">
-      <a id="LinearRegression:LinearRegression"></a>
+    </li><li visbl="pub" name="axle.ml.LinearRegressionModule" data-isabs="false">
+      <a id="LinearRegressionModule:LinearRegressionModule"></a>
       <h4 class="signature">
       <span class="kind">object</span>
       <span class="symbol"> 
-        <a href="LinearRegression$.html"><span class="name">LinearRegression</span></a>
+        <a href="LinearRegressionModule$.html"><span class="name">LinearRegressionModule</span></a>
         
-        <span class="result"> extends LinearRegression</span>
+        <span class="result"> extends LinearRegressionModule</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="axle.ml.LogisticRegression" data-isabs="false">
-      <a id="LogisticRegression:LogisticRegression"></a>
+    </li><li visbl="pub" name="axle.ml.LogisticRegressionModule" data-isabs="false">
+      <a id="LogisticRegressionModule:LogisticRegressionModule"></a>
       <h4 class="signature">
       <span class="kind">object</span>
       <span class="symbol"> 
-        <a href="LogisticRegression$.html"><span class="name">LogisticRegression</span></a>
+        <a href="LogisticRegressionModule$.html"><span class="name">LogisticRegressionModule</span></a>
         
-        <span class="result"> extends LogisticRegression</span>
+        <span class="result"> extends LogisticRegressionModule</span>
       </span>
       </h4>
       

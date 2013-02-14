@@ -63,7 +63,7 @@
       <span class="symbol"> 
         <span class="name">CrossProduct</span>
         
-        <span class="params">(<span name="iterables">iterables: Seq[_ &lt;: Iterable[E]]</span>)</span>
+        <span class="params">(<span name="collections">collections: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[<span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[E]]</span>)</span>
       </span>
       </h4>
       
@@ -72,18 +72,7 @@
 
         <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="axle.CrossProduct.CrossProductIterator" data-isabs="false">
-      <a id="CrossProductIterator:CrossProductIterator[InE]"></a>
-      <h4 class="signature">
-      <span class="kind">class</span>
-      <span class="symbol"> 
-        <a href="CrossProduct$CrossProductIterator.html"><span class="name">CrossProductIterator</span></a>
-        <span class="tparams">[<span name="InE">InE</span>]</span>
-        <span class="result"> extends Iterator[List[InE]]</span>
-      </span>
-      </h4>
-      
-    </li><li visbl="prt" name="scala.collection.TraversableLike#Self" data-isabs="false">
+              <ol><li visbl="prt" name="scala.collection.TraversableLike#Self" data-isabs="false">
       <a id="Self:Self"></a>
       <h4 class="signature">
       <span class="kind">type</span>
@@ -338,17 +327,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableOnce</dd></dl></div>
-    </li><li visbl="pub" name="axle.CrossProduct#collections" data-isabs="false">
-      <a id="collections():Seq[Iterable[E]]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">collections</span>
-        
-        <span class="params">()</span><span class="result">: <span name="scala.collection.Seq" class="extype">Seq</span>[<span name="scala.collection.Iterable" class="extype">Iterable</span>[E]]</span>
-      </span>
-      </h4>
-      
     </li><li visbl="pub" name="scala.collection.Iterable#companion" data-isabs="false">
       <a id="companion:GenericCompanion[Iterable]"></a>
       <h4 class="signature">
@@ -415,6 +393,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableOnce → GenTraversableOnce</dd></dl></div>
+    </li><li visbl="pub" name="axle.CrossProduct#current" data-isabs="false">
+      <a id="current(IndexedSeq[Int]):List[E]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">current</span>
+        
+        <span class="params">(<span name="indices">indices: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[<span name="scala.Int" class="extype">Int</span>]</span>)</span><span class="result">: List[E]</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.collection.IterableLike#drop" data-isabs="false">
       <a id="drop(Int):Iterable[List[E]]"></a>
       <h4 class="signature">
@@ -752,13 +741,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>GenTraversableLike → GenTraversableOnce</dd></dl></div>
     </li><li visbl="pub" name="axle.CrossProduct#iterator" data-isabs="false">
-      <a id="iterator():CrossProductIterator[E]"></a>
+      <a id="iterator():Iterator[List[E]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">iterator</span>
         
-        <span class="params">()</span><span class="result">: <a name="axle.CrossProduct.CrossProductIterator" class="extype" href="CrossProduct$CrossProductIterator.html">CrossProductIterator</a>[E]</span>
+        <span class="params">()</span><span class="result">: <span name="scala.collection.Iterator" class="extype">Iterator</span>[List[E]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.CrossProduct" class="extype" href="">CrossProduct</a> → IterableLike → GenIterableLike</dd></dl></div>
@@ -1048,6 +1037,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>TraversableLike → GenTraversableLike</dd></dl></div>
+    </li><li visbl="pub" name="axle.CrossProduct#result" data-isabs="false">
+      <a id="result:Stream[List[E]]"></a>
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol"> 
+        <span class="name">result</span>
+        
+        <span class="result">: Stream[List[E]]</span>
+      </span>
+      </h4>
+      
     </li><li visbl="prt" name="scala.collection.TraversableOnce#reversed" data-isabs="false">
       <a id="reversed:List[List[E]]"></a>
       <h4 class="signature">
@@ -1230,6 +1230,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="axle.CrossProduct#tail" data-isabs="false">
+      <a id="tail(IndexedSeq[Int],Int):Stream[List[E]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">tail</span>
+        
+        <span class="params">(<span name="indices0">indices0: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[<span name="scala.Int" class="extype">Int</span>]</span>, <span name="i0">i0: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: Stream[List[E]]</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.collection.TraversableLike#tail" data-isabs="false">
       <a id="tail:Iterable[List[E]]"></a>
       <h4 class="signature">

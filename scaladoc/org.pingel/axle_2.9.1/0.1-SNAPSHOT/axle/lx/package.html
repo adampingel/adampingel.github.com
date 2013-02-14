@@ -65,10 +65,10 @@
       <span class="symbol"> 
         <a href="DocumentVectorSpace.html"><span class="name">DocumentVectorSpace</span></a>
         
-        <span class="result"> extends AnyRef</span>
+        <span class="result"> extends JblasMatrixModule</span>
       </span>
       </h4>
-      <p class="comment cmt">Vector Space Model</p>
+      
     </li><li visbl="pub" name="axle.lx.EditDistance" data-isabs="true">
       <a id="EditDistance:EditDistance"></a>
       <h4 class="signature">
@@ -80,6 +80,17 @@
       </span>
       </h4>
       <p class="comment cmt">Edit Distance</p>
+    </li><li visbl="pub" name="axle.lx.Levenshtein" data-isabs="false">
+      <a id="Levenshtein:Levenshtein"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Levenshtein.html"><span class="name">Levenshtein</span></a>
+        
+        <span class="params">(<span name="mm">mm: MatrixModule</span>)</span><span class="result"> extends EditDistance with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Based on the Scala implementation of</p>
     </li><li visbl="pub" name="axle.lx.TFIDFDocumentVectorSpace" data-isabs="false">
       <a id="TFIDFDocumentVectorSpace:TFIDFDocumentVectorSpace"></a>
       <h4 class="signature">
@@ -131,17 +142,6 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="axle.lx.Levenshtein" data-isabs="false">
-      <a id="Levenshtein:Levenshtein"></a>
-      <h4 class="signature">
-      <span class="kind">object</span>
-      <span class="symbol"> 
-        <a href="Levenshtein$.html"><span class="name">Levenshtein</span></a>
-        
-        <span class="result"> extends EditDistance</span>
-      </span>
-      </h4>
-      <p class="comment cmt">Based on the Scala implementation of</p>
     </li></ol>
             </div>
 

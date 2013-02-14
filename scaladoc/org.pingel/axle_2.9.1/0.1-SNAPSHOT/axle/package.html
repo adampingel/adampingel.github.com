@@ -54,6 +54,17 @@
       <span class="symbol"> 
         <a href="Combinations.html"><span class="name">Combinations</span></a>
         <span class="tparams">[<span name="E">E</span>]</span>
+        <span class="result"> extends Iterable[IndexedSeq[E]]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.CombinationsFast" data-isabs="false">
+      <a id="CombinationsFast:CombinationsFast[E]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="CombinationsFast.html"><span class="name">CombinationsFast</span></a>
+        <span class="tparams">[<span name="E">E</span>]</span>
         <span class="result"> extends Iterable[List[E]]</span>
       </span>
       </h4>
@@ -76,7 +87,7 @@
       <span class="symbol"> 
         <a href="EnrichedArray.html"><span class="name">EnrichedArray</span></a>
         <span class="tparams">[<span name="T">T</span>]</span>
-        <span class="params">(<span name="arr">arr: Array[T]</span>)</span><span class="result"> extends Product with Serializable</span>
+        <span class="params">(<span name="arr">arr: Array[T]</span>, <span name="evidence$1">evidence$1: ClassManifest[T]</span>)</span><span class="result"> extends Product with Serializable</span>
       </span>
       </h4>
       
@@ -120,7 +131,7 @@
       <span class="symbol"> 
         <a href="EnrichedGenTraversable.html"><span class="name">EnrichedGenTraversable</span></a>
         <span class="tparams">[<span name="T">+T</span>]</span>
-        <span class="params">(<span name="gt">gt: GenTraversable[T]</span>)</span><span class="result"> extends Product with Serializable</span>
+        <span class="params">(<span name="gt">gt: GenTraversable[T]</span>, <span name="evidence$1">evidence$1: ClassManifest[T]</span>)</span><span class="result"> extends Product with Serializable</span>
       </span>
       </h4>
       
@@ -196,6 +207,17 @@
       <span class="kind">class</span>
       <span class="symbol"> 
         <a href="Permutations.html"><span class="name">Permutations</span></a>
+        <span class="tparams">[<span name="E">E</span>]</span>
+        <span class="result"> extends Iterable[IndexedSeq[E]]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.PermutationsFast" data-isabs="false">
+      <a id="PermutationsFast:PermutationsFast[E]"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="PermutationsFast.html"><span class="name">PermutationsFast</span></a>
         <span class="tparams">[<span name="E">E</span>]</span>
         <span class="result"> extends Iterable[List[E]]</span>
       </span>
@@ -296,6 +318,17 @@
       </span>
       </h4>
       
+    </li><li visbl="pub" name="axle.CombinationsFast" data-isabs="false">
+      <a id="CombinationsFast:CombinationsFast"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="CombinationsFast$.html"><span class="name">CombinationsFast</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="axle.EnrichedIndexedSeq" data-isabs="false">
       <a id="EnrichedIndexedSeq:EnrichedIndexedSeq"></a>
       <h4 class="signature">
@@ -340,6 +373,17 @@
       </span>
       </h4>
       <p class="comment cmt">Based on Python's itertools.</p>
+    </li><li visbl="pub" name="axle.PermutationsFast" data-isabs="false">
+      <a id="PermutationsFast:PermutationsFast"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="PermutationsFast$.html"><span class="name">PermutationsFast</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Based on Python's itertools.</p>
     </li><li visbl="pub" name="axle.ScalaMapReduce" data-isabs="false">
       <a id="ScalaMapReduce:ScalaMapReduce"></a>
       <h4 class="signature">
@@ -374,13 +418,13 @@
       </h4>
       
     </li><li visbl="pub" name="axle.package#enrichArray" data-isabs="false">
-      <a id="enrichArray[T](Array[T]):EnrichedArray[T]"></a>
+      <a id="enrichArray[T](Array[T])(ClassManifest[T]):EnrichedArray[T]"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol"> 
         <span class="name">enrichArray</span>
         <span class="tparams">[<span name="T">T</span>]</span>
-        <span class="params">(<span name="arr">arr: <span name="scala.Array" class="extype">Array</span>[T]</span>)</span><span class="result">: <a name="axle.EnrichedArray" class="extype" href="EnrichedArray.html">EnrichedArray</a>[T]</span>
+        <span class="params">(<span name="arr">arr: <span name="scala.Array" class="extype">Array</span>[T]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[T]</span>)</span><span class="result">: <a name="axle.EnrichedArray" class="extype" href="EnrichedArray.html">EnrichedArray</a>[T]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.package" class="extype" href="package$.html">package</a></dd></dl></div>
@@ -392,17 +436,6 @@
         <span class="name">enrichBoolean</span>
         
         <span class="params">(<span name="b">b: <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="axle.EnrichedBoolean" class="extype" href="EnrichedBoolean.html">EnrichedBoolean</a></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.package" class="extype" href="package$.html">package</a></dd></dl></div>
-    </li><li visbl="pub" name="axle.package#enrichBuffer" data-isabs="false">
-      <a id="enrichBuffer[T](Buffer[T]):EnrichedMutableBuffer[T]"></a>
-      <h4 class="signature">
-      <span class="kind">implicit def</span>
-      <span class="symbol"> 
-        <span class="name">enrichBuffer</span>
-        <span class="tparams">[<span name="T">T</span>]</span>
-        <span class="params">(<span name="buffer">buffer: <span name="scala.collection.mutable.Buffer" class="extype">Buffer</span>[T]</span>)</span><span class="result">: <a name="axle.EnrichedMutableBuffer" class="extype" href="EnrichedMutableBuffer.html">EnrichedMutableBuffer</a>[T]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.package" class="extype" href="package$.html">package</a></dd></dl></div>
@@ -429,24 +462,24 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="axle.package#enrichGenTraversable" data-isabs="false">
-      <a id="enrichGenTraversable[T](GenTraversable[T]):EnrichedGenTraversable[T]"></a>
+      <a id="enrichGenTraversable[T](GenTraversable[T])(ClassManifest[T]):EnrichedGenTraversable[T]"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol"> 
         <span class="name">enrichGenTraversable</span>
         <span class="tparams">[<span name="T">T</span>]</span>
-        <span class="params">(<span name="gt">gt: <span name="scala.collection.GenTraversable" class="extype">GenTraversable</span>[T]</span>)</span><span class="result">: <a name="axle.EnrichedGenTraversable" class="extype" href="EnrichedGenTraversable.html">EnrichedGenTraversable</a>[T]</span>
+        <span class="params">(<span name="gt">gt: <span name="scala.collection.GenTraversable" class="extype">GenTraversable</span>[T]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[T]</span>)</span><span class="result">: <a name="axle.EnrichedGenTraversable" class="extype" href="EnrichedGenTraversable.html">EnrichedGenTraversable</a>[T]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.package" class="extype" href="package$.html">package</a></dd></dl></div>
     </li><li visbl="pub" name="axle.package#enrichIndexedSeq" data-isabs="false">
-      <a id="enrichIndexedSeq[T](IndexedSeq[T]):EnrichedIndexedSeq[T]"></a>
+      <a id="enrichIndexedSeq[T](IndexedSeq[T])(ClassManifest[T]):EnrichedIndexedSeq[T]"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol"> 
         <span class="name">enrichIndexedSeq</span>
         <span class="tparams">[<span name="T">T</span>]</span>
-        <span class="params">(<span name="is">is: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[T]</span>)</span><span class="result">: <a name="axle.EnrichedIndexedSeq" class="extype" href="EnrichedIndexedSeq.html">EnrichedIndexedSeq</a>[T]</span>
+        <span class="params">(<span name="is">is: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[T]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[T]</span>)</span><span class="result">: <a name="axle.EnrichedIndexedSeq" class="extype" href="EnrichedIndexedSeq.html">EnrichedIndexedSeq</a>[T]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.package" class="extype" href="package$.html">package</a></dd></dl></div>
@@ -458,6 +491,17 @@
         <span class="name">enrichInt</span>
         
         <span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="axle.EnrichedInt" class="extype" href="EnrichedInt.html">EnrichedInt</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.package" class="extype" href="package$.html">package</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.package#enrichMutableBuffer" data-isabs="false">
+      <a id="enrichMutableBuffer[T](Buffer[T]):EnrichedMutableBuffer[T]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol"> 
+        <span class="name">enrichMutableBuffer</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="params">(<span name="buffer">buffer: <span name="scala.collection.mutable.Buffer" class="extype">Buffer</span>[T]</span>)</span><span class="result">: <a name="axle.EnrichedMutableBuffer" class="extype" href="EnrichedMutableBuffer.html">EnrichedMutableBuffer</a>[T]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd><dt>Definition Classes</dt><dd><a name="axle.package" class="extype" href="package$.html">package</a></dd></dl></div>

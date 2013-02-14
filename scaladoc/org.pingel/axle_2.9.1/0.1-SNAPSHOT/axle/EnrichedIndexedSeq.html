@@ -63,7 +63,7 @@
       <span class="symbol"> 
         <span class="name">EnrichedIndexedSeq</span>
         
-        <span class="params">(<span name="is">is: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[T]</span>)</span>
+        <span class="params">(<span name="is">is: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[T]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[T]</span>)</span>
       </span>
       </h4>
       
@@ -168,13 +168,13 @@
               
         </dd></dl></div>
     </li><li visbl="pub" name="axle.EnrichedIndexedSeq#combinations" data-isabs="false">
-      <a id="combinations(Int):Combinations[T]"></a>
+      <a id="combinations(Int):CombinationsFast[T]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">combinations</span>
         
-        <span class="params">(<span name="r">r: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="axle.Combinations" class="extype" href="Combinations.html">Combinations</a>[T]</span>
+        <span class="params">(<span name="r">r: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="axle.CombinationsFast" class="extype" href="CombinationsFast.html">CombinationsFast</a>[T]</span>
       </span>
       </h4>
       
@@ -281,13 +281,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="axle.EnrichedIndexedSeq#permutations" data-isabs="false">
-      <a id="permutations(Int):Permutations[T]"></a>
+      <a id="permutations(Int):PermutationsFast[T]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">permutations</span>
         
-        <span class="params">(<span name="r">r: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="axle.Permutations" class="extype" href="Permutations.html">Permutations</a>[T]</span>
+        <span class="params">(<span name="r">r: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="axle.PermutationsFast" class="extype" href="PermutationsFast.html">PermutationsFast</a>[T]</span>
       </span>
       </h4>
       
@@ -310,6 +310,17 @@
         <span class="name">random</span>
         
         <span class="params">()</span><span class="result">: T</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="axle.EnrichedIndexedSeq#swap" data-isabs="false">
+      <a id="swap(Int,Int):IndexedSeq[T]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">swap</span>
+        
+        <span class="params">(<span name="i0">i0: <span name="scala.Int" class="extype">Int</span></span>, <span name="i1">i1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.collection.IndexedSeq" class="extype">IndexedSeq</span>[T]</span>
       </span>
       </h4>
       

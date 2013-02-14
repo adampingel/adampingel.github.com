@@ -106,6 +106,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.ttt.TicTacToe" class="extype" href="">TicTacToe</a> → <a name="axle.game.Game" class="extype" href="../Game.html">Game</a></dd></dl></div>
+    </li><li visbl="pub" name="axle.game.ttt.TicTacToe#Matrix" data-isabs="false">
+      <a id="Matrix:Matrix[T]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol"> 
+        <span class="name">Matrix</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        <span class="result"> = <a name="axle.matrix.JblasMatrixModule.Matrix" class="extype" href="../../matrix/JblasMatrixModule$Matrix.html">Matrix</a>[T]</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="axle.game.ttt.TicTacToe#OUTCOME" data-isabs="false">
       <a id="OUTCOME:OUTCOME"></a>
       <h4 class="signature">
@@ -270,6 +281,17 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li visbl="pub" name="axle.game.ttt.TicTacToe#convertPlayerId" data-isabs="false">
+      <a id="convertPlayerId:FunctionPair[Double, Option[String]]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit val</span>
+      <span class="symbol"> 
+        <span class="name">convertPlayerId</span>
+        
+        <span class="result">: <a name="axle.algebra.FunctionPair" class="extype" href="../../algebra/FunctionPair.html">FunctionPair</a>[<span name="scala.Double" class="extype">Double</span>, <span name="scala.Option" class="extype">Option</span>[String]]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -571,13 +593,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="axle.game.Game" class="extype" href="../Game.html">Game</a></dd></dl></div>
     </li><li visbl="pub" name="axle.game.ttt.TicTacToe#startBoard" data-isabs="false">
-      <a id="startBoard():ArrayMatrix[Option[String]]"></a>
+      <a id="startBoard():Matrix[Option[String]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">startBoard</span>
         
-        <span class="params">()</span><span class="result">: <a name="axle.matrix.ArrayMatrixFactory.ArrayMatrix" class="extype" href="../../matrix/ArrayMatrixFactory$ArrayMatrix.html">ArrayMatrix</a>[<span name="scala.Option" class="extype">Option</span>[String]]</span>
+        <span class="params">()</span><span class="result">: <a name="axle.matrix.JblasMatrixModule.Matrix" class="extype" href="../../matrix/JblasMatrixModule$Matrix.html">Matrix</a>[<span name="scala.Option" class="extype">Option</span>[String]]</span>
       </span>
       </h4>
       
@@ -610,7 +632,7 @@
       <span class="symbol"> 
         <span class="name">state</span>
         
-        <span class="params">(<span name="player">player: <a name="axle.game.ttt.TicTacToePlayer" class="extype" href="TicTacToePlayer.html">TicTacToePlayer</a></span>, <span name="board">board: <a name="axle.matrix.MatrixFactory.Matrix" class="extype" href="../../matrix/MatrixFactory$Matrix.html">Matrix</a>[<span name="scala.Option" class="extype">Option</span>[String]]</span>, <span name="eventQueue">eventQueue: <span name="scala.collection.immutable.Map" class="extype">Map</span>[<a name="axle.game.ttt.TicTacToePlayer" class="extype" href="TicTacToePlayer.html">TicTacToePlayer</a>, List[<a name="axle.game.Event" class="extype" href="../Event.html">Event</a>[<a name="axle.game.ttt.TicTacToe" class="extype" href="">TicTacToe</a>]]]</span>)</span><span class="result">: <span name="scala.Some" class="extype">Some</span>[<a name="axle.game.ttt.TicTacToeState" class="extype" href="TicTacToeState.html">TicTacToeState</a>]</span>
+        <span class="params">(<span name="player">player: <a name="axle.game.ttt.TicTacToePlayer" class="extype" href="TicTacToePlayer.html">TicTacToePlayer</a></span>, <span name="board">board: Matrix[<span name="scala.Option" class="extype">Option</span>[String]]</span>, <span name="eventQueue">eventQueue: <span name="scala.collection.immutable.Map" class="extype">Map</span>[<a name="axle.game.ttt.TicTacToePlayer" class="extype" href="TicTacToePlayer.html">TicTacToePlayer</a>, List[<a name="axle.game.Event" class="extype" href="../Event.html">Event</a>[<a name="axle.game.ttt.TicTacToe" class="extype" href="">TicTacToe</a>]]]</span>)</span><span class="result">: <span name="scala.Some" class="extype">Some</span>[<a name="axle.game.ttt.TicTacToeState" class="extype" href="TicTacToeState.html">TicTacToeState</a>]</span>
       </span>
       </h4>
       
@@ -647,6 +669,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
+    </li><li visbl="pub" name="axle.game.ttt.TicTacToe#tttmm" data-isabs="false">
+      <a id="tttmm:JblasMatrixModule"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol"> 
+        <span class="name">tttmm</span>
+        
+        <span class="result">: <a name="axle.matrix.JblasMatrixModule" class="extype" href="../../matrix/JblasMatrixModule.html">JblasMatrixModule</a></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
       <a id="wait():Unit"></a>
       <h4 class="signature">
