@@ -40,7 +40,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">KMeansClassifier</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="data">data: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span>]</span>, <span name="N">N: <span class="extype" name="scala.Int">Int</span></span>, <span name="featureExtractor">featureExtractor: (<span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span>) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="constructor">constructor: (<span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span></span>, <span name="distance">distance: (<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="scala.Double">Double</span></span>, <span name="K">K: <span class="extype" name="scala.Int">Int</span></span>, <span name="iterations">iterations: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">KMeansClassifier</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="data">data: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span>]</span>, <span name="N">N: <span class="extype" name="scala.Int">Int</span></span>, <span name="featureExtractor">featureExtractor: (<span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span>) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="constructor">constructor: (<span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span></span>, <span name="space">space: <span class="extype" name="spire.algebra.MetricSpace">MetricSpace</span>[<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>]</span>, <span name="K">K: <span class="extype" name="scala.Int">Int</span></span>, <span name="iterations">iterations: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -87,7 +87,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="axle.ml.KMeansModule.KMeansClassifier#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(data:Seq[T],N:Int,featureExtractor:T=&gt;Seq[Double],constructor:Seq[Double]=&gt;T,distance:(KMeansModule.this.Matrix[Double],KMeansModule.this.Matrix[Double])=&gt;Double,K:Int,iterations:Int):KMeansModule.this.KMeansClassifier[T]"></a>
+      <a id="&lt;init&gt;(data:Seq[T],N:Int,featureExtractor:T=&gt;Seq[Double],constructor:Seq[Double]=&gt;T,space:spire.algebra.MetricSpace[axle.matrix.JblasMatrixModule.Matrix[Double],Double],K:Int,iterations:Int):KMeansModule.this.KMeansClassifier[T]"></a>
       <a id="&lt;init&gt;:KMeansClassifier[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -95,7 +95,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">KMeansClassifier</span><span class="params">(<span name="data">data: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span>]</span>, <span name="N">N: <span class="extype" name="scala.Int">Int</span></span>, <span name="featureExtractor">featureExtractor: (<span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span>) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="constructor">constructor: (<span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span></span>, <span name="distance">distance: (<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="scala.Double">Double</span></span>, <span name="K">K: <span class="extype" name="scala.Int">Int</span></span>, <span name="iterations">iterations: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="name">KMeansClassifier</span><span class="params">(<span name="data">data: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span>]</span>, <span name="N">N: <span class="extype" name="scala.Int">Int</span></span>, <span name="featureExtractor">featureExtractor: (<span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span>) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="constructor">constructor: (<span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="axle.ml.KMeansModule.KMeansClassifier.T">T</span></span>, <span name="space">space: <span class="extype" name="spire.algebra.MetricSpace">MetricSpace</span>[<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>]</span>, <span name="K">K: <span class="extype" name="scala.Int">Int</span></span>, <span name="iterations">iterations: <span class="extype" name="scala.Int">Int</span></span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">N</dt><dd class="cmt"><p>number of features</p></dd><dt class="param">featureExtractor</dt><dd class="cmt"><p>creates a list of features (Doubles) of length N given a T</p></dd><dt class="param">constructor</dt><dd class="cmt"><p>creates a T from list of arguments of length N</p></dd></dl></div>
@@ -200,28 +200,28 @@
       </h4>
       <p class="shortcomment cmt">number of features</p>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#X" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="X:KMeansModule.this.Matrix[Double]"></a>
-      <a id="X:KMeansModule.Matrix[Double]"></a>
+      <a id="X:axle.matrix.JblasMatrixModule.Matrix[Double]"></a>
+      <a id="X:matrix.JblasMatrixModule.Matrix[Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">X</span><span class="result">: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">X</span><span class="result">: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
       
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#a" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="a:KMeansModule.this.Matrix[Int]"></a>
-      <a id="a:KMeansModule.Matrix[Int]"></a>
+      <a id="a:axle.matrix.JblasMatrixModule.Matrix[Int]"></a>
+      <a id="a:matrix.JblasMatrixModule.Matrix[Int]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">a</span><span class="result">: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>]</span>
+        <span class="name">a</span><span class="result">: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       
@@ -239,28 +239,28 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#assignmentLog" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="assignmentLog:Seq[KMeansModule.this.Matrix[Int]]"></a>
-      <a id="assignmentLog:Seq[KMeansModule.Matrix[Int]]"></a>
+      <a id="assignmentLog:Seq[axle.matrix.JblasMatrixModule.Matrix[Int]]"></a>
+      <a id="assignmentLog:Seq[matrix.JblasMatrixModule.Matrix[Int]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">assignmentLog</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>]]</span>
+        <span class="name">assignmentLog</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>]]</span>
       </span>
       </h4>
       
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#assignmentsAndDistances" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="assignmentsAndDistances(distance:(KMeansModule.this.Matrix[Double],KMeansModule.this.Matrix[Double])=&gt;Double,X:KMeansModule.this.Matrix[Double],μ:KMeansModule.this.Matrix[Double]):(KMeansModule.this.Matrix[Int],KMeansModule.this.Matrix[Double])"></a>
-      <a id="assignmentsAndDistances((KMeansModule.Matrix[Double],KMeansModule.Matrix[Double])⇒Double,KMeansModule.Matrix[Double],KMeansModule.Matrix[Double]):(KMeansModule.Matrix[Int],KMeansModule.Matrix[Double])"></a>
+      <a id="assignmentsAndDistances(space:spire.algebra.MetricSpace[axle.matrix.JblasMatrixModule.Matrix[Double],Double],X:axle.matrix.JblasMatrixModule.Matrix[Double],μ:axle.matrix.JblasMatrixModule.Matrix[Double]):(axle.matrix.JblasMatrixModule.Matrix[Int],axle.matrix.JblasMatrixModule.Matrix[Double])"></a>
+      <a id="assignmentsAndDistances(MetricSpace[matrix.JblasMatrixModule.Matrix[Double],Double],matrix.JblasMatrixModule.Matrix[Double],matrix.JblasMatrixModule.Matrix[Double]):(matrix.JblasMatrixModule.Matrix[Int],matrix.JblasMatrixModule.Matrix[Double])"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">assignmentsAndDistances</span><span class="params">(<span name="distance">distance: (<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="scala.Double">Double</span></span>, <span name="X">X: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="μ">μ: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: (<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>])</span>
+        <span class="name">assignmentsAndDistances</span><span class="params">(<span name="space">space: <span class="extype" name="spire.algebra.MetricSpace">MetricSpace</span>[<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>]</span>, <span name="X">X: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="μ">μ: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: (<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>], <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>])</span>
       </span>
       </h4>
       <p class="shortcomment cmt">assignmentsAndDistances
@@ -270,15 +270,15 @@ N x 1 matrix: indexes of centroids closest to xi
 N x 1 matrix: distances to those centroids
 </p></dd></dl></div>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#centroidIndexAndDistanceClosestTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="centroidIndexAndDistanceClosestTo(distance:(KMeansModule.this.Matrix[Double],KMeansModule.this.Matrix[Double])=&gt;Double,μ:KMeansModule.this.Matrix[Double],x:KMeansModule.this.Matrix[Double]):(Int,Double)"></a>
-      <a id="centroidIndexAndDistanceClosestTo((KMeansModule.Matrix[Double],KMeansModule.Matrix[Double])⇒Double,KMeansModule.Matrix[Double],KMeansModule.Matrix[Double]):(Int,Double)"></a>
+      <a id="centroidIndexAndDistanceClosestTo(space:spire.algebra.MetricSpace[axle.matrix.JblasMatrixModule.Matrix[Double],Double],μ:axle.matrix.JblasMatrixModule.Matrix[Double],x:axle.matrix.JblasMatrixModule.Matrix[Double]):(Int,Double)"></a>
+      <a id="centroidIndexAndDistanceClosestTo(MetricSpace[matrix.JblasMatrixModule.Matrix[Double],Double],matrix.JblasMatrixModule.Matrix[Double],matrix.JblasMatrixModule.Matrix[Double]):(Int,Double)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">centroidIndexAndDistanceClosestTo</span><span class="params">(<span name="distance">distance: (<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="scala.Double">Double</span></span>, <span name="μ">μ: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="x">x: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>)</span>
+        <span class="name">centroidIndexAndDistanceClosestTo</span><span class="params">(<span name="space">space: <span class="extype" name="spire.algebra.MetricSpace">MetricSpace</span>[<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>]</span>, <span name="μ">μ: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="x">x: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt">centroidIndexAndDistanceClosestTo
@@ -286,15 +286,15 @@ N x 1 matrix: distances to those centroids
 </p></div><dl class="paramcmts block"><dt class="param">μ</dt><dd class="cmt"></dd><dt class="param">x</dt><dd class="cmt"><p>
 </p></dd></dl></div>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#centroids" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="centroids(X:KMeansModule.this.Matrix[Double],K:Int,assignments:KMeansModule.this.Matrix[Int]):(KMeansModule.this.Matrix[Double],Seq[Int])"></a>
-      <a id="centroids(KMeansModule.Matrix[Double],Int,KMeansModule.Matrix[Int]):(KMeansModule.Matrix[Double],Seq[Int])"></a>
+      <a id="centroids(X:axle.matrix.JblasMatrixModule.Matrix[Double],K:Int,assignments:axle.matrix.JblasMatrixModule.Matrix[Int]):(axle.matrix.JblasMatrixModule.Matrix[Double],Seq[Int])"></a>
+      <a id="centroids(matrix.JblasMatrixModule.Matrix[Double],Int,matrix.JblasMatrixModule.Matrix[Int]):(matrix.JblasMatrixModule.Matrix[Double],Seq[Int])"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">centroids</span><span class="params">(<span name="X">X: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="K">K: <span class="extype" name="scala.Int">Int</span></span>, <span name="assignments">assignments: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: (<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>])</span>
+        <span class="name">centroids</span><span class="params">(<span name="X">X: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="K">K: <span class="extype" name="scala.Int">Int</span></span>, <span name="assignments">assignments: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: (<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="scala.Int">Int</span>])</span>
       </span>
       </h4>
       <p class="shortcomment cmt">centroids
@@ -330,20 +330,20 @@ N x 1 matrix: distances to those centroids
               
         </dd></dl></div>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#clusterLA" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="clusterLA(X:KMeansModule.this.Matrix[Double],distance:(KMeansModule.this.Matrix[Double],KMeansModule.this.Matrix[Double])=&gt;Double,K:Int,iterations:Int):Seq[(KMeansModule.this.Matrix[Double],KMeansModule.this.Matrix[Int],KMeansModule.this.Matrix[Double])]"></a>
-      <a id="clusterLA(KMeansModule.Matrix[Double],(KMeansModule.Matrix[Double],KMeansModule.Matrix[Double])⇒Double,Int,Int):Seq[(KMeansModule.Matrix[Double],KMeansModule.Matrix[Int],KMeansModule.Matrix[Double])]"></a>
+      <a id="clusterLA(X:axle.matrix.JblasMatrixModule.Matrix[Double],space:spire.algebra.MetricSpace[axle.matrix.JblasMatrixModule.Matrix[Double],Double],K:Int,iterations:Int):Seq[(axle.matrix.JblasMatrixModule.Matrix[Double],axle.matrix.JblasMatrixModule.Matrix[Int],axle.matrix.JblasMatrixModule.Matrix[Double])]"></a>
+      <a id="clusterLA(matrix.JblasMatrixModule.Matrix[Double],MetricSpace[matrix.JblasMatrixModule.Matrix[Double],Double],Int,Int):Seq[(matrix.JblasMatrixModule.Matrix[Double],matrix.JblasMatrixModule.Matrix[Int],matrix.JblasMatrixModule.Matrix[Double])]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clusterLA</span><span class="params">(<span name="X">X: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="distance">distance: (<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="scala.Double">Double</span></span>, <span name="K">K: <span class="extype" name="scala.Int">Int</span></span>, <span name="iterations">iterations: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>])]</span>
+        <span class="name">clusterLA</span><span class="params">(<span name="X">X: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="space">space: <span class="extype" name="spire.algebra.MetricSpace">MetricSpace</span>[<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>]</span>, <span name="K">K: <span class="extype" name="scala.Int">Int</span></span>, <span name="iterations">iterations: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>], <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>])]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">clusterLA
 </p><div class="fullcomment"><div class="comment cmt"><p>clusterLA
-</p></div><dl class="paramcmts block"><dt class="param">X</dt><dd class="cmt"><p>(normalized feature matrix)</p></dd><dt class="param">distance</dt><dd class="cmt"></dd><dt class="param">K</dt><dd class="cmt"></dd><dt class="param">iterations</dt><dd class="cmt"><p></p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">X</dt><dd class="cmt"><p>(normalized feature matrix)</p></dd><dt class="param">K</dt><dd class="cmt"></dd><dt class="param">iterations</dt><dd class="cmt"><p></p></dd></dl></div>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#confusionMatrix" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="confusionMatrix[L](data:Seq[T],labelExtractor:T=&gt;L):KMeansModule.this.ConfusionMatrix[T,L]"></a>
       <a id="confusionMatrix[L](Seq[T],(T)⇒L):ConfusionMatrix[T,L]"></a>
@@ -371,15 +371,15 @@ N x 1 matrix: distances to those centroids
       </h4>
       <p class="shortcomment cmt">creates a T from list of arguments of length N</p>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#d" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="d:KMeansModule.this.Matrix[Double]"></a>
-      <a id="d:KMeansModule.Matrix[Double]"></a>
+      <a id="d:axle.matrix.JblasMatrixModule.Matrix[Double]"></a>
+      <a id="d:matrix.JblasMatrixModule.Matrix[Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">d</span><span class="result">: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">d</span><span class="result">: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
       
@@ -396,29 +396,16 @@ N x 1 matrix: distances to those centroids
       </span>
       </h4>
       
-    </li><li name="axle.ml.KMeansModule.KMeansClassifier#distance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="distance:(KMeansModule.this.Matrix[Double],KMeansModule.this.Matrix[Double])=&gt;Double"></a>
-      <a id="distance:(KMeansModule.Matrix[Double],KMeansModule.Matrix[Double])⇒Double"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">distance</span><span class="result">: (<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]) ⇒ <span class="extype" name="scala.Double">Double</span></span>
-      </span>
-      </h4>
-      
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#distanceLog" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="distanceLog:Seq[KMeansModule.this.Matrix[Double]]"></a>
-      <a id="distanceLog:Seq[KMeansModule.Matrix[Double]]"></a>
+      <a id="distanceLog:Seq[axle.matrix.JblasMatrixModule.Matrix[Double]]"></a>
+      <a id="distanceLog:Seq[matrix.JblasMatrixModule.Matrix[Double]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">distanceLog</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]]</span>
+        <span class="name">distanceLog</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]]</span>
       </span>
       </h4>
       
@@ -501,15 +488,15 @@ N x 1 matrix: distances to those centroids
       </h4>
       <p class="shortcomment cmt">creates a list of features (Doubles) of length N given a T</p>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#features" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="features:KMeansModule.this.Matrix[Double]"></a>
-      <a id="features:KMeansModule.Matrix[Double]"></a>
+      <a id="features:axle.matrix.JblasMatrixModule.Matrix[Double]"></a>
+      <a id="features:matrix.JblasMatrixModule.Matrix[Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">features</span><span class="result">: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">features</span><span class="result">: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
       
@@ -582,15 +569,15 @@ N x 1 matrix: distances to those centroids
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#normalizer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="normalizer:KMeansModule.this.PCAFeatureNormalizer"></a>
-      <a id="normalizer:KMeansModule.PCAFeatureNormalizer"></a>
+      <a id="normalizer:axle.ml.FeatureNormalizerModule.PCAFeatureNormalizer"></a>
+      <a id="normalizer:FeatureNormalizerModule.PCAFeatureNormalizer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">normalizer</span><span class="result">: <a href="KMeansModule.html#PCAFeatureNormalizerextendsFeatureNormalizerModule.this.FeatureNormalizer" class="extmbr" name="axle.ml.FeatureNormalizerModule.PCAFeatureNormalizer">KMeansModule.PCAFeatureNormalizer</a></span>
+        <span class="name">normalizer</span><span class="result">: <a href="FeatureNormalizerModule$.html#PCAFeatureNormalizerextendsFeatureNormalizerModule.this.FeatureNormalizer" class="extmbr" name="axle.ml.FeatureNormalizerModule.PCAFeatureNormalizer">FeatureNormalizerModule.PCAFeatureNormalizer</a></span>
       </span>
       </h4>
       
@@ -620,6 +607,19 @@ N x 1 matrix: distances to those centroids
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="axle.ml.KMeansModule.KMeansClassifier#space" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="space:spire.algebra.MetricSpace[axle.matrix.JblasMatrixModule.Matrix[Double],Double]"></a>
+      <a id="space:MetricSpace[matrix.JblasMatrixModule.Matrix[Double],Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">space</span><span class="result">: <span class="extype" name="spire.algebra.MetricSpace">MetricSpace</span>[<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -682,28 +682,28 @@ N x 1 matrix: distances to those centroids
               
         </dd></dl></div>
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#μ" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="μ:KMeansModule.this.Matrix[Double]"></a>
-      <a id="μ:KMeansModule.Matrix[Double]"></a>
+      <a id="μ:axle.matrix.JblasMatrixModule.Matrix[Double]"></a>
+      <a id="μ:matrix.JblasMatrixModule.Matrix[Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">μ</span><span class="result">: <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">μ</span><span class="result">: <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
       
     </li><li name="axle.ml.KMeansModule.KMeansClassifier#μads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="μads:Seq[(KMeansModule.this.Matrix[Double],KMeansModule.this.Matrix[Int],KMeansModule.this.Matrix[Double])]"></a>
-      <a id="μads:Seq[(KMeansModule.Matrix[Double],KMeansModule.Matrix[Int],KMeansModule.Matrix[Double])]"></a>
+      <a id="μads:Seq[(axle.matrix.JblasMatrixModule.Matrix[Double],axle.matrix.JblasMatrixModule.Matrix[Int],axle.matrix.JblasMatrixModule.Matrix[Double])]"></a>
+      <a id="μads:Seq[(matrix.JblasMatrixModule.Matrix[Double],matrix.JblasMatrixModule.Matrix[Int],matrix.JblasMatrixModule.Matrix[Double])]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">μads</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>], <a href="KMeansModule.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">KMeansModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>])]</span>
+        <span class="name">μads</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>], <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Int">Int</span>], <a href="../matrix/JblasMatrixModule$.html#Matrix[T]extendsJblasMatrixModule.this.MatrixLike[T]" class="extmbr" name="axle.matrix.JblasMatrixModule.Matrix">matrix.JblasMatrixModule.Matrix</a>[<span class="extype" name="scala.Double">Double</span>])]</span>
       </span>
       </h4>
       

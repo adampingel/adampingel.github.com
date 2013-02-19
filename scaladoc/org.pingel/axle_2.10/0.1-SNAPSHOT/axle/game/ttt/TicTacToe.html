@@ -335,15 +335,15 @@
               
         </dd></dl></div>
     </li><li name="axle.game.ttt.TicTacToe#convertPlayerId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="convertPlayerId:axle.algebra.FunctionPair[Double,Option[String]]"></a>
-      <a id="convertPlayerId:FunctionPair[Double,Option[String]]"></a>
+      <a id="convertPlayerId:axle.algebra.FunctionPair[Double,Option[axle.game.ttt.TicTacToePlayer]]"></a>
+      <a id="convertPlayerId:FunctionPair[Double,Option[TicTacToePlayer]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">convertPlayerId</span><span class="result">: <a href="../../algebra/FunctionPair.html" class="extype" name="axle.algebra.FunctionPair">FunctionPair</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+        <span class="name">convertPlayerId</span><span class="result">: <a href="../../algebra/FunctionPair.html" class="extype" name="axle.algebra.FunctionPair">FunctionPair</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Option">Option</span>[<a href="TicTacToePlayer.html" class="extype" name="axle.game.ttt.TicTacToePlayer">TicTacToePlayer</a>]]</span>
       </span>
       </h4>
       
@@ -403,15 +403,15 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="axle.game.ttt.TicTacToe#introMessage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="introMessage():Unit"></a>
-      <a id="introMessage():Unit"></a>
+      <a id="introMessage():String"></a>
+      <a id="introMessage():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">introMessage</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">introMessage</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="axle.game.ttt.TicTacToe">TicTacToe</a> → <a href="../Game.html" class="extype" name="axle.game.Game">Game</a></dd></dl></div>
@@ -610,6 +610,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="axle.game.ttt.TicTacToe">TicTacToe</a> → <a href="../Game.html" class="extype" name="axle.game.Game">Game</a></dd></dl></div>
+    </li><li name="axle.game.ttt.TicTacToe#playersSeq" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="playersSeq:scala.collection.immutable.Vector[axle.game.ttt.TicTacToePlayer]"></a>
+      <a id="playersSeq:Vector[TicTacToePlayer]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">playersSeq</span><span class="result">: <span class="extype" name="scala.collection.immutable.Vector">Vector</span>[<a href="TicTacToePlayer.html" class="extype" name="axle.game.ttt.TicTacToePlayer">TicTacToePlayer</a>]</span>
+      </span>
+      </h4>
+      
     </li><li name="axle.game.Game#scriptedMoveStateStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="scriptedMoveStateStream(state:G#STATE,moveIt:Iterator[G#MOVE]):Stream[(G#MOVE,G#STATE)]"></a>
       <a id="scriptedMoveStateStream(STATE,Iterator[MOVE]):Stream[(MOVE,STATE)]"></a>
@@ -624,15 +637,15 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Game.html" class="extype" name="axle.game.Game">Game</a></dd></dl></div>
     </li><li name="axle.game.ttt.TicTacToe#startBoard" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="startBoard():TicTacToe.this.tttmm.Matrix[Option[String]]"></a>
-      <a id="startBoard():(tttmm)#Matrix[Option[String]]"></a>
+      <a id="startBoard():TicTacToe.this.tttmm.Matrix[Option[axle.game.ttt.TicTacToePlayer]]"></a>
+      <a id="startBoard():(tttmm)#Matrix[Option[TicTacToePlayer]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">startBoard</span><span class="params">()</span><span class="result">: (<a href="#tttmm:axle.matrix.JblasMatrixModule" class="extmbr" name="axle.game.ttt.TicTacToe#tttmm">tttmm</a>)#<span class="extype" name="axle.matrix.JblasMatrixModule.Matrix">Matrix</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+        <span class="name">startBoard</span><span class="params">()</span><span class="result">: (<a href="#tttmm:axle.matrix.JblasMatrixModule" class="extmbr" name="axle.game.ttt.TicTacToe#tttmm">tttmm</a>)#<span class="extype" name="axle.matrix.JblasMatrixModule.Matrix">Matrix</span>[<span class="extype" name="scala.Option">Option</span>[<a href="TicTacToePlayer.html" class="extype" name="axle.game.ttt.TicTacToePlayer">TicTacToePlayer</a>]]</span>
       </span>
       </h4>
       
@@ -663,15 +676,15 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="axle.game.ttt.TicTacToe">TicTacToe</a> → <a href="../Game.html" class="extype" name="axle.game.Game">Game</a></dd></dl></div>
     </li><li name="axle.game.ttt.TicTacToe#state" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="state(player:axle.game.ttt.TicTacToePlayer,board:TicTacToe.this.Matrix[Option[String]],eventQueue:scala.collection.immutable.Map[axle.game.ttt.TicTacToePlayer,List[axle.game.Event[axle.game.ttt.TicTacToe]]]):Some[axle.game.ttt.TicTacToeState]"></a>
-      <a id="state(TicTacToePlayer,Matrix[Option[String]],Map[TicTacToePlayer,List[Event[TicTacToe]]]):Some[TicTacToeState]"></a>
+      <a id="state(player:axle.game.ttt.TicTacToePlayer,board:TicTacToe.this.Matrix[Option[axle.game.ttt.TicTacToePlayer]],eventQueue:scala.collection.immutable.Map[axle.game.ttt.TicTacToePlayer,List[axle.game.Event[axle.game.ttt.TicTacToe]]]):Some[axle.game.ttt.TicTacToeState]"></a>
+      <a id="state(TicTacToePlayer,Matrix[Option[TicTacToePlayer]],Map[TicTacToePlayer,List[Event[TicTacToe]]]):Some[TicTacToeState]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">state</span><span class="params">(<span name="player">player: <a href="TicTacToePlayer.html" class="extype" name="axle.game.ttt.TicTacToePlayer">TicTacToePlayer</a></span>, <span name="board">board: <a href="#Matrix[T]=TicTacToe.this.tttmm.Matrix[T]" class="extmbr" name="axle.game.ttt.TicTacToe.Matrix">Matrix</a>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="eventQueue">eventQueue: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<a href="TicTacToePlayer.html" class="extype" name="axle.game.ttt.TicTacToePlayer">TicTacToePlayer</a>, <span class="extype" name="scala.List">List</span>[<a href="../Event.html" class="extype" name="axle.game.Event">Event</a>[<a href="" class="extype" name="axle.game.ttt.TicTacToe">TicTacToe</a>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Some">Some</span>[<a href="TicTacToeState.html" class="extype" name="axle.game.ttt.TicTacToeState">TicTacToeState</a>]</span>
+        <span class="name">state</span><span class="params">(<span name="player">player: <a href="TicTacToePlayer.html" class="extype" name="axle.game.ttt.TicTacToePlayer">TicTacToePlayer</a></span>, <span name="board">board: <a href="#Matrix[T]=TicTacToe.this.tttmm.Matrix[T]" class="extmbr" name="axle.game.ttt.TicTacToe.Matrix">Matrix</a>[<span class="extype" name="scala.Option">Option</span>[<a href="TicTacToePlayer.html" class="extype" name="axle.game.ttt.TicTacToePlayer">TicTacToePlayer</a>]]</span>, <span name="eventQueue">eventQueue: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<a href="TicTacToePlayer.html" class="extype" name="axle.game.ttt.TicTacToePlayer">TicTacToePlayer</a>, <span class="extype" name="scala.List">List</span>[<a href="../Event.html" class="extype" name="axle.game.Event">Event</a>[<a href="" class="extype" name="axle.game.ttt.TicTacToe">TicTacToe</a>]]]</span>)</span><span class="result">: <span class="extype" name="scala.Some">Some</span>[<a href="TicTacToeState.html" class="extype" name="axle.game.ttt.TicTacToeState">TicTacToeState</a>]</span>
       </span>
       </h4>
       
