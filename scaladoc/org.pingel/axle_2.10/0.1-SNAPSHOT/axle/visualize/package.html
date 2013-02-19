@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>visualize - axle.visualize</title>
+          <meta name="description" content="visualize - axle.visualize" />
+          <meta name="keywords" content="visualize axle.visualize" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'axle.visualize.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="axle">axle</a></p>
+        <h1>visualize</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visualize</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="axle.visualize"><span>visualize</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="axle.visualize.AxleFrame" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AxleFrameextendsJFrame"></a>
+      <a id="AxleFrame:AxleFrame"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AxleFrame.html"><span class="name">AxleFrame</span></a><span class="result"> extends <span class="extype" name="javax.swing.JFrame">JFrame</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.BackgroundPanel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BackgroundPanelextendsJPanel"></a>
+      <a id="BackgroundPanel:BackgroundPanel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BackgroundPanel.html"><span class="name">BackgroundPanel</span></a><span class="result"> extends <span class="extype" name="javax.swing.JPanel">JPanel</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.BarChart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BarChart[X,S,Y]extendsProductwithSerializable"></a>
+      <a id="BarChart[X,S,Y]:BarChart[X,S,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BarChart.html"><span class="name">BarChart</span></a><span class="tparams">[<span name="X">X</span>, <span name="S">S</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="xs">xs: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.X">X</span>]</span>, <span name="ss">ss: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.S">S</span>]</span>, <span name="y">y: (<span class="extype" name="axle.visualize.BarChart.X">X</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>, <span name="xLabeller">xLabeller: (<span class="extype" name="axle.visualize.BarChart.X">X</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((x: X) =&gt; x.toString())</span></span>, <span name="sLabeller">sLabeller: (<span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((s: S) =&gt; s.toString())</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="barWidthPercent">barWidthPercent: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.8</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.BarChartComponent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BarChartComponent[X,S,Y]extendsJPanel"></a>
+      <a id="BarChartComponent[X,S,Y]:BarChartComponent[X,S,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BarChartComponent.html"><span class="name">BarChartComponent</span></a><span class="tparams">[<span name="X">X</span>, <span name="S">S</span>, <span name="Y">Y</span>]</span><span class="result"> extends <span class="extype" name="javax.swing.JPanel">JPanel</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Behavior" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Behavior[I,+A]extendsObject"></a>
+      <a id="Behavior[I,+A]:Behavior[I,A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Behavior.html"><span class="name">Behavior</span></a><span class="tparams">[<span name="I">I</span>, <span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.DataLines" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DataLines[X,Y]extendsPaintable"></a>
+      <a id="DataLines[X,Y]:DataLines[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DataLines.html"><span class="name">DataLines</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <a href="Paintable.html" class="extype" name="axle.visualize.Paintable">Paintable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.HorizontalLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HorizontalLine[X,Y]extendsPaintable"></a>
+      <a id="HorizontalLine[X,Y]:HorizontalLine[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HorizontalLine.html"><span class="name">HorizontalLine</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <a href="Paintable.html" class="extype" name="axle.visualize.Paintable">Paintable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.JungDirectedGraphVisualization" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JungDirectedGraphVisualizationextendsObject"></a>
+      <a id="JungDirectedGraphVisualization:JungDirectedGraphVisualization"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JungDirectedGraphVisualization.html"><span class="name">JungDirectedGraphVisualization</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.JungUndirectedGraphVisualization" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JungUndirectedGraphVisualizationextendsObject"></a>
+      <a id="JungUndirectedGraphVisualization:JungUndirectedGraphVisualization"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JungUndirectedGraphVisualization.html"><span class="name">JungUndirectedGraphVisualization</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Key" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Key[X,Y]extendsPaintable"></a>
+      <a id="Key[X,Y]:Key[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Key.html"><span class="name">Key</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <a href="Paintable.html" class="extype" name="axle.visualize.Paintable">Paintable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.KmeansVisualizationModule" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="KmeansVisualizationModuleextendsKMeansModule"></a>
+      <a id="KmeansVisualizationModule:KmeansVisualizationModule"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="KmeansVisualizationModule.html"><span class="name">KmeansVisualizationModule</span></a><span class="result"> extends <a href="../ml/KMeansModule.html" class="extype" name="axle.ml.KMeansModule">KMeansModule</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Paintable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PaintableextendsObject"></a>
+      <a id="Paintable:Paintable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Paintable.html"><span class="name">Paintable</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Plot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Plot[X,Y]extendsProductwithSerializable"></a>
+      <a id="Plot[X,Y]:Plot[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Plot.html"><span class="name">Plot</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="lfs">lfs: <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="axle.visualize.Plot.X">X</span>, <span class="extype" name="axle.visualize.Plot.Y">Y</span>])]</span>, <span name="connect">connect: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="pointDiameter">pointDiameter: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">4</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.Plot.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxis">yAxis: <span class="extype" name="axle.visualize.Plot.X">X</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.X">X</span>]</span>, <span name="evidence$2">evidence$2: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.Y">Y</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.PlotComponent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PlotComponent[X,Y]extendsJPanel"></a>
+      <a id="PlotComponent[X,Y]:PlotComponent[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PlotComponent.html"><span class="name">PlotComponent</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <span class="extype" name="javax.swing.JPanel">JPanel</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Plottable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Plottable[T]extendsOrdering[T]withPortionable[T]"></a>
+      <a id="Plottable[T]:Plottable[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Plottable.html"><span class="name">Plottable</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.Ordering">Ordering</span>[<span class="extype" name="axle.visualize.Plottable.T">T</span>] with <a href="../algebra/Portionable.html" class="extype" name="axle.algebra.Portionable">Portionable</a>[<span class="extype" name="axle.visualize.Plottable.T">T</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Point2D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Point2D[X,Y]extendsProductwithSerializable"></a>
+      <a id="Point2D[X,Y]:Point2D[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Point2D.html"><span class="name">Point2D</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="x">x: <span class="extype" name="axle.visualize.Point2D.X">X</span></span>, <span name="y">y: <span class="extype" name="axle.visualize.Point2D.Y">Y</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.ReactivePlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReactivePlot[X,Y]extendsProductwithSerializable"></a>
+      <a id="ReactivePlot[X,Y]:ReactivePlot[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ReactivePlot.html"><span class="name">ReactivePlot</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="dataB">dataB: <a href="Behavior.html" class="extype" name="axle.visualize.Behavior">Behavior</a>[<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="axle.visualize.ReactivePlot.X">X</span>, <span class="extype" name="axle.visualize.ReactivePlot.Y">Y</span>])]]</span>, <span name="connect">connect: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="pointDiameter">pointDiameter: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">4</span></span>, <span name="keyLeftPadding">keyLeftPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="keyTopPadding">keyTopPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="keyWidth">keyWidth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">80</span></span>, <span name="fontName">fontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Courier New&quot;</span></span>, <span name="fontSize">fontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">12</span></span>, <span name="titleFontName">titleFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Palatino&quot;</span></span>, <span name="titleFontSize">titleFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="colors">colors: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="java.awt.Color">Color</span>] = <span class="defval" name="immutable.this.List.apply[java.awt.Color](java.awt.Color.blue, java.awt.Color.red, java.awt.Color.green, java.awt.Color.orange, java.awt.Color.pink, java.awt.Color.yellow)">...</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.ReactivePlot.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxis">yAxis: <span class="extype" name="axle.visualize.ReactivePlot.X">X</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.ReactivePlot.X">X</span>]</span>, <span name="evidence$2">evidence$2: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.ReactivePlot.Y">Y</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.ReactivePlotComponent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReactivePlotComponent[X,Y]extendsJPanel"></a>
+      <a id="ReactivePlotComponent[X,Y]:ReactivePlotComponent[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ReactivePlotComponent.html"><span class="name">ReactivePlotComponent</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <span class="extype" name="javax.swing.JPanel">JPanel</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.ScaledArea2D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScaledArea2D[X,Y]extendsObject"></a>
+      <a id="ScaledArea2D[X,Y]:ScaledArea2D[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ScaledArea2D.html"><span class="name">ScaledArea2D</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Text" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TextextendsPaintable"></a>
+      <a id="Text:Text"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Text.html"><span class="name">Text</span></a><span class="result"> extends <a href="Paintable.html" class="extype" name="axle.visualize.Paintable">Paintable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.VerticalLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VerticalLine[X,Y]extendsPaintable"></a>
+      <a id="VerticalLine[X,Y]:VerticalLine[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VerticalLine.html"><span class="name">VerticalLine</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <a href="Paintable.html" class="extype" name="axle.visualize.Paintable">Paintable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.XTics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="XTics[X,Y]extendsPaintable"></a>
+      <a id="XTics[X,Y]:XTics[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="XTics.html"><span class="name">XTics</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <a href="Paintable.html" class="extype" name="axle.visualize.Paintable">Paintable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.YTics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="YTics[X,Y]extendsPaintable"></a>
+      <a id="YTics[X,Y]:YTics[X,Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="YTics.html"><span class="name">YTics</span></a><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <a href="Paintable.html" class="extype" name="axle.visualize.Paintable">Paintable</a></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="axle.visualize.Plottable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Plottable"></a>
+      <a id="Plottable:Plottable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Plottable$.html"><span class="name">Plottable</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#bmp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bmp(component:java.awt.Component,filename:String):Unit"></a>
+      <a id="bmp(Component,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bmp</span><span class="params">(<span name="component">component: <span class="extype" name="java.awt.Component">Component</span></span>, <span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#component2file" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="component2file(component:java.awt.Component,filename:String,encoding:String):Unit"></a>
+      <a id="component2file(Component,String,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">component2file</span><span class="params">(<span name="component">component: <span class="extype" name="java.awt.Component">Component</span></span>, <span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="encoding">encoding: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">component2file</p><div class="fullcomment"><div class="comment cmt"><p>component2file</p><p>encoding: PNG, JPEG, gif, BMP</p><p>http://stackoverflow.com/questions/4028898/create-an-image-from-a-non-visible-awt-component
+</p></div></div>
+    </li><li name="axle.visualize.package#enCompnentUndirectedGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="enCompnentUndirectedGraph[VP,EP](ug:axle.graph.UndirectedGraph[VP,EP]):java.awt.Component"></a>
+      <a id="enCompnentUndirectedGraph[VP,EP](UndirectedGraph[VP,EP]):Component"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enCompnentUndirectedGraph</span><span class="tparams">[<span name="VP">VP</span>, <span name="EP">EP</span>]</span><span class="params">(<span name="ug">ug: <a href="../graph/UndirectedGraph.html" class="extype" name="axle.graph.UndirectedGraph">UndirectedGraph</a>[<span class="extype" name="axle.visualize.enCompnentUndirectedGraph.VP">VP</span>, <span class="extype" name="axle.visualize.enCompnentUndirectedGraph.EP">EP</span>]</span>)</span><span class="result">: <span class="extype" name="java.awt.Component">Component</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#enComponentBarChart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="enComponentBarChart[X,S,Y](barChart:axle.visualize.BarChart[X,S,Y]):java.awt.Component"></a>
+      <a id="enComponentBarChart[X,S,Y](BarChart[X,S,Y]):Component"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enComponentBarChart</span><span class="tparams">[<span name="X">X</span>, <span name="S">S</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="barChart">barChart: <a href="BarChart.html" class="extype" name="axle.visualize.BarChart">BarChart</a>[<span class="extype" name="axle.visualize.enComponentBarChart.X">X</span>, <span class="extype" name="axle.visualize.enComponentBarChart.S">S</span>, <span class="extype" name="axle.visualize.enComponentBarChart.Y">Y</span>]</span>)</span><span class="result">: <span class="extype" name="java.awt.Component">Component</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#enComponentDirectedGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="enComponentDirectedGraph[VP,EP](dg:axle.graph.DirectedGraph[VP,EP]):java.awt.Component"></a>
+      <a id="enComponentDirectedGraph[VP,EP](DirectedGraph[VP,EP]):Component"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enComponentDirectedGraph</span><span class="tparams">[<span name="VP">VP</span>, <span name="EP">EP</span>]</span><span class="params">(<span name="dg">dg: <a href="../graph/DirectedGraph.html" class="extype" name="axle.graph.DirectedGraph">DirectedGraph</a>[<span class="extype" name="axle.visualize.enComponentDirectedGraph.VP">VP</span>, <span class="extype" name="axle.visualize.enComponentDirectedGraph.EP">EP</span>]</span>)</span><span class="result">: <span class="extype" name="java.awt.Component">Component</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#enComponentPlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="enComponentPlot[X,Y](plot:axle.visualize.Plot[X,Y]):java.awt.Component"></a>
+      <a id="enComponentPlot[X,Y](Plot[X,Y]):Component"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enComponentPlot</span><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="plot">plot: <a href="Plot.html" class="extype" name="axle.visualize.Plot">Plot</a>[<span class="extype" name="axle.visualize.enComponentPlot.X">X</span>, <span class="extype" name="axle.visualize.enComponentPlot.Y">Y</span>]</span>)</span><span class="result">: <span class="extype" name="java.awt.Component">Component</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#enComponentReactivePlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="enComponentReactivePlot[X,Y](plot:axle.visualize.ReactivePlot[X,Y]):java.awt.Component"></a>
+      <a id="enComponentReactivePlot[X,Y](ReactivePlot[X,Y]):Component"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enComponentReactivePlot</span><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="plot">plot: <a href="ReactivePlot.html" class="extype" name="axle.visualize.ReactivePlot">ReactivePlot</a>[<span class="extype" name="axle.visualize.enComponentReactivePlot.X">X</span>, <span class="extype" name="axle.visualize.enComponentReactivePlot.Y">Y</span>]</span>)</span><span class="result">: <span class="extype" name="java.awt.Component">Component</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#gif" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gif(component:java.awt.Component,filename:String):Unit"></a>
+      <a id="gif(Component,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gif</span><span class="params">(<span name="component">component: <span class="extype" name="java.awt.Component">Component</span></span>, <span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#jpeg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jpeg(component:java.awt.Component,filename:String):Unit"></a>
+      <a id="jpeg(Component,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jpeg</span><span class="params">(<span name="component">component: <span class="extype" name="java.awt.Component">Component</span></span>, <span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#newFrame" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="newFrame(width:Int,height:Int):axle.visualize.AxleFrame"></a>
+      <a id="newFrame(Int,Int):AxleFrame"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newFrame</span><span class="params">(<span name="width">width: <span class="extype" name="scala.Int">Int</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="AxleFrame.html" class="extype" name="axle.visualize.AxleFrame">AxleFrame</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#png" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="png(component:java.awt.Component,filename:String):Unit"></a>
+      <a id="png(Component,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">png</span><span class="params">(<span name="component">component: <span class="extype" name="java.awt.Component">Component</span></span>, <span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.package#show" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="show(component:java.awt.Component):Unit"></a>
+      <a id="show(Component):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">show</span><span class="params">(<span name="component">component: <span class="extype" name="java.awt.Component">Component</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

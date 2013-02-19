@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>cards - axle.game.cards</title>
+          <meta name="description" content="cards - axle.game.cards" />
+          <meta name="keywords" content="cards axle.game.cards" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'axle.game.cards.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="axle">axle</a>.<a href="../package.html" class="extype" name="axle.game">game</a></p>
+        <h1>cards</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cards</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="axle.game.cards.Card" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CardextendsProductwithSerializable"></a>
+      <a id="Card:Card"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Card.html"><span class="name">Card</span></a><span class="params">(<span name="rank">rank: <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>, <span name="suit">suit: <a href="Suit.html" class="extype" name="axle.game.cards.Suit">Suit</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.CardOrdering" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CardOrderingextendsOrdering[axle.game.cards.Card]"></a>
+      <a id="CardOrdering:CardOrdering"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CardOrdering.html"><span class="name">CardOrdering</span></a><span class="result"> extends <span class="extype" name="scala.Ordering">Ordering</span>[<a href="Card.html" class="extype" name="axle.game.cards.Card">Card</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Deck" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeckextendsProductwithSerializable"></a>
+      <a id="Deck:Deck"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Deck.html"><span class="name">Deck</span></a><span class="params">(<span name="cards">cards: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<a href="Card.html" class="extype" name="axle.game.cards.Card">Card</a>] = <span class="defval" name="scala.util.Random.shuffle[axle.game.cards.Card, scala.collection.immutable.Vector](Deck.cards)(immutable.this.Vector.canBuildFrom[axle.game.cards.Card])">...</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Rank" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RankextendsObject"></a>
+      <a id="Rank:Rank"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Rank.html"><span class="name">Rank</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.RankOrdering" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RankOrderingextendsOrdering[axle.game.cards.Rank]"></a>
+      <a id="RankOrdering:RankOrdering"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RankOrdering.html"><span class="name">RankOrdering</span></a><span class="result"> extends <span class="extype" name="scala.Ordering">Ordering</span>[<a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Suit" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SuitextendsObject"></a>
+      <a id="Suit:Suit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Suit.html"><span class="name">Suit</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="axle.game.cards.Ace" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Ace"></a>
+      <a id="Ace:Ace"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Ace$.html"><span class="name">Ace</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Clubs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Clubs"></a>
+      <a id="Clubs:Clubs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Clubs$.html"><span class="name">Clubs</span></a><span class="result"> extends <a href="Suit.html" class="extype" name="axle.game.cards.Suit">Suit</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Deck" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Deck"></a>
+      <a id="Deck:Deck"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Deck$.html"><span class="name">Deck</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Diamonds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Diamonds"></a>
+      <a id="Diamonds:Diamonds"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Diamonds$.html"><span class="name">Diamonds</span></a><span class="result"> extends <a href="Suit.html" class="extype" name="axle.game.cards.Suit">Suit</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Hearts" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Hearts"></a>
+      <a id="Hearts:Hearts"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Hearts$.html"><span class="name">Hearts</span></a><span class="result"> extends <a href="Suit.html" class="extype" name="axle.game.cards.Suit">Suit</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Implicits" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Implicits"></a>
+      <a id="Implicits:Implicits"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Implicits$.html"><span class="name">Implicits</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Jack" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Jack"></a>
+      <a id="Jack:Jack"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Jack$.html"><span class="name">Jack</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.King" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="King"></a>
+      <a id="King:King"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="King$.html"><span class="name">King</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Queen" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Queen"></a>
+      <a id="Queen:Queen"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Queen$.html"><span class="name">Queen</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R10" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R10"></a>
+      <a id="R10:R10"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R10$.html"><span class="name">R10</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R2"></a>
+      <a id="R2:R2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R2$.html"><span class="name">R2</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R3" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R3"></a>
+      <a id="R3:R3"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R3$.html"><span class="name">R3</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R4" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R4"></a>
+      <a id="R4:R4"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R4$.html"><span class="name">R4</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R5" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R5"></a>
+      <a id="R5:R5"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R5$.html"><span class="name">R5</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R6" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R6"></a>
+      <a id="R6:R6"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R6$.html"><span class="name">R6</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R7" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R7"></a>
+      <a id="R7:R7"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R7$.html"><span class="name">R7</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R8" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R8"></a>
+      <a id="R8:R8"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R8$.html"><span class="name">R8</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.R9" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="R9"></a>
+      <a id="R9:R9"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="R9$.html"><span class="name">R9</span></a><span class="result"> extends <a href="Rank.html" class="extype" name="axle.game.cards.Rank">Rank</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.game.cards.Spades" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Spades"></a>
+      <a id="Spades:Spades"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Spades$.html"><span class="name">Spades</span></a><span class="result"> extends <a href="Suit.html" class="extype" name="axle.game.cards.Suit">Suit</a></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

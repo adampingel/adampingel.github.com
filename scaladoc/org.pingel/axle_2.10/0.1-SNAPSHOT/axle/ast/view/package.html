@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>view - axle.ast.view</title>
+          <meta name="description" content="view - axle.ast.view" />
+          <meta name="keywords" content="view axle.ast.view" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'axle.ast.view.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="axle">axle</a>.<a href="../package.html" class="extype" name="axle.ast">ast</a></p>
+        <h1>view</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">view</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="axle.ast.view.AstNodeFormatter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AstNodeFormatter[R,S]extendsObject"></a>
+      <a id="AstNodeFormatter[R,S]:AstNodeFormatter[R,S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AstNodeFormatter.html"><span class="name">AstNodeFormatter</span></a><span class="tparams">[<span name="R">R</span>, <span name="S">S</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.AstNodeFormatterString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AstNodeFormatterStringextendsAstNodeFormatter[String,List[String]]"></a>
+      <a id="AstNodeFormatterString:AstNodeFormatterString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AstNodeFormatterString.html"><span class="name">AstNodeFormatterString</span></a><span class="result"> extends <a href="AstNodeFormatter.html" class="extype" name="axle.ast.view.AstNodeFormatter">AstNodeFormatter</a>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.FormatterConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FormatterConfigextendsProductwithSerializable"></a>
+      <a id="FormatterConfig:FormatterConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FormatterConfig.html"><span class="name">FormatterConfig</span></a><span class="params">(<span name="language">language: <a href="../Language.html" class="extype" name="axle.ast.Language">Language</a></span>, <span name="conform">conform: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="highlight">highlight: <span class="extype" name="scala.collection.Set">Set</span>[<a href="../AstNode.html" class="extype" name="axle.ast.AstNode">AstNode</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.FormatterState" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FormatterStateextendsProductwithSerializable"></a>
+      <a id="FormatterState:FormatterState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FormatterState.html"><span class="name">FormatterState</span></a><span class="params">(<span name="indentationLevel">indentationLevel: <span class="extype" name="scala.Int">Int</span></span>, <span name="column">column: <span class="extype" name="scala.Int">Int</span></span>, <span name="needsIndent">needsIndent: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="lineno">lineno: <span class="extype" name="scala.Int">Int</span></span>, <span name="stack">stack: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Option">Option</span>[(<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.String">String</span>)]]</span>, <span name="_node2lineno">_node2lineno: <span class="extype" name="scala.collection.Map">Map</span>[<a href="../AstNode.html" class="extype" name="axle.ast.AstNode">AstNode</a>, <span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.View" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="View[T]extendsObject"></a>
+      <a id="View[T]:View[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="View.html"><span class="name">View</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.XhtmlAstNodeFormatter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="XhtmlAstNodeFormatterextendsAstNodeFormatter[List[scala.xml.Node],List[scala.xml.Node]]"></a>
+      <a id="XhtmlAstNodeFormatter:XhtmlAstNodeFormatter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="XhtmlAstNodeFormatter.html"><span class="name">XhtmlAstNodeFormatter</span></a><span class="result"> extends <a href="AstNodeFormatter.html" class="extype" name="axle.ast.view.AstNodeFormatter">AstNodeFormatter</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.xml.Node">Node</span>], <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.xml.Node">Node</span>]]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.XhtmlLinesAstNodeFormatterState" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="XhtmlLinesAstNodeFormatterStateextendsProductwithSerializable"></a>
+      <a id="XhtmlLinesAstNodeFormatterState:XhtmlLinesAstNodeFormatterState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="XhtmlLinesAstNodeFormatterState.html"><span class="name">XhtmlLinesAstNodeFormatterState</span></a><span class="params">(<span name="tokens">tokens: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.xml.Node">Node</span>]</span>, <span name="currentLine">currentLine: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.xml.Node">Node</span>]]</span>, <span name="_lines">_lines: <span class="extype" name="scala.collection.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="axle.ast.view.Emission" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Emission"></a>
+      <a id="Emission:Emission"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Emission$.html"><span class="name">Emission</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.Existence" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Existence"></a>
+      <a id="Existence:Existence"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Existence$.html"><span class="name">Existence</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.ViewString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ViewString"></a>
+      <a id="ViewString:ViewString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ViewString$.html"><span class="name">ViewString</span></a><span class="result"> extends <a href="View.html" class="extype" name="axle.ast.view.View">View</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.ast.view.ViewXhtml" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ViewXhtml"></a>
+      <a id="ViewXhtml:ViewXhtml"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ViewXhtml$.html"><span class="name">ViewXhtml</span></a><span class="result"> extends <a href="View.html" class="extype" name="axle.ast.view.View">View</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

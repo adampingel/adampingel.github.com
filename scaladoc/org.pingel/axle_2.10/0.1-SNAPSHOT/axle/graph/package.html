@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>graph - axle.graph</title>
+          <meta name="description" content="graph - axle.graph" />
+          <meta name="keywords" content="graph axle.graph" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'axle.graph.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="axle">axle</a></p>
+        <h1>graph</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">graph</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="axle.graph.DirectedGraph" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DirectedGraph[VP,EP]extendsObject"></a>
+      <a id="DirectedGraph[VP,EP]:DirectedGraph[VP,EP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectedGraph.html"><span class="name">DirectedGraph</span></a><span class="tparams">[<span name="VP">VP</span>, <span name="EP">EP</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.graph.Edge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Edge[S,EP]extendsProductwithSerializable"></a>
+      <a id="Edge[S,EP]:Edge[S,EP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Edge.html"><span class="name">Edge</span></a><span class="tparams">[<span name="S">S</span>, <span name="EP">EP</span>]</span><span class="params">(<span name="storage">storage: <span class="extype" name="axle.graph.Edge.S">S</span></span>, <span name="payloadF">payloadF: (<span class="extype" name="axle.graph.Edge.S">S</span>) ⇒ <span class="extype" name="axle.graph.Edge.EP">EP</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.graph.JungDirectedGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JungDirectedGraph[VP,EP]extendsDirectedGraph[VP,EP]withProductwithSerializable"></a>
+      <a id="JungDirectedGraph[VP,EP]:JungDirectedGraph[VP,EP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="JungDirectedGraph.html"><span class="name">JungDirectedGraph</span></a><span class="tparams">[<span name="VP">VP</span>, <span name="EP">EP</span>]</span><span class="params">(<span name="vps">vps: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.graph.JungDirectedGraph.VP">VP</span>]</span>, <span name="ef">ef: (<span class="extype" name="scala.collection.Seq">Seq</span>[<a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.JungDirectedGraph.VP">VP</span>]]) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.JungDirectedGraph.VP">VP</span>], <a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.JungDirectedGraph.VP">VP</span>], <span class="extype" name="axle.graph.JungDirectedGraph.EP">EP</span>)]</span>)</span><span class="result"> extends <a href="DirectedGraph.html" class="extype" name="axle.graph.DirectedGraph">DirectedGraph</a>[<span class="extype" name="axle.graph.JungDirectedGraph.VP">VP</span>, <span class="extype" name="axle.graph.JungDirectedGraph.EP">EP</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.graph.JungUndirectedGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JungUndirectedGraph[VP,EP]extendsUndirectedGraph[VP,EP]withProductwithSerializable"></a>
+      <a id="JungUndirectedGraph[VP,EP]:JungUndirectedGraph[VP,EP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="JungUndirectedGraph.html"><span class="name">JungUndirectedGraph</span></a><span class="tparams">[<span name="VP">VP</span>, <span name="EP">EP</span>]</span><span class="params">(<span name="vps">vps: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.graph.JungUndirectedGraph.VP">VP</span>]</span>, <span name="ef">ef: (<span class="extype" name="scala.collection.Seq">Seq</span>[<a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.JungUndirectedGraph.VP">VP</span>]]) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.JungUndirectedGraph.VP">VP</span>], <a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.JungUndirectedGraph.VP">VP</span>], <span class="extype" name="axle.graph.JungUndirectedGraph.EP">EP</span>)]</span>)</span><span class="result"> extends <a href="UndirectedGraph.html" class="extype" name="axle.graph.UndirectedGraph">UndirectedGraph</a>[<span class="extype" name="axle.graph.JungUndirectedGraph.VP">VP</span>, <span class="extype" name="axle.graph.JungUndirectedGraph.EP">EP</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.graph.NativeDirectedGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NativeDirectedGraph[VP,EP]extendsDirectedGraph[VP,EP]withProductwithSerializable"></a>
+      <a id="NativeDirectedGraph[VP,EP]:NativeDirectedGraph[VP,EP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NativeDirectedGraph.html"><span class="name">NativeDirectedGraph</span></a><span class="tparams">[<span name="VP">VP</span>, <span name="EP">EP</span>]</span><span class="params">(<span name="vps">vps: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.graph.NativeDirectedGraph.VP">VP</span>]</span>, <span name="ef">ef: (<span class="extype" name="scala.collection.Seq">Seq</span>[<a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.NativeDirectedGraph.VP">VP</span>]]) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.NativeDirectedGraph.VP">VP</span>], <a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.NativeDirectedGraph.VP">VP</span>], <span class="extype" name="axle.graph.NativeDirectedGraph.EP">EP</span>)]</span>)</span><span class="result"> extends <a href="DirectedGraph.html" class="extype" name="axle.graph.DirectedGraph">DirectedGraph</a>[<span class="extype" name="axle.graph.NativeDirectedGraph.VP">VP</span>, <span class="extype" name="axle.graph.NativeDirectedGraph.EP">EP</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.graph.NativeUndirectedGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NativeUndirectedGraph[VP,EP]extendsUndirectedGraph[VP,EP]withProductwithSerializable"></a>
+      <a id="NativeUndirectedGraph[VP,EP]:NativeUndirectedGraph[VP,EP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NativeUndirectedGraph.html"><span class="name">NativeUndirectedGraph</span></a><span class="tparams">[<span name="VP">VP</span>, <span name="EP">EP</span>]</span><span class="params">(<span name="vps">vps: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.graph.NativeUndirectedGraph.VP">VP</span>]</span>, <span name="ef">ef: (<span class="extype" name="scala.collection.Seq">Seq</span>[<a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.NativeUndirectedGraph.VP">VP</span>]]) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.NativeUndirectedGraph.VP">VP</span>], <a href="Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<span class="extype" name="axle.graph.NativeUndirectedGraph.VP">VP</span>], <span class="extype" name="axle.graph.NativeUndirectedGraph.EP">EP</span>)]</span>)</span><span class="result"> extends <a href="UndirectedGraph.html" class="extype" name="axle.graph.UndirectedGraph">UndirectedGraph</a>[<span class="extype" name="axle.graph.NativeUndirectedGraph.VP">VP</span>, <span class="extype" name="axle.graph.NativeUndirectedGraph.EP">EP</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.graph.UndirectedGraph" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UndirectedGraph[VP,EP]extendsObject"></a>
+      <a id="UndirectedGraph[VP,EP]:UndirectedGraph[VP,EP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UndirectedGraph.html"><span class="name">UndirectedGraph</span></a><span class="tparams">[<span name="VP">VP</span>, <span name="EP">EP</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.graph.Vertex" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Vertex[VP]extendsProductwithSerializable"></a>
+      <a id="Vertex[VP]:Vertex[VP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Vertex.html"><span class="name">Vertex</span></a><span class="tparams">[<span name="VP">VP</span>]</span><span class="params">(<span name="payload">payload: <span class="extype" name="axle.graph.Vertex.VP">VP</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
