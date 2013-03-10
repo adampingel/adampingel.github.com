@@ -40,7 +40,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Plot</span><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="lfs">lfs: <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="axle.visualize.Plot.X">X</span>, <span class="extype" name="axle.visualize.Plot.Y">Y</span>])]</span>, <span name="connect">connect: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="pointDiameter">pointDiameter: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">4</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.Plot.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxis">yAxis: <span class="extype" name="axle.visualize.Plot.X">X</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.X">X</span>]</span>, <span name="evidence$2">evidence$2: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.Y">Y</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">Plot</span><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="dataFunction">dataFunction: () ⇒ <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="axle.visualize.Plot.X">X</span>, <span class="extype" name="axle.visualize.Plot.Y">Y</span>])]</span>, <span name="connect">connect: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="pointDiameter">pointDiameter: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">4</span></span>, <span name="keyLeftPadding">keyLeftPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="keyTopPadding">keyTopPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="keyWidth">keyWidth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">80</span></span>, <span name="fontName">fontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Courier New&quot;</span></span>, <span name="fontSize">fontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">12</span></span>, <span name="titleFontName">titleFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Palatino&quot;</span></span>, <span name="titleFontSize">titleFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="colors">colors: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="java.awt.Color">Color</span>] = <span class="defval" name="immutable.this.List.apply[java.awt.Color](java.awt.Color.blue, java.awt.Color.red, java.awt.Color.green, java.awt.Color.orange, java.awt.Color.pink, java.awt.Color.yellow)">...</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.Plot.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxis">yAxis: <span class="extype" name="axle.visualize.Plot.X">X</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.Option">Option</span>[<a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.X">X</span>]</span>, <span name="evidence$2">evidence$2: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.Y">Y</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -85,7 +85,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="axle.visualize.Plot#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(lfs:Seq[(String,scala.collection.SortedMap[X,Y])],connect:Boolean,drawKey:Boolean,width:Int,height:Int,border:Int,pointDiameter:Int,title:Option[String],xAxis:Y,xAxisLabel:Option[String],yAxis:X,yAxisLabel:Option[String])(implicitevidence$1:axle.visualize.Plottable[X],implicitevidence$2:axle.visualize.Plottable[Y]):axle.visualize.Plot[X,Y]"></a>
+      <a id="&lt;init&gt;(dataFunction:()=&gt;List[(String,scala.collection.immutable.TreeMap[X,Y])],connect:Boolean,drawKey:Boolean,width:Int,height:Int,border:Int,pointDiameter:Int,keyLeftPadding:Int,keyTopPadding:Int,keyWidth:Int,fontName:String,fontSize:Int,titleFontName:String,titleFontSize:Int,colors:Seq[java.awt.Color],title:Option[String],xAxis:Y,xAxisLabel:Option[String],yAxis:X,yAxisLabel:Option[String],refreshInterval:Option[axle.quanta.Time.Q])(implicitevidence$1:axle.visualize.Plottable[X],implicitevidence$2:axle.visualize.Plottable[Y]):axle.visualize.Plot[X,Y]"></a>
       <a id="&lt;init&gt;:Plot[X,Y]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,7 +93,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Plot</span><span class="params">(<span name="lfs">lfs: <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="axle.visualize.Plot.X">X</span>, <span class="extype" name="axle.visualize.Plot.Y">Y</span>])]</span>, <span name="connect">connect: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="pointDiameter">pointDiameter: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">4</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.Plot.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxis">yAxis: <span class="extype" name="axle.visualize.Plot.X">X</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.X">X</span>]</span>, <span name="arg1">arg1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.Y">Y</span>]</span>)</span>
+        <span class="name">Plot</span><span class="params">(<span name="dataFunction">dataFunction: () ⇒ <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="axle.visualize.Plot.X">X</span>, <span class="extype" name="axle.visualize.Plot.Y">Y</span>])]</span>, <span name="connect">connect: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="pointDiameter">pointDiameter: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">4</span></span>, <span name="keyLeftPadding">keyLeftPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="keyTopPadding">keyTopPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="keyWidth">keyWidth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">80</span></span>, <span name="fontName">fontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Courier New&quot;</span></span>, <span name="fontSize">fontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">12</span></span>, <span name="titleFontName">titleFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Palatino&quot;</span></span>, <span name="titleFontSize">titleFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="colors">colors: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="java.awt.Color">Color</span>] = <span class="defval" name="immutable.this.List.apply[java.awt.Color](java.awt.Color.blue, java.awt.Color.red, java.awt.Color.green, java.awt.Color.orange, java.awt.Color.pink, java.awt.Color.yellow)">...</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.Plot.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxis">yAxis: <span class="extype" name="axle.visualize.Plot.X">X</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.Option">Option</span>[<a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.X">X</span>]</span>, <span name="arg1">arg1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.Y">Y</span>]</span>)</span>
       </span>
       </h4>
       
@@ -213,6 +213,19 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="axle.visualize.Plot#colors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="colors:Seq[java.awt.Color]"></a>
+      <a id="colors:Seq[Color]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">colors</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="java.awt.Color">Color</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="axle.visualize.Plot#connect" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="connect:Boolean"></a>
       <a id="connect:Boolean"></a>
@@ -223,6 +236,32 @@
       </span>
       <span class="symbol">
         <span class="name">connect</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Plot#dataFeedActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dataFeedActor:akka.actor.ActorRef"></a>
+      <a id="dataFeedActor:ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dataFeedActor</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Plot#dataFunction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dataFunction:()=&gt;List[(String,scala.collection.immutable.TreeMap[X,Y])]"></a>
+      <a id="dataFunction:()⇒List[(String,TreeMap[X,Y])]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dataFunction</span><span class="result">: () ⇒ <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="axle.visualize.Plot.X">X</span>, <span class="extype" name="axle.visualize.Plot.Y">Y</span>])]</span>
       </span>
       </h4>
       
@@ -268,6 +307,32 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="axle.visualize.Plot#fontName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fontName:String"></a>
+      <a id="fontName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fontName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Plot#fontSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fontSize:Int"></a>
+      <a id="fontSize:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fontSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -307,68 +372,42 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="axle.visualize.Plot#lfs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="lfs:Seq[(String,scala.collection.SortedMap[X,Y])]"></a>
-      <a id="lfs:Seq[(String,SortedMap[X,Y])]"></a>
+    </li><li name="axle.visualize.Plot#keyLeftPadding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="keyLeftPadding:Int"></a>
+      <a id="keyLeftPadding:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">lfs</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="axle.visualize.Plot.X">X</span>, <span class="extype" name="axle.visualize.Plot.Y">Y</span>])]</span>
+        <span class="name">keyLeftPadding</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
-    </li><li name="axle.visualize.Plot#maxX" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="maxX:X"></a>
-      <a id="maxX:X"></a>
+    </li><li name="axle.visualize.Plot#keyTopPadding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="keyTopPadding:Int"></a>
+      <a id="keyTopPadding:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">maxX</span><span class="result">: <span class="extype" name="axle.visualize.Plot.X">X</span></span>
+        <span class="name">keyTopPadding</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
-    </li><li name="axle.visualize.Plot#maxY" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="maxY:Y"></a>
-      <a id="maxY:Y"></a>
+    </li><li name="axle.visualize.Plot#keyWidth" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="keyWidth:Int"></a>
+      <a id="keyWidth:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">maxY</span><span class="result">: <span class="extype" name="axle.visualize.Plot.Y">Y</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.Plot#minX" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="minX:X"></a>
-      <a id="minX:X"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">minX</span><span class="result">: <span class="extype" name="axle.visualize.Plot.X">X</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.Plot#minY" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="minY:Y"></a>
-      <a id="minY:Y"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">minY</span><span class="result">: <span class="extype" name="axle.visualize.Plot.Y">Y</span></span>
+        <span class="name">keyWidth</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -424,6 +463,19 @@
       </span>
       </h4>
       
+    </li><li name="axle.visualize.Plot#refreshInterval" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="refreshInterval:Option[axle.quanta.Time.Q]"></a>
+      <a id="refreshInterval:Option[quanta.Time.Q]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">refreshInterval</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -447,6 +499,32 @@
       </span>
       <span class="symbol">
         <span class="name">title</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Plot#titleFontName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="titleFontName:String"></a>
+      <a id="titleFontName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">titleFontName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.Plot#titleFontSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="titleFontSize:Int"></a>
+      <a id="titleFontSize:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">titleFontSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -537,32 +615,6 @@
       </span>
       </h4>
       
-    </li><li name="axle.visualize.Plot#xPlottable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="xPlottable():axle.visualize.Plottable[X]"></a>
-      <a id="xPlottable():Plottable[X]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">xPlottable</span><span class="params">()</span><span class="result">: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.X">X</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.Plot#xTics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="xTics:Seq[(X,String)]"></a>
-      <a id="xTics:Seq[(X,String)]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">xTics</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="axle.visualize.Plot.X">X</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
-      </span>
-      </h4>
-      
     </li><li name="axle.visualize.Plot#yAxis" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="yAxis:X"></a>
       <a id="yAxis:X"></a>
@@ -586,32 +638,6 @@
       </span>
       <span class="symbol">
         <span class="name">yAxisLabel</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.Plot#yPlottable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="yPlottable():axle.visualize.Plottable[Y]"></a>
-      <a id="yPlottable():Plottable[Y]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">yPlottable</span><span class="params">()</span><span class="result">: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.Plot.Y">Y</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.Plot#yTics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="yTics:Seq[(Y,String)]"></a>
-      <a id="yTics:Seq[(Y,String)]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">yTics</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="axle.visualize.Plot.Y">Y</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
       </span>
       </h4>
       

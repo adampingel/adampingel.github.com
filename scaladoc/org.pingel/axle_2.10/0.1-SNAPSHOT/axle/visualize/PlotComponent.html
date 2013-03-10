@@ -40,13 +40,13 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">PlotComponent</span><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <span class="extype" name="javax.swing.JPanel">JPanel</span></span>
+        <span class="name">PlotComponent</span><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <span class="extype" name="javax.swing.JPanel">JPanel</span> with <a href="Fed.html" class="extype" name="axle.visualize.Fed">Fed</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="javax.swing.JPanel">JPanel</span>, <span class="extype" name="javax.accessibility.Accessible">Accessible</span>, <span class="extype" name="javax.swing.JComponent">JComponent</span>, <span class="extype" name="javax.swing.TransferHandler.HasGetTransferHandler">HasGetTransferHandler</span>, <span class="extype" name="java.awt.Container">Container</span>, <span class="extype" name="java.awt.Component">Component</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="java.awt.MenuContainer">MenuContainer</span>, <span class="extype" name="java.awt.image.ImageObserver">ImageObserver</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="Fed.html" class="extype" name="axle.visualize.Fed">Fed</a>, <span class="extype" name="javax.swing.JPanel">JPanel</span>, <span class="extype" name="javax.accessibility.Accessible">Accessible</span>, <span class="extype" name="javax.swing.JComponent">JComponent</span>, <span class="extype" name="javax.swing.TransferHandler.HasGetTransferHandler">HasGetTransferHandler</span>, <span class="extype" name="java.awt.Container">Container</span>, <span class="extype" name="java.awt.Component">Component</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="java.awt.MenuContainer">MenuContainer</span>, <span class="extype" name="java.awt.image.ImageObserver">ImageObserver</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -64,7 +64,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="axle.visualize.PlotComponent"><span>PlotComponent</span></li><li class="in" name="javax.swing.JPanel"><span>JPanel</span></li><li class="in" name="javax.accessibility.Accessible"><span>Accessible</span></li><li class="in" name="javax.swing.JComponent"><span>JComponent</span></li><li class="in" name="javax.swing.TransferHandler.HasGetTransferHandler"><span>HasGetTransferHandler</span></li><li class="in" name="java.awt.Container"><span>Container</span></li><li class="in" name="java.awt.Component"><span>Component</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="java.awt.MenuContainer"><span>MenuContainer</span></li><li class="in" name="java.awt.image.ImageObserver"><span>ImageObserver</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="axle.visualize.PlotComponent"><span>PlotComponent</span></li><li class="in" name="axle.visualize.Fed"><span>Fed</span></li><li class="in" name="javax.swing.JPanel"><span>JPanel</span></li><li class="in" name="javax.accessibility.Accessible"><span>Accessible</span></li><li class="in" name="javax.swing.JComponent"><span>JComponent</span></li><li class="in" name="javax.swing.TransferHandler.HasGetTransferHandler"><span>HasGetTransferHandler</span></li><li class="in" name="java.awt.Container"><span>Container</span></li><li class="in" name="java.awt.Component"><span>Component</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="java.awt.MenuContainer"><span>MenuContainer</span></li><li class="in" name="java.awt.image.ImageObserver"><span>ImageObserver</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -85,7 +85,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="axle.visualize.PlotComponent#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(plot:axle.visualize.Plot[X,Y]):axle.visualize.PlotComponent[X,Y]"></a>
+      <a id="&lt;init&gt;(plot:axle.visualize.Plot[X,Y])(implicitevidence$3:axle.visualize.Plottable[X],implicitevidence$4:axle.visualize.Plottable[Y]):axle.visualize.PlotComponent[X,Y]"></a>
       <a id="&lt;init&gt;:PlotComponent[X,Y]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,7 +93,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">PlotComponent</span><span class="params">(<span name="plot">plot: <a href="Plot.html" class="extype" name="axle.visualize.Plot">Plot</a>[<span class="extype" name="axle.visualize.PlotComponent.X">X</span>, <span class="extype" name="axle.visualize.PlotComponent.Y">Y</span>]</span>)</span>
+        <span class="name">PlotComponent</span><span class="params">(<span name="plot">plot: <a href="Plot.html" class="extype" name="axle.visualize.Plot">Plot</a>[<span class="extype" name="axle.visualize.PlotComponent.X">X</span>, <span class="extype" name="axle.visualize.PlotComponent.Y">Y</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.PlotComponent.X">X</span>]</span>, <span name="arg1">arg1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.PlotComponent.Y">Y</span>]</span>)</span>
       </span>
       </h4>
       
@@ -658,32 +658,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.awt">java.awt</span>] </dd><dt>Definition Classes</dt><dd>Component</dd></dl></div>
-    </li><li name="axle.visualize.PlotComponent#colorStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="colorStream:scala.collection.immutable.Stream[java.awt.Color]"></a>
-      <a id="colorStream:Stream[Color]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">colorStream</span><span class="result">: <span class="extype" name="scala.collection.immutable.Stream">Stream</span>[<span class="extype" name="java.awt.Color">Color</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.PlotComponent#colors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="colors:List[java.awt.Color]"></a>
-      <a id="colors:List[Color]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">colors</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.awt.Color">Color</span>]</span>
-      </span>
-      </h4>
-      
     </li><li name="javax.swing.JComponent#computeVisibleRect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="computeVisibleRect(x$1:java.awt.Rectangle):Unit"></a>
       <a id="computeVisibleRect(Rectangle):Unit"></a>
@@ -882,6 +856,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="axle.visualize.PlotComponent#feeder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="feeder():akka.actor.ActorRef"></a>
+      <a id="feeder():ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">feeder</span><span class="params">()</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="axle.visualize.PlotComponent">PlotComponent</a> → <a href="Fed.html" class="extype" name="axle.visualize.Fed">Fed</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -2701,71 +2688,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Component</dd></dl></div>
-    </li><li name="axle.visualize.PlotComponent#key" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="key(g2d:java.awt.Graphics2D):Unit"></a>
-      <a id="key(Graphics2D):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">key</span><span class="params">(<span name="g2d">g2d: <span class="extype" name="java.awt.Graphics2D">Graphics2D</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.PlotComponent#keyLeftPadding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="keyLeftPadding:Int"></a>
-      <a id="keyLeftPadding:Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">keyLeftPadding</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.PlotComponent#keyTopPadding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="keyTopPadding:Int"></a>
-      <a id="keyTopPadding:Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">keyTopPadding</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.PlotComponent#keyWidth" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="keyWidth:Int"></a>
-      <a id="keyWidth:Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">keyWidth</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.PlotComponent#labels" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="labels(g2d:java.awt.Graphics2D,fontMetrics:java.awt.FontMetrics):Unit"></a>
-      <a id="labels(Graphics2D,FontMetrics):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">labels</span><span class="params">(<span name="g2d">g2d: <span class="extype" name="java.awt.Graphics2D">Graphics2D</span></span>, <span name="fontMetrics">fontMetrics: <span class="extype" name="java.awt.FontMetrics">FontMetrics</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      
     </li><li name="java.awt.Container#list" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="list(x$1:java.io.PrintWriter,x$2:Int):Unit"></a>
       <a id="list(PrintWriter,Int):Unit"></a>
@@ -3702,19 +3624,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>JComponent</dd></dl></div>
-    </li><li name="axle.visualize.PlotComponent#scaledArea" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="scaledArea:axle.visualize.ScaledArea2D[X,Y]"></a>
-      <a id="scaledArea:ScaledArea2D[X,Y]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">scaledArea</span><span class="result">: <a href="ScaledArea2D.html" class="extype" name="axle.visualize.ScaledArea2D">ScaledArea2D</a>[<span class="extype" name="axle.visualize.PlotComponent.X">X</span>, <span class="extype" name="axle.visualize.PlotComponent.Y">Y</span>]</span>
-      </span>
-      </h4>
-      
     </li><li name="javax.swing.JComponent#scrollRectToVisible" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="scrollRectToVisible(x$1:java.awt.Rectangle):Unit"></a>
       <a id="scrollRectToVisible(Rectangle):Unit"></a>
@@ -4352,6 +4261,19 @@
       </span>
       </h4>
       
+    </li><li name="axle.visualize.PlotComponent#titleText" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="titleText:Option[axle.visualize.element.Text]"></a>
+      <a id="titleText:Option[Text]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">titleText</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="element/Text.html" class="extype" name="axle.visualize.element.Text">Text</a>]</span>
+      </span>
+      </h4>
+      
     </li><li name="java.awt.Component#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -4417,19 +4339,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Component</dd></dl></div>
-    </li><li name="axle.visualize.PlotComponent#twist" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="twist:Double"></a>
-      <a id="twist:Double"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">twist</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
-      </span>
-      </h4>
-      
     </li><li name="javax.swing.JComponent#unregisterKeyboardAction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="unregisterKeyboardAction(x$1:javax.swing.KeyStroke):Unit"></a>
       <a id="unregisterKeyboardAction(KeyStroke):Unit"></a>
@@ -4543,6 +4452,32 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="axle.visualize.PlotComponent#xAxisLabelText" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="xAxisLabelText:Option[axle.visualize.element.Text]"></a>
+      <a id="xAxisLabelText:Option[Text]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">xAxisLabelText</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="element/Text.html" class="extype" name="axle.visualize.element.Text">Text</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.PlotComponent#yAxisLabelText" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="yAxisLabelText:Option[axle.visualize.element.Text]"></a>
+      <a id="yAxisLabelText:Option[Text]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">yAxisLabelText</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="element/Text.html" class="extype" name="axle.visualize.element.Text">Text</a>]</span>
+      </span>
+      </h4>
+      
     </li></ol>
             </div>
 
@@ -5293,7 +5228,9 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="javax.swing.JPanel">
+        <div class="parent" name="axle.visualize.Fed">
+              <h3>Inherited from <a href="Fed.html" class="extype" name="axle.visualize.Fed">Fed</a></h3>
+            </div><div class="parent" name="javax.swing.JPanel">
               <h3>Inherited from <span class="extype" name="javax.swing.JPanel">JPanel</span></h3>
             </div><div class="parent" name="javax.accessibility.Accessible">
               <h3>Inherited from <span class="extype" name="javax.accessibility.Accessible">Accessible</span></h3>

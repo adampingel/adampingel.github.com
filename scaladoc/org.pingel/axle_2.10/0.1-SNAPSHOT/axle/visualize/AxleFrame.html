@@ -85,7 +85,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="axle.visualize.AxleFrame#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(width:Int,height:Int,bgColor:java.awt.Color,title:String):axle.visualize.AxleFrame"></a>
+      <a id="&lt;init&gt;(width:Int,height:Int,bgColor:java.awt.Color,title:String,dataFeedActorOpt:Option[akka.actor.ActorRef]):axle.visualize.AxleFrame"></a>
       <a id="&lt;init&gt;:AxleFrame"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,7 +93,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">AxleFrame</span><span class="params">(<span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1100</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">800</span></span>, <span name="bgColor">bgColor: <span class="extype" name="java.awt.Color">Color</span> = <span class="symbol">java.awt.Color.white</span></span>, <span name="title">title: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;αχλε&quot;</span></span>)</span>
+        <span class="name">AxleFrame</span><span class="params">(<span name="width">width: <span class="extype" name="scala.Int">Int</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span></span>, <span name="bgColor">bgColor: <span class="extype" name="java.awt.Color">Color</span></span>, <span name="title">title: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dataFeedActorOpt">dataFeedActorOpt: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="akka.actor.ActorRef">ActorRef</span>]</span>)</span>
       </span>
       </h4>
       
@@ -1070,6 +1070,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="javax.swing">javax.swing</span>] </dd><dt>Definition Classes</dt><dd>JFrame</dd></dl></div>
+    </li><li name="axle.visualize.AxleFrame#frameRepaintingActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="frameRepaintingActor:akka.actor.ActorRef"></a>
+      <a id="frameRepaintingActor:ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">frameRepaintingActor</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4>
+      
     </li><li name="javax.swing.JFrame#getAccessibleContext" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getAccessibleContext():javax.accessibility.AccessibleContext"></a>
       <a id="getAccessibleContext():AccessibleContext"></a>

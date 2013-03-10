@@ -37,16 +37,16 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">ScaledArea2D</span><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">ScaledArea2D</span><span class="tparams">[<span name="X">X</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="width">width: <span class="extype" name="scala.Int">Int</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span></span>, <span name="pad">pad: <span class="extype" name="scala.Int">Int</span></span>, <span name="minX">minX: <span class="extype" name="axle.visualize.ScaledArea2D.X">X</span></span>, <span name="maxX">maxX: <span class="extype" name="axle.visualize.ScaledArea2D.X">X</span></span>, <span name="minY">minY: <span class="extype" name="axle.visualize.ScaledArea2D.Y">Y</span></span>, <span name="maxY">maxY: <span class="extype" name="axle.visualize.ScaledArea2D.Y">Y</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="../algebra/Portionable.html" class="extype" name="axle.algebra.Portionable">Portionable</a>[<span class="extype" name="axle.visualize.ScaledArea2D.X">X</span>]</span>, <span name="evidence$2">evidence$2: <a href="../algebra/Portionable.html" class="extype" name="axle.algebra.Portionable">Portionable</a>[<span class="extype" name="axle.visualize.ScaledArea2D.Y">Y</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -64,7 +64,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="axle.visualize.ScaledArea2D"><span>ScaledArea2D</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="axle.visualize.ScaledArea2D"><span>ScaledArea2D</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -265,45 +265,6 @@
       </span>
       </h4>
       
-    </li><li name="axle.visualize.ScaledArea2D#drawXTic" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="drawXTic(g2d:java.awt.Graphics2D,fontMetrics:java.awt.FontMetrics,xTic:(X,String),fDrawLine:Boolean,angle:axle.quanta.Angle.Q):Unit"></a>
-      <a id="drawXTic(Graphics2D,FontMetrics,(X,String),Boolean,quanta.Angle.Q):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">drawXTic</span><span class="params">(<span name="g2d">g2d: <span class="extype" name="java.awt.Graphics2D">Graphics2D</span></span>, <span name="fontMetrics">fontMetrics: <span class="extype" name="java.awt.FontMetrics">FontMetrics</span></span>, <span name="xTic">xTic: (<span class="extype" name="axle.visualize.ScaledArea2D.X">X</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>, <span name="fDrawLine">fDrawLine: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="angle">angle: <a href="../quanta/Angle$.html#Q=Angle.this.AngleQuantity" class="extmbr" name="axle.quanta.Angle.Q">quanta.Angle.Q</a> = <span class="symbol"><span class="name"><a href="#zeroDegrees:axle.quanta.Angle.Q">zeroDegrees</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.ScaledArea2D#drawXTics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="drawXTics(g2d:java.awt.Graphics2D,fontMetrics:java.awt.FontMetrics,xTics:Seq[(X,String)],fDrawLines:Boolean,angle:axle.quanta.Angle.Q):Unit"></a>
-      <a id="drawXTics(Graphics2D,FontMetrics,Seq[(X,String)],Boolean,quanta.Angle.Q):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">drawXTics</span><span class="params">(<span name="g2d">g2d: <span class="extype" name="java.awt.Graphics2D">Graphics2D</span></span>, <span name="fontMetrics">fontMetrics: <span class="extype" name="java.awt.FontMetrics">FontMetrics</span></span>, <span name="xTics">xTics: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="axle.visualize.ScaledArea2D.X">X</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="fDrawLines">fDrawLines: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="angle">angle: <a href="../quanta/Angle$.html#Q=Angle.this.AngleQuantity" class="extmbr" name="axle.quanta.Angle.Q">quanta.Angle.Q</a> = <span class="symbol"><span class="name"><a href="#zeroDegrees:axle.quanta.Angle.Q">zeroDegrees</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.ScaledArea2D#drawYTics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="drawYTics(g2d:java.awt.Graphics2D,fontMetrics:java.awt.FontMetrics,yTics:Seq[(Y,String)]):Unit"></a>
-      <a id="drawYTics(Graphics2D,FontMetrics,Seq[(Y,String)]):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">drawYTics</span><span class="params">(<span name="g2d">g2d: <span class="extype" name="java.awt.Graphics2D">Graphics2D</span></span>, <span name="fontMetrics">fontMetrics: <span class="extype" name="java.awt.FontMetrics">FontMetrics</span></span>, <span name="yTics">yTics: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="axle.visualize.ScaledArea2D.Y">Y</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      
     </li><li name="axle.visualize.ScaledArea2D#drawableHeight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="drawableHeight:Int"></a>
       <a id="drawableHeight:Int"></a>
@@ -343,19 +304,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="axle.visualize.ScaledArea2D#fillOval" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="fillOval(g2d:java.awt.Graphics2D,p:axle.visualize.Point2D[X,Y],width:Int,height:Int):Unit"></a>
       <a id="fillOval(Graphics2D,Point2D[X,Y],Int,Int):Unit"></a>
@@ -424,29 +372,16 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
+    </li><li name="axle.visualize.ScaledArea2D#height" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="height:Int"></a>
+      <a id="height:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="axle.visualize.ScaledArea2D#horizontalLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="horizontalLine(g2d:java.awt.Graphics2D,y:Y):Unit"></a>
-      <a id="horizontalLine(Graphics2D,Y):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">horizontalLine</span><span class="params">(<span name="g2d">g2d: <span class="extype" name="java.awt.Graphics2D">Graphics2D</span></span>, <span name="y">y: <span class="extype" name="axle.visualize.ScaledArea2D.Y">Y</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">height</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -463,6 +398,58 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="axle.visualize.ScaledArea2D#maxX" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="maxX:X"></a>
+      <a id="maxX:X"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maxX</span><span class="result">: <span class="extype" name="axle.visualize.ScaledArea2D.X">X</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.ScaledArea2D#maxY" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="maxY:Y"></a>
+      <a id="maxY:Y"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maxY</span><span class="result">: <span class="extype" name="axle.visualize.ScaledArea2D.Y">Y</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.ScaledArea2D#minX" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minX:X"></a>
+      <a id="minX:X"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minX</span><span class="result">: <span class="extype" name="axle.visualize.ScaledArea2D.X">X</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.ScaledArea2D#minY" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minY:Y"></a>
+      <a id="minY:Y"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minY</span><span class="result">: <span class="extype" name="axle.visualize.ScaledArea2D.Y">Y</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -502,6 +489,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="axle.visualize.ScaledArea2D#pad" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pad:Int"></a>
+      <a id="pad:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pad</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -515,32 +515,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="axle.visualize.ScaledArea2D#verticalLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="verticalLine(g2d:java.awt.Graphics2D,x:X):Unit"></a>
-      <a id="verticalLine(Graphics2D,X):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">verticalLine</span><span class="params">(<span name="g2d">g2d: <span class="extype" name="java.awt.Graphics2D">Graphics2D</span></span>, <span name="x">x: <span class="extype" name="axle.visualize.ScaledArea2D.X">X</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -589,6 +563,19 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="axle.visualize.ScaledArea2D#width" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="width:Int"></a>
+      <a id="width:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">width</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
     </li><li name="axle.visualize.ScaledArea2D#xPortionable" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="xPortionable:axle.algebra.Portionable[X]"></a>
       <a id="xPortionable:Portionable[X]"></a>
@@ -615,19 +602,6 @@
       </span>
       </h4>
       
-    </li><li name="axle.visualize.ScaledArea2D#zeroDegrees" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="zeroDegrees:axle.quanta.Angle.Q"></a>
-      <a id="zeroDegrees:quanta.Angle.Q"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">zeroDegrees</span><span class="result">: <a href="../quanta/Angle$.html#Q=Angle.this.AngleQuantity" class="extmbr" name="axle.quanta.Angle.Q">quanta.Angle.Q</a></span>
-      </span>
-      </h4>
-      
     </li></ol>
             </div>
 
@@ -637,7 +611,15 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

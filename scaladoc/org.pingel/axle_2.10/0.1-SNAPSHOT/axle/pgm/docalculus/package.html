@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>docalculus - axle.pgm.docalculus</title>
+          <meta name="description" content="docalculus - axle.pgm.docalculus" />
+          <meta name="keywords" content="docalculus axle.pgm.docalculus" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'axle.pgm.docalculus.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="axle">axle</a>.<a href="../package.html" class="extype" name="axle.pgm">pgm</a></p>
+        <h1>docalculus</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">docalculus</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="axle.pgm.docalculus.CausalModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CausalModelextendsModel[axle.pgm.docalculus.CausalModelNode]"></a>
+      <a id="CausalModel:CausalModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CausalModel.html"><span class="name">CausalModel</span></a><span class="result"> extends <a href="../Model.html" class="extype" name="axle.pgm.Model">Model</a>[<a href="CausalModelNode.html" class="extype" name="axle.pgm.docalculus.CausalModelNode">CausalModelNode</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.CausalModelNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CausalModelNodeextendsProductwithSerializable"></a>
+      <a id="CausalModelNode:CausalModelNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CausalModelNode.html"><span class="name">CausalModelNode</span></a><span class="params">(<span name="rv">rv: <a href="../../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]</span>, <span name="observable">observable: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.CausalityProbability" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CausalityProbabilityextendsFormwithProductwithSerializable"></a>
+      <a id="CausalityProbability:CausalityProbability"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CausalityProbability.html"><span class="name">CausalityProbability</span></a><span class="params">(<span name="question">question: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]</span>, <span name="given">given: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]</span>, <span name="actions">actions: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]</span>)</span><span class="result"> extends <a href="Form.html" class="extype" name="axle.pgm.docalculus.Form">Form</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.Form" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FormextendsObject"></a>
+      <a id="Form:Form"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Form.html"><span class="name">Form</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.PFunction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PFunctionextendsProductwithSerializable"></a>
+      <a id="PFunction:PFunction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PFunction.html"><span class="name">PFunction</span></a><span class="params">(<span name="rv">rv: <a href="../../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]</span>, <span name="inputs">inputs: <span class="extype" name="scala.Seq">Seq</span>[<a href="../../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.Rule" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RuleextendsForm"></a>
+      <a id="Rule:Rule"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Rule.html"><span class="name">Rule</span></a><span class="result"> extends <a href="Form.html" class="extype" name="axle.pgm.docalculus.Form">Form</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.Sigma" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Sigma[T]extendsFormwithProductwithSerializable"></a>
+      <a id="Sigma[T]:Sigma[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Sigma.html"><span class="name">Sigma</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="xs">xs: <span class="extype" name="scala.collection.Set">Set</span>[<span class="extype" name="axle.pgm.docalculus.Sigma.T">T</span>]</span>, <span name="f">f: (<span class="extype" name="axle.pgm.docalculus.Sigma.T">T</span>) ⇒ <a href="Form.html" class="extype" name="axle.pgm.docalculus.Form">Form</a></span>)</span><span class="result"> extends <a href="Form.html" class="extype" name="axle.pgm.docalculus.Form">Form</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.Unifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnifierextendsObject"></a>
+      <a id="Unifier:Unifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Unifier.html"><span class="name">Unifier</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.VariableNamer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VariableNamerextendsObject"></a>
+      <a id="VariableNamer:VariableNamer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VariableNamer.html"><span class="name">VariableNamer</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="axle.pgm.docalculus.ActionToObservation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActionToObservation"></a>
+      <a id="ActionToObservation:ActionToObservation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ActionToObservation$.html"><span class="name">ActionToObservation</span></a><span class="result"> extends <a href="Rule.html" class="extype" name="axle.pgm.docalculus.Rule">Rule</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.AdjustForDirectCauses" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AdjustForDirectCauses"></a>
+      <a id="AdjustForDirectCauses:AdjustForDirectCauses"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AdjustForDirectCauses$.html"><span class="name">AdjustForDirectCauses</span></a><span class="result"> extends <a href="Rule.html" class="extype" name="axle.pgm.docalculus.Rule">Rule</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.CausalModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CausalModel"></a>
+      <a id="CausalModel:CausalModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CausalModel$.html"><span class="name">CausalModel</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.DeleteAction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeleteAction"></a>
+      <a id="DeleteAction:DeleteAction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DeleteAction$.html"><span class="name">DeleteAction</span></a><span class="result"> extends <a href="Rule.html" class="extype" name="axle.pgm.docalculus.Rule">Rule</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.DeleteObservation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeleteObservation"></a>
+      <a id="DeleteObservation:DeleteObservation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DeleteObservation$.html"><span class="name">DeleteObservation</span></a><span class="result"> extends <a href="Rule.html" class="extype" name="axle.pgm.docalculus.Rule">Rule</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.InsertAction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InsertAction"></a>
+      <a id="InsertAction:InsertAction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InsertAction$.html"><span class="name">InsertAction</span></a><span class="result"> extends <a href="Rule.html" class="extype" name="axle.pgm.docalculus.Rule">Rule</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.InsertObservation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InsertObservation"></a>
+      <a id="InsertObservation:InsertObservation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InsertObservation$.html"><span class="name">InsertObservation</span></a><span class="result"> extends <a href="Rule.html" class="extype" name="axle.pgm.docalculus.Rule">Rule</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.ObservationToAction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ObservationToAction"></a>
+      <a id="ObservationToAction:ObservationToAction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ObservationToAction$.html"><span class="name">ObservationToAction</span></a><span class="result"> extends <a href="Rule.html" class="extype" name="axle.pgm.docalculus.Rule">Rule</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.docalculus.Search" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Search"></a>
+      <a id="Search:Search"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Search$.html"><span class="name">Search</span></a>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
