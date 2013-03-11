@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>BayesianNetworkModule - axle.pgm.BayesianNetworkModule</title>
-          <meta name="description" content="BayesianNetworkModule - axle.pgm.BayesianNetworkModule" />
-          <meta name="keywords" content="BayesianNetworkModule axle.pgm.BayesianNetworkModule" />
+          <title>InteractionGraph - axle.pgm.InteractionGraph</title>
+          <meta name="description" content="InteractionGraph - axle.pgm.InteractionGraph" />
+          <meta name="keywords" content="InteractionGraph axle.pgm.InteractionGraph" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -17,7 +17,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
-            var hash = 'axle.pgm.BayesianNetworkModule$';
+            var hash = 'axle.pgm.InteractionGraph';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -27,26 +27,26 @@
    	  </script>
     
         </head>
-        <body class="value">
+        <body class="type">
       <div id="definition">
-        <a href="BayesianNetworkModule.html" title="Go to companion"><img src="../../lib/object_to_trait_big.png" /></a>
+        <img src="../../lib/class_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="axle">axle</a>.<a href="package.html" class="extype" name="axle.pgm">pgm</a></p>
-        <h1><a href="BayesianNetworkModule.html" title="Go to companion">BayesianNetworkModule</a></h1>
+        <h1>InteractionGraph</h1>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">BayesianNetworkModule</span><span class="result"> extends <a href="BayesianNetworkModule.html" class="extype" name="axle.pgm.BayesianNetworkModule">BayesianNetworkModule</a></span>
+        <span class="name">InteractionGraph</span><span class="params">(<span name="vps">vps: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]</span>, <span name="ef">ef: (<span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]]) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]], <a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]], <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="BayesianNetworkModule.html" class="extype" name="axle.pgm.BayesianNetworkModule">BayesianNetworkModule</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -64,7 +64,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="axle.pgm.BayesianNetworkModule"><span>BayesianNetworkModule</span></li><li class="in" name="axle.pgm.BayesianNetworkModule"><span>BayesianNetworkModule</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="axle.pgm.InteractionGraph"><span>InteractionGraph</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -82,38 +82,25 @@
 
       <div id="template">
         <div id="allMembers">
-        
-
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="axle.pgm.BayesianNetworkModule.BayesianNetwork" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="BayesianNetworkextendsModel[BayesianNetworkModule.this.BayesianNetworkNode]"></a>
-      <a id="BayesianNetwork:BayesianNetwork"></a>
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="axle.pgm.InteractionGraph#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(vps:Seq[axle.stats.RandomVariable[_]],ef:Seq[axle.graph.Vertex[axle.stats.RandomVariable[_]]]=&gt;Seq[(axle.graph.Vertex[axle.stats.RandomVariable[_]],axle.graph.Vertex[axle.stats.RandomVariable[_]],String)]):axle.pgm.InteractionGraph"></a>
+      <a id="&lt;init&gt;:InteractionGraph"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <a href="BayesianNetworkModule$BayesianNetwork.html"><span class="name">BayesianNetwork</span></a><span class="result"> extends <a href="Model.html" class="extype" name="axle.pgm.Model">Model</a>[<a href="BayesianNetworkModule$BayesianNetworkNode.html" class="extype" name="axle.pgm.BayesianNetworkModule.BayesianNetworkNode">BayesianNetworkNode</a>]</span>
+        <span class="name">InteractionGraph</span><span class="params">(<span name="vps">vps: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]</span>, <span name="ef">ef: (<span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]]) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]], <a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]], <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BayesianNetworkModule.html" class="extype" name="axle.pgm.BayesianNetworkModule">BayesianNetworkModule</a></dd></dl></div>
-    </li><li name="axle.pgm.BayesianNetworkModule.BayesianNetworkNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="BayesianNetworkNodeextendsXmlAblewithProductwithSerializable"></a>
-      <a id="BayesianNetworkNode:BayesianNetworkNode"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="BayesianNetworkModule$BayesianNetworkNode.html"><span class="name">BayesianNetworkNode</span></a><span class="params">(<span name="rv">rv: <a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]</span>, <span name="cpt">cpt: <a href="../stats/FactorModule$.html#FactorextendsObject" class="extmbr" name="axle.stats.FactorModule.Factor">stats.FactorModule.Factor</a></span>)</span><span class="result"> extends <a href="../XmlAble.html" class="extype" name="axle.XmlAble">XmlAble</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BayesianNetworkModule.html" class="extype" name="axle.pgm.BayesianNetworkModule">BayesianNetworkModule</a></dd></dl></div>
+      
     </li></ol>
             </div>
+
+        
 
         
 
@@ -184,19 +171,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="axle.pgm.BayesianNetworkModule.BayesianNetwork" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="BayesianNetwork"></a>
-      <a id="BayesianNetwork:BayesianNetwork"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="BayesianNetworkModule$BayesianNetwork$.html"><span class="name">BayesianNetwork</span></a>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BayesianNetworkModule.html" class="extype" name="axle.pgm.BayesianNetworkModule">BayesianNetworkModule</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -226,6 +200,45 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="axle.pgm.InteractionGraph#ef" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ef:Seq[axle.graph.Vertex[axle.stats.RandomVariable[_]]]=&gt;Seq[(axle.graph.Vertex[axle.stats.RandomVariable[_]],axle.graph.Vertex[axle.stats.RandomVariable[_]],String)]"></a>
+      <a id="ef:(Seq[Vertex[RandomVariable[_]]])⇒Seq[(Vertex[RandomVariable[_]],Vertex[RandomVariable[_]],String)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ef</span><span class="result">: (<span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]]) ⇒ <span class="extype" name="scala.collection.Seq">Seq</span>[(<a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]], <a href="../graph/Vertex.html" class="extype" name="axle.graph.Vertex">Vertex</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]], <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.InteractionGraph#eliminate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="eliminate(rv:axle.stats.RandomVariable[_]):axle.pgm.InteractionGraph"></a>
+      <a id="eliminate(RandomVariable[_]):InteractionGraph"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eliminate</span><span class="params">(<span name="rv">rv: <a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]</span>)</span><span class="result">: <a href="" class="extype" name="axle.pgm.InteractionGraph">InteractionGraph</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.pgm.InteractionGraph#eliminationSequence" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="eliminationSequence(π:List[axle.stats.RandomVariable[_]]):List[axle.pgm.InteractionGraph]"></a>
+      <a id="eliminationSequence(List[RandomVariable[_]]):List[InteractionGraph]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eliminationSequence</span><span class="params">(<span name="π">π: <span class="extype" name="scala.List">List</span>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="" class="extype" name="axle.pgm.InteractionGraph">InteractionGraph</a>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -239,19 +252,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -281,19 +281,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
+    </li><li name="axle.pgm.InteractionGraph#graph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="graph:axle.graph.JungUndirectedGraph[axle.stats.RandomVariable[_],String]"></a>
+      <a id="graph:JungUndirectedGraph[RandomVariable[_],String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">graph</span><span class="result">: <a href="../graph/JungUndirectedGraph.html" class="extype" name="axle.graph.JungUndirectedGraph">JungUndirectedGraph</a>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_], <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -359,19 +359,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
+    </li><li name="axle.pgm.InteractionGraph#vps" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="vps:Seq[axle.stats.RandomVariable[_]]"></a>
+      <a id="vps:Seq[RandomVariable[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">vps</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<a href="../stats/RandomVariable.html" class="extype" name="axle.stats.RandomVariable">RandomVariable</a>[_]]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -429,8 +429,14 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="axle.pgm.BayesianNetworkModule">
-              <h3>Inherited from <a href="BayesianNetworkModule.html" class="extype" name="axle.pgm.BayesianNetworkModule">BayesianNetworkModule</a></h3>
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

@@ -40,7 +40,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">BarChart</span><span class="tparams">[<span name="X">X</span>, <span name="S">S</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="xs">xs: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.X">X</span>]</span>, <span name="ss">ss: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.S">S</span>]</span>, <span name="y">y: (<span class="extype" name="axle.visualize.BarChart.X">X</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>, <span name="xLabeller">xLabeller: (<span class="extype" name="axle.visualize.BarChart.X">X</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((x: X) =&gt; x.toString())</span></span>, <span name="sLabeller">sLabeller: (<span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((s: S) =&gt; s.toString())</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="barWidthPercent">barWidthPercent: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.8</span></span>, <span name="keyLeftPadding">keyLeftPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="keyTopPadding">keyTopPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="keyWidth">keyWidth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">80</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="normalFontName">normalFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Courier New&quot;</span></span>, <span name="normalFontSize">normalFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">12</span></span>, <span name="titleFontName">titleFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Palatino&quot;</span></span>, <span name="titleFontSize">titleFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.Option">Option</span>[<a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">BarChart</span><span class="tparams">[<span name="G">G</span>, <span name="S">S</span>, <span name="Y">Y</span>]</span><span class="params">(<span name="groups">groups: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.G">G</span>]</span>, <span name="slices">slices: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.S">S</span>]</span>, <span name="initialValue">initialValue: <span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>, <span name="gLabeller">gLabeller: (<span class="extype" name="axle.visualize.BarChart.G">G</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((g: G) =&gt; g.toString())</span></span>, <span name="sLabeller">sLabeller: (<span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((s: S) =&gt; s.toString())</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="barWidthPercent">barWidthPercent: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.8</span></span>, <span name="keyLeftPadding">keyLeftPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="keyTopPadding">keyTopPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="keyWidth">keyWidth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">80</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="normalFontName">normalFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Courier New&quot;</span></span>, <span name="normalFontSize">normalFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">12</span></span>, <span name="titleFontName">titleFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Palatino&quot;</span></span>, <span name="titleFontSize">titleFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="refresher">refresher: <span class="extype" name="scala.Option">Option</span>[((<span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>]) ⇒ <span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>], <a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>)] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -85,15 +85,15 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="axle.visualize.BarChart#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(xs:Seq[X],ss:Seq[S],y:(X,S)=&gt;Y,xLabeller:X=&gt;String,sLabeller:S=&gt;String,drawKey:Boolean,width:Int,height:Int,border:Int,barWidthPercent:Double,keyLeftPadding:Int,keyTopPadding:Int,keyWidth:Int,title:Option[String],normalFontName:String,normalFontSize:Int,titleFontName:String,titleFontSize:Int,xAxis:Y,xAxisLabel:Option[String],yAxisLabel:Option[String],refreshInterval:Option[axle.quanta.Time.Q])(implicitevidence$1:axle.visualize.Plottable[Y]):axle.visualize.BarChart[X,S,Y]"></a>
-      <a id="&lt;init&gt;:BarChart[X,S,Y]"></a>
+      <a id="&lt;init&gt;(groups:Seq[G],slices:Seq[S],initialValue:scala.collection.Map[(G,S),Y],gLabeller:G=&gt;String,sLabeller:S=&gt;String,drawKey:Boolean,width:Int,height:Int,border:Int,barWidthPercent:Double,keyLeftPadding:Int,keyTopPadding:Int,keyWidth:Int,title:Option[String],normalFontName:String,normalFontSize:Int,titleFontName:String,titleFontSize:Int,xAxis:Y,xAxisLabel:Option[String],yAxisLabel:Option[String],refresher:Option[(scala.collection.Map[(G,S),Y]=&gt;scala.collection.Map[(G,S),Y],axle.quanta.Time.Q)])(implicitevidence$1:axle.visualize.Plottable[Y]):axle.visualize.BarChart[G,S,Y]"></a>
+      <a id="&lt;init&gt;:BarChart[G,S,Y]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">BarChart</span><span class="params">(<span name="xs">xs: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.X">X</span>]</span>, <span name="ss">ss: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.S">S</span>]</span>, <span name="y">y: (<span class="extype" name="axle.visualize.BarChart.X">X</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>, <span name="xLabeller">xLabeller: (<span class="extype" name="axle.visualize.BarChart.X">X</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((x: X) =&gt; x.toString())</span></span>, <span name="sLabeller">sLabeller: (<span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((s: S) =&gt; s.toString())</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="barWidthPercent">barWidthPercent: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.8</span></span>, <span name="keyLeftPadding">keyLeftPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="keyTopPadding">keyTopPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="keyWidth">keyWidth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">80</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="normalFontName">normalFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Courier New&quot;</span></span>, <span name="normalFontSize">normalFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">12</span></span>, <span name="titleFontName">titleFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Palatino&quot;</span></span>, <span name="titleFontSize">titleFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.Option">Option</span>[<a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>)</span>
+        <span class="name">BarChart</span><span class="params">(<span name="groups">groups: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.G">G</span>]</span>, <span name="slices">slices: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.S">S</span>]</span>, <span name="initialValue">initialValue: <span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>, <span name="gLabeller">gLabeller: (<span class="extype" name="axle.visualize.BarChart.G">G</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((g: G) =&gt; g.toString())</span></span>, <span name="sLabeller">sLabeller: (<span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">((s: S) =&gt; s.toString())</span></span>, <span name="drawKey">drawKey: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="width">width: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">700</span></span>, <span name="height">height: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">600</span></span>, <span name="border">border: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="barWidthPercent">barWidthPercent: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.8</span></span>, <span name="keyLeftPadding">keyLeftPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="keyTopPadding">keyTopPadding: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">50</span></span>, <span name="keyWidth">keyWidth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">80</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="normalFontName">normalFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Courier New&quot;</span></span>, <span name="normalFontSize">normalFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">12</span></span>, <span name="titleFontName">titleFontName: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Palatino&quot;</span></span>, <span name="titleFontSize">titleFontSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">20</span></span>, <span name="xAxis">xAxis: <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>, <span name="xAxisLabel">xAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="yAxisLabel">yAxisLabel: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>, <span name="refresher">refresher: <span class="extype" name="scala.Option">Option</span>[((<span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>]) ⇒ <span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>], <a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>)] = <span class="symbol">scala.None</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="Plottable.html" class="extype" name="axle.visualize.Plottable">Plottable</a>[<span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>)</span>
       </span>
       </h4>
       
@@ -239,19 +239,6 @@
       </span>
       </h4>
       
-    </li><li name="axle.visualize.BarChart#dataFunction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="dataFunction:()=&gt;scala.collection.immutable.Map[(X,S),Y]"></a>
-      <a id="dataFunction:()⇒Map[(X,S),Y]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">dataFunction</span><span class="result">: () ⇒ <span class="extype" name="scala.collection.immutable.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.X">X</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>
-      </span>
-      </h4>
-      
     </li><li name="axle.visualize.BarChart#drawKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="drawKey:Boolean"></a>
       <a id="drawKey:Boolean"></a>
@@ -294,6 +281,19 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="axle.visualize.BarChart#gLabeller" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gLabeller:G=&gt;String"></a>
+      <a id="gLabeller:(G)⇒String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gLabeller</span><span class="result">: (<span class="extype" name="axle.visualize.BarChart.G">G</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -307,6 +307,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="axle.visualize.BarChart#groups" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="groups:Seq[G]"></a>
+      <a id="groups:Seq[G]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">groups</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.G">G</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="axle.visualize.BarChart#height" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="height:Int"></a>
       <a id="height:Int"></a>
@@ -317,6 +330,19 @@
       </span>
       <span class="symbol">
         <span class="name">height</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="axle.visualize.BarChart#initialValue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="initialValue:scala.collection.Map[(G,S),Y]"></a>
+      <a id="initialValue:Map[(G,S),Y]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initialValue</span><span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>]</span>
       </span>
       </h4>
       
@@ -437,16 +463,16 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="axle.visualize.BarChart#refreshInterval" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="refreshInterval:Option[axle.quanta.Time.Q]"></a>
-      <a id="refreshInterval:Option[quanta.Time.Q]"></a>
+    </li><li name="axle.visualize.BarChart#refresher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="refresher:Option[(scala.collection.Map[(G,S),Y]=&gt;scala.collection.Map[(G,S),Y],axle.quanta.Time.Q)]"></a>
+      <a id="refresher:Option[((Map[(G,S),Y])⇒Map[(G,S),Y],quanta.Time.Q)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">refreshInterval</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>]</span>
+        <span class="name">refresher</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[((<span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>]) ⇒ <span class="extype" name="scala.collection.Map">Map</span>[(<span class="extype" name="axle.visualize.BarChart.G">G</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>), <span class="extype" name="axle.visualize.BarChart.Y">Y</span>], <a href="../quanta/Time$.html#Q=Time.this.TimeQuantity" class="extmbr" name="axle.quanta.Time.Q">quanta.Time.Q</a>)]</span>
       </span>
       </h4>
       
@@ -463,16 +489,16 @@
       </span>
       </h4>
       
-    </li><li name="axle.visualize.BarChart#ss" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ss:Seq[S]"></a>
-      <a id="ss:Seq[S]"></a>
+    </li><li name="axle.visualize.BarChart#slices" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="slices:Seq[S]"></a>
+      <a id="slices:Seq[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">ss</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.S">S</span>]</span>
+        <span class="name">slices</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.S">S</span>]</span>
       </span>
       </h4>
       
@@ -612,45 +638,6 @@
       </span>
       <span class="symbol">
         <span class="name">xAxisLabel</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.BarChart#xLabeller" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="xLabeller:X=&gt;String"></a>
-      <a id="xLabeller:(X)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">xLabeller</span><span class="result">: (<span class="extype" name="axle.visualize.BarChart.X">X</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.BarChart#xs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="xs:Seq[X]"></a>
-      <a id="xs:Seq[X]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">xs</span><span class="result">: <span class="extype" name="scala.collection.Seq">Seq</span>[<span class="extype" name="axle.visualize.BarChart.X">X</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="axle.visualize.BarChart#y" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="y:(X,S)=&gt;Y"></a>
-      <a id="y:(X,S)⇒Y"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">y</span><span class="result">: (<span class="extype" name="axle.visualize.BarChart.X">X</span>, <span class="extype" name="axle.visualize.BarChart.S">S</span>) ⇒ <span class="extype" name="axle.visualize.BarChart.Y">Y</span></span>
       </span>
       </h4>
       

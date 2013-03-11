@@ -40,7 +40,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">GeneticAlgorithmLog</span><span class="tparams">[<span name="G">G</span>]</span><span class="params">(<span name="popLog">popLog: <span class="extype" name="scala.collection.IndexedSeq">IndexedSeq</span>[(<span class="extype" name="axle.ml.GeneticAlgorithmLog.G">G</span>, <span class="extype" name="scala.Double">Double</span>)]</span>, <span name="mins">mins: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="maxs">maxs: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="aves">aves: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">GeneticAlgorithmLog</span><span class="tparams">[<span name="G">G</span>]</span><span class="params">(<span name="popLog">popLog: <span class="extype" name="scala.collection.IndexedSeq">IndexedSeq</span>[(<span class="extype" name="axle.ml.GeneticAlgorithmLog.G">G</span>, <span class="extype" name="scala.Double">Double</span>)]</span>, <span name="mins">mins: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="maxs">maxs: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="aves">aves: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -85,7 +85,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="axle.ml.GeneticAlgorithmLog#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(popLog:IndexedSeq[(G,Double)],mins:scala.collection.SortedMap[Int,Double],maxs:scala.collection.SortedMap[Int,Double],aves:scala.collection.SortedMap[Int,Double]):axle.ml.GeneticAlgorithmLog[G]"></a>
+      <a id="&lt;init&gt;(popLog:IndexedSeq[(G,Double)],mins:scala.collection.immutable.TreeMap[Int,Double],maxs:scala.collection.immutable.TreeMap[Int,Double],aves:scala.collection.immutable.TreeMap[Int,Double]):axle.ml.GeneticAlgorithmLog[G]"></a>
       <a id="&lt;init&gt;:GeneticAlgorithmLog[G]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,7 +93,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">GeneticAlgorithmLog</span><span class="params">(<span name="popLog">popLog: <span class="extype" name="scala.collection.IndexedSeq">IndexedSeq</span>[(<span class="extype" name="axle.ml.GeneticAlgorithmLog.G">G</span>, <span class="extype" name="scala.Double">Double</span>)]</span>, <span name="mins">mins: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="maxs">maxs: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="aves">aves: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span>
+        <span class="name">GeneticAlgorithmLog</span><span class="params">(<span name="popLog">popLog: <span class="extype" name="scala.collection.IndexedSeq">IndexedSeq</span>[(<span class="extype" name="axle.ml.GeneticAlgorithmLog.G">G</span>, <span class="extype" name="scala.Double">Double</span>)]</span>, <span name="mins">mins: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="maxs">maxs: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="aves">aves: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span>
       </span>
       </h4>
       
@@ -185,15 +185,15 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="axle.ml.GeneticAlgorithmLog#aves" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="aves:scala.collection.SortedMap[Int,Double]"></a>
-      <a id="aves:SortedMap[Int,Double]"></a>
+      <a id="aves:scala.collection.immutable.TreeMap[Int,Double]"></a>
+      <a id="aves:TreeMap[Int,Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">aves</span><span class="result">: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">aves</span><span class="result">: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
       
@@ -269,28 +269,28 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="axle.ml.GeneticAlgorithmLog#maxs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="maxs:scala.collection.SortedMap[Int,Double]"></a>
-      <a id="maxs:SortedMap[Int,Double]"></a>
+      <a id="maxs:scala.collection.immutable.TreeMap[Int,Double]"></a>
+      <a id="maxs:TreeMap[Int,Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">maxs</span><span class="result">: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">maxs</span><span class="result">: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
       
     </li><li name="axle.ml.GeneticAlgorithmLog#mins" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="mins:scala.collection.SortedMap[Int,Double]"></a>
-      <a id="mins:SortedMap[Int,Double]"></a>
+      <a id="mins:scala.collection.immutable.TreeMap[Int,Double]"></a>
+      <a id="mins:TreeMap[Int,Double]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">mins</span><span class="result">: <span class="extype" name="scala.collection.SortedMap">SortedMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+        <span class="name">mins</span><span class="result">: <span class="extype" name="scala.collection.immutable.TreeMap">TreeMap</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
       
